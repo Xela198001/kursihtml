@@ -1,0 +1,176 @@
+.header {
+  position: relative;
+
+  & .top {
+    max-width: 100%;
+    min-height: 120px;
+    background-color: #fff;
+    box-shadow: 4px 0 50px -15px #0c0c0c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    @include fontRG;
+    font-size: 2.5rem;
+    color: #355dcac9;
+    padding: 0 2rem;
+
+    & .top-contact {
+    }
+
+    & .top-button {
+      & .link-button {
+        width: 400px;
+        min-height: 4.5rem;
+        border: 1px solid #355dcac9;
+        border-radius: 5px;
+        @include fontBD;
+        font-size: 0.75em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #355dcac9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          border: 1px solid #2150d3;
+          color: #2150d3;
+          box-shadow: 0px 5px 10px 2px #e1e1e1;
+        }
+
+        &:active {
+          border: 1px solid #355dcac9;
+          color: #355dcac9;
+          box-shadow: inset 0px 5px 10px 1px #e1e1e1;
+        }
+      }
+    }
+  }
+
+  & .head {
+    margin-top: 120px;
+    min-height: 860px;
+    background-color: #355cca;
+    padding: 0 2rem 1rem 2rem;
+
+    & .imgBg {
+      background: url("../img/html.png") no-repeat center;
+      background-size: cover;
+      position: absolute;
+      right: 30px;
+      top: 150px;
+      width: 1010px;
+      height: 700px;
+    }
+
+    & .nav {
+      width: 100%;
+      min-height: 145px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+
+      & .listItems {
+        margin: 0 35px 0 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        & .item {
+          font-family: "Proxima Nova Th";
+          font-size: 2em;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #fff;
+          margin: 0 2rem 0 2rem;
+
+          & .link {
+            background-color: transparent;
+            color: currentColor;
+            text-decoration: none;
+            letter-spacing: 4.1px;
+          }
+        }
+      }
+    }
+
+    & .head-text {
+      color: #fff;
+      margin: 150px 0 0 0;
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        height: 300px;
+        width: 5px;
+        background-color: #4ee3e4;
+        margin-left: 50px;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      & .wrp {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @include fontRG;
+        font-size: 4em;
+        color: currentColor;
+        letter-spacing: 1.2;
+        margin: 0 0 0 80px;
+
+        & span:nth-child(1) {
+          @include fontLT;
+          font-size: 0.5em;
+          text-transform: uppercase;
+          color: currentColor;
+        }
+
+        & span:nth-child(2) {
+          @include fontRG;
+          font-size: 1.25em;
+          color: #48eed3;
+          // background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+  //         -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+          display: table;
+        }
+
+        & span:nth-child(3) {
+          margin: 10px 0 0 0;
+          @include fontLT;
+          font-size: 0.5em;
+          line-height: 1.5;
+          color: currentColor;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1920px) {
+.header .head .imgBg {
+    background: url(../img/html.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    right: 30px;
+    top: 150px;
+    width: 675px;
+    height: 470px;
+}
+
+.header .head .head-text {
+    margin: 50px 0 0 0;
+}
+}
