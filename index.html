@@ -9,6 +9,22 @@
     <title>онлайн курсы HTML-верстальщик / Frontend-разработчик</title>
   </head>
   <body>
+    <script>
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+</script>
+    <div class="preloader">
+  <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <path fill="#5d66fd"
+      d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+    </path>
+  </svg>
+</div>
     <div class="contaner">
       <div class="header">
         <div class="top">
@@ -31,7 +47,6 @@
               <li class="item"><a href="#" class="link">Формат обучения</a></li>
               <li class="item"><a href="#" class="link">Цены</a></li>
             </ul>
-            <div class="imgBg"></div>
           </div>
           <div class="head-text">
             <h1 class="wrp">
@@ -40,11 +55,43 @@
               <span class="subTitle">Освой востребованную, высокооплачиваемую профессию</span>
             </h1>
           </div>
+          <div class="imgBg"></div>
         </div>
       </div>
-      <div class="main"></div>
+      <div class="main">
+        <div class="section-advantages">
+          <h2 class="title">Преимущества</h2>
+          <div class="listItems">
+            <div class="item">
+              <div class="itemSVG"></div>
+              <div class="itemTitle"></div>
+              <span class="itemText"></span>
+            </div>
+            <div class="item">
+              <div class="itemSVG"></div>
+              <div class="itemTitle"></div>
+              <span class="itemText"></span>
+            </div>
+            <div class="item">
+              <div class="itemSVG"></div>
+              <div class="itemTitle"></div>
+              <span class="itemText"></span>
+            </div>
+            <div class="item">
+              <div class="itemSVG"></div>
+              <div class="itemTitle"></div>
+              <span class="itemText"></span>
+            </div>
+            <div class="item">
+              <div class="itemSVG"></div>
+              <div class="itemTitle"></div>
+              <span class="itemText"></span>
+            </div>
+          </div>
+        </div>
+      </div>
       <footer class="footer"></footer>
     </div>
-    <script src="./js/script.js"></script>
+    <script defer src="./js/script.js"></script>
   </body>
 </html>

@@ -18,6 +18,7 @@
     font-size: 2.5rem;
     color: #355dcac9;
     padding: 0 2rem;
+    z-index: 200;
 
     & .top-contact {
     }
@@ -55,15 +56,21 @@
   & .head {
     margin-top: 120px;
     min-height: 860px;
-    background-color: #355cca;
+    // background-color: #355cca;
+    background: linear-gradient(60deg, #5e62fe 0%, #5994f3 60%, #56adee);
     padding: 0 2rem 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
 
     & .imgBg {
       background: url("../img/html.png") no-repeat center;
       background-size: cover;
-      position: absolute;
-      right: 30px;
-      top: 150px;
+      // position: absolute;
+      // right: 30px;
+      // top: 150px;
       width: 1010px;
       height: 700px;
     }
@@ -104,9 +111,13 @@
     }
 
     & .head-text {
+      width: 40%;
       color: #fff;
       margin: 150px 0 0 0;
       position: relative;
+      display: flex;
+      justify-content: flex-start;
+      flex-grow: 1;
 
       &::before {
         content: "";
@@ -124,8 +135,9 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        flex-shrink: 1;
         @include fontRG;
-        font-size: 4em;
+        font-size: 4rem;
         color: currentColor;
         letter-spacing: 1.2;
         margin: 0 0 0 80px;

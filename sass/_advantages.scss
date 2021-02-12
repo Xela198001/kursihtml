@@ -1,0 +1,71 @@
+.section-advantages {
+
+  & .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 65px 0 0 0;
+    @include fontBD;
+    font-size: 1.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #000;
+  }
+
+.listItems {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    align-items: flex-start;
+    /* overflow: hidden; */
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: flex-start;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+
+  & .item {
+    width: 25%;
+    min-height: 300px;
+    padding: 15px 15px 15px 15px;
+    margin: 25px 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    @include fontRG;
+    font-size: 1.5em;
+
+    &:hover {
+      box-shadow: 0px 0 5px 3px #f1f1f1;
+    }
+
+    & .itemTitle {
+      font-size: 0.75em;
+    font-weight: normal;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 15px 0 0 0;
+    }
+
+    & .itemText {
+          font-size: 0.75em;
+    margin: 20px 0 0 0;
+    }
+  }
+}
+
+  #iconClock, #iconCity, #iconMoney, #iconSpeedMeter, #iconReact {
+    width: 50px;
+    height: 50px;
+    fill: #5d66fd;
+  }
+}
