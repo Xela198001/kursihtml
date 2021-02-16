@@ -2,8 +2,6 @@ let title = document.querySelectorAll(".listItems .item .itemSVG");
 let imgSVG = document.querySelectorAll(".listItems .item .itemTitle");
 let desc = document.querySelectorAll(".listItems .item .itemText");
 let listi = document.querySelectorAll("div.item");
-listi[0].children[1].innerHTML = "jjj";
-console.log(listi[0].querySelector(".imgSVG"));
 
 var listItems = [
   {
@@ -46,23 +44,157 @@ var listItems = [
   },
 ];
 
+const listItemsPrice = [
+  {
+    id: 1,
+    title: "Начинающий",
+    list: ["HTML", "CSS"],
+    skills: [
+      "Знаниям и умениям применять на практике HTML",
+      "Использовать самые последние новшества CSS",
+      "Верстать статические сайты",
+      "Изучите свойства и возможности применения HTML/CSS",
+    ],
+    price: 5000,
+    sale: 3555,
+  },
+  {
+    id: 2,
+    title: "Продвинутый",
+    list: [
+      "Начинающий в подарок",
+      "HTML5",
+      "CSS3",
+      "JavaScript базовый",
+      "Препроцессоры SASS/SCSS, LESS",
+      "Git",
+    ],
+    skills: [
+      "Изучите свойства и возможности применения HTML/CSS",
+      "Знаниям и умениям применять на практике HTML5",
+      "Использовать самые последние новшества CSS3",
+      "Препроцессоры SASS, SCSS, LESS",
+      "Верстать статические сайты",
+      "Использовать тени, скругленные углы блоков без использования изображений",
+      "Создавать текстовые эффекты",
+      "Использовать на своих сайтах нестандартные загружаемые шрифты",
+      "Определять поддерживаются ли возможности HTML5/CSS3 в браузере пользователя",
+      "Использовать встроенные возможности браузера для воспроизведения аудио и видео на веб-страницах",
+      "Разбираться в языке JavaScript и писать код, соответствующий стандартам",
+      "Использовать инструменты разработки и отладку в браузере",
+      "Управлять структурой страницы DOM",
+      "Создавать и реагировать на различные события в браузере",
+    ],
+    price: 15000,
+    sale: 10555,
+  },
+  {
+    id: 3,
+    title: "Frontend-разработчик",
+    list: [
+      "Начинающий в подарок",
+      "Продвинутый в подарок",
+      "JavaScript продвинутый",
+      "VueJS",
+      "ReactJS",
+      "Webpack",
+    ],
+    skills: [
+      "Изучите свойства и возможности применения HTML/CSS",
+      "Знаниям и умениям применять на практике HTML5",
+      "Использовать самые последние новшества CSS3",
+      "Препроцессоры SASS, SCSS, LESS",
+      "Верстать статические сайты",
+      "Использовать тени, скругленные углы блоков без использования изображений",
+      "Создавать текстовые эффекты",
+      "Использовать на своих сайтах нестандартные загружаемые шрифты",
+      "Определять поддерживаются ли возможности HTML5/CSS3 в браузере пользователя",
+      "Использовать встроенные возможности браузера для воспроизведения аудио и видео на веб-страницах",
+      "Разбираться в языке JavaScript и писать код, соответствующий стандартам",
+      "Использовать инструменты разработки и отладку в браузере",
+      "Управлять структурой страницы DOM",
+      "Создавать и реагировать на различные события в браузере",
+      "Использовать возможности ReactJS",
+      "Верстать динамические сайты",
+      "Использовать возможности Git для командной работы",
+      "Использовать возможности Webpack для сборки проекта",
+      "Использовать возможности шаблонизатора Tailwindcss",
+    ],
+    price: 25000,
+    sale: 20555,
+  },
+];
+
 var i = 0;
 
-function list() {
+function listAdv(i) {
   // console.log(n.innerHTML);
   listi.forEach((item) => {
     item.children[0].innerHTML = listItems[i].svgIcon;
     item.children[1].innerHTML = listItems[i].title;
     item.children[2].innerHTML = listItems[i].desc;
-    console.log(item.children[2]);
     i++;
   });
-  console.log(listItems[0].title);
-};
+}
 
+listAdv(0);
+
+let listCard = document.querySelectorAll(".card");
+
+function listPrice(j, n) {
+  for (let i = 0; i < listCard.length; i++) {
+    // listCard[i].children[j].innerHTML = listItemsPrice[i].title;
+    var listLi = listCard[i].children[j + 1];
+    if (n === "list") {
+      listItemsPrice[i].list.map((item) => {
+        let list = document.createElement("li");
+        list.classList.add("item");
+        list.innerHTML = item;
+        listLi.appendChild(list);
+      });
+    }
+    if (n === "skills") {
+      listItemsPrice[i].skills.map((item) => {
+        let list = document.createElement("li");
+        list.classList.add("item");
+        list.innerHTML = item;
+        listLi.appendChild(list);
+      });
+    }
+  }
+}
+
+let price = document.querySelectorAll("div.price");
+
+console.log(price);
+function Price(price) {
+  let i = 0;
+  listItemsPrice.map((item, i) => {
+    price[i].children[0].innerHTML = item.price;
+    price[i].children[1].innerHTML = item.sale;
+    i++;
+  });
+}
+
+listPrice(1, "list");
+listPrice(3, "skills");
+Price(price);
+
+/**Подсчет ширины браузера в реальном времени */
+// const width = document.querySelector(".width");
+
+// window.addEventListener(
+//   "resize",
+//   function () {
+//     width.innerHTML = innerWidth;
+//   },
+//   false
+// );
+/**------------------------------------------ */
+
+// console.log(listLi)
 // listItems.map((item) => {
 //   list(title, item.title);
 //   list(imgSVG, item.imgSVG);
 //   list(desc, item.desc);
 // });
-list(i);

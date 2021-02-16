@@ -1,4 +1,10 @@
 .section-advantages {
+  display: flex;
+    flex-shrink: 1;
+    flex-grow: 1;
+  & .wrp {
+    @include sectionWidth();
+  }
 
   & .title {
     width: 100%;
@@ -13,7 +19,7 @@
     color: #000;
   }
 
-.listItems {
+  .listItems {
     display: flex;
     flex-wrap: wrap;
     flex-shrink: 1;
@@ -29,41 +35,45 @@
     -ms-flex-pack: distribute;
     justify-content: space-around;
 
-  & .item {
-    width: 25%;
-    min-height: 300px;
-    padding: 15px 15px 15px 15px;
-    margin: 25px 5px;
-    box-sizing: border-box;
-    overflow: hidden;
-    font-size: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 7px;
-    @include fontRG;
-    font-size: 1.5em;
+    & .item {
+      width: 15%;
+      min-height: 300px;
+      padding: 15px 15px 15px 15px;
+      margin: 25px 5px;
+      box-sizing: border-box;
+      overflow: hidden;
+      font-size: 1em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 7px;
+      @include fontRG;
+      font-size: 1.5em;
 
-    &:hover {
-      box-shadow: 0px 0 5px 3px #f1f1f1;
-    }
+      &:hover {
+        box-shadow: 0px 0 5px 3px #f1f1f1;
+      }
 
-    & .itemTitle {
-      font-size: 0.75em;
-    font-weight: normal;
-    font-family: sans-serif;
-    text-align: center;
-    margin: 15px 0 0 0;
-    }
+      & .itemTitle {
+        font-size: 0.75em;
+        font-weight: normal;
+        font-family: sans-serif;
+        text-align: center;
+        margin: 15px 0 0 0;
+      }
 
-    & .itemText {
-          font-size: 0.75em;
-    margin: 20px 0 0 0;
+      & .itemText {
+        font-size: 0.55em;
+        margin: 20px 0 0 0;
+      }
     }
   }
-}
 
-  #iconClock, #iconCity, #iconMoney, #iconSpeedMeter, #iconReact {
+  #iconClock,
+  #iconCity,
+  #iconMoney,
+  #iconSpeedMeter,
+  #iconReact {
     width: 50px;
     height: 50px;
     fill: #5d66fd;

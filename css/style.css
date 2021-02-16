@@ -385,24 +385,88 @@
   display: none;
 }
 
+#iconVK, #iconWhatsapp, #iconViber, #iconTelegram {
+  width: 28px;
+  height: 28px;
+}
+
+.iconWhatsappBg, .iconWhatsappBorder {
+  fill: #43d854;
+}
+
+.iconWhatsappPhone, .iconWhatsappPhoneBorder {
+  fill: #fff;
+}
+
+.iconViber {
+  fill: #665CAC;
+}
+
+.iconViberPhone {
+  fill: #fff;
+}
+
+.iconTelegramSend {
+  fill: #fff;
+}
+
 .contaner {
   width: 100%;
 }
 
+#iconVk {
+  width: 24px;
+  height: 24px;
+}
+
 .header {
   position: relative;
+  background: linear-gradient(60deg, #5e62fe 0%, #5994f3 60%, #56adee);
+}
+
+.header .wrp {
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .header .top {
   max-width: 100%;
-  min-height: 120px;
+  min-height: 80px;
   background-color: #fff;
-  -webkit-box-shadow: 4px 0 50px -15px #0c0c0c;
-          box-shadow: 4px 0 50px -15px #0c0c0c;
+  -webkit-box-shadow: 4px 0 50px -25px #0c0c0c;
+          box-shadow: 4px 0 50px -25px #0c0c0c;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #355dcac9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  z-index: 200;
+}
+
+.header .top .wrp {
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -415,18 +479,54 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2.5rem;
-  color: #355dcac9;
-  padding: 0 2rem;
-  z-index: 200;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
-.header .top .top-button .link-button {
-  width: 400px;
-  min-height: 4.5rem;
+.header .top .wrp .top-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header .top .wrp .top-contact .messenger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header .top .wrp .top-contact .messenger .social-link {
+  margin: 0.3rem;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.header .top .wrp .top-contact .messenger .social-link .whatsapp:hover ~ .iconWhatsappBg {
+  fill: #fff;
+}
+
+.header .top .wrp .top-contact .messenger .social-link .imgSVG {
+  width: 32px;
+  height: 32px;
+}
+
+.header .top .wrp .top-button .link-button {
+  width: 20rem;
+  min-height: 2.25em;
   border: 1px solid #355dcac9;
   border-radius: 5px;
   font-family: 'Proxima Nova Cn Rg';
@@ -447,14 +547,14 @@
           align-items: center;
 }
 
-.header .top .top-button .link-button:hover {
+.header .top .wrp .top-button .link-button:hover {
   border: 1px solid #2150d3;
   color: #2150d3;
   -webkit-box-shadow: 0px 5px 10px 2px #e1e1e1;
           box-shadow: 0px 5px 10px 2px #e1e1e1;
 }
 
-.header .top .top-button .link-button:active {
+.header .top .wrp .top-button .link-button:active {
   border: 1px solid #355dcac9;
   color: #355dcac9;
   -webkit-box-shadow: inset 0px 5px 10px 1px #e1e1e1;
@@ -462,32 +562,41 @@
 }
 
 .header .head {
-  margin-top: 120px;
-  min-height: 860px;
-  background: linear-gradient(60deg, #5e62fe 0%, #5994f3 60%, #56adee);
+  position: relative;
+  margin-top: 80px;
+  min-height: 300px;
   padding: 0 2rem 1rem 2rem;
-  display: -webkit-box;
+  /* display: -webkit-box; */
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
+  /* -webkit-box-orient: horizontal; */
+  /* -webkit-box-direction: normal; */
+  -ms-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-wrap: wrap;
+  /* -webkit-box-pack: start; */
+  -ms-flex-pack: start;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: start;
 }
 
 .header .head .imgBg {
-  background: url("../img/html.png") no-repeat center;
-  background-size: cover;
-  width: 1010px;
-  height: 700px;
+  width: 35%;
+  background: url("../img/html.png") no-repeat top;
+  background-size: contain;
+  height: 300px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
 }
 
 .header .head .nav {
@@ -529,7 +638,7 @@
 
 .header .head .nav .listItems .item {
   font-family: "Proxima Nova Th";
-  font-size: 2em;
+  font-size: 0.75emem;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
@@ -544,9 +653,8 @@
 }
 
 .header .head .head-text {
-  width: 40%;
+  width: 60%;
   color: #fff;
-  margin: 150px 0 0 0;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -557,12 +665,14 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
 }
 
 .header .head .head-text::before {
   content: "";
   display: block;
-  height: 300px;
+  height: 210px;
   width: 5px;
   background-color: #4ee3e4;
   margin-left: 50px;
@@ -587,7 +697,7 @@
   font-family: 'Proxima Nova Cn Rg', 'sans-serif';
   font-weight: normal;
   font-style: normal;
-  font-size: 4rem;
+  font-size: 2em;
   color: currentColor;
   letter-spacing: 1.2;
   margin: 0 0 0 80px;
@@ -597,7 +707,7 @@
   font-family: 'Proxima Nova Cn Lt';
   font-weight: 300;
   font-style: normal;
-  font-size: 0.5em;
+  font-size: 0.75em;
   text-transform: uppercase;
   color: currentColor;
 }
@@ -606,7 +716,7 @@
   font-family: 'Proxima Nova Cn Rg', 'sans-serif';
   font-weight: normal;
   font-style: normal;
-  font-size: 1.25em;
+  font-size: 1.75em;
   color: #48eed3;
   display: table;
 }
@@ -616,24 +726,25 @@
   font-family: 'Proxima Nova Cn Lt';
   font-weight: 300;
   font-style: normal;
-  font-size: 0.5em;
+  font-size: 0.75em;
   line-height: 1.5;
   color: currentColor;
 }
 
-@media (max-width: 1920px) {
-  .header .head .imgBg {
-    background: url(../img/html.png) no-repeat center;
-    background-size: cover;
-    position: absolute;
-    right: 30px;
-    top: 150px;
-    width: 675px;
-    height: 470px;
-  }
-  .header .head .head-text {
-    margin: 50px 0 0 0;
-  }
+.section-advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.section-advantages .wrp {
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .section-advantages .title {
@@ -681,7 +792,7 @@
 }
 
 .section-advantages .listItems .item {
-  width: 25%;
+  width: 15%;
   min-height: 300px;
   padding: 15px 15px 15px 15px;
   margin: 25px 5px;
@@ -720,13 +831,233 @@
 }
 
 .section-advantages .listItems .item .itemText {
-  font-size: 0.75em;
+  font-size: 0.55em;
   margin: 20px 0 0 0;
 }
 
-.section-advantages #iconClock, .section-advantages #iconCity, .section-advantages #iconMoney, .section-advantages #iconSpeedMeter, .section-advantages #iconReact {
+.section-advantages #iconClock,
+.section-advantages #iconCity,
+.section-advantages #iconMoney,
+.section-advantages #iconSpeedMeter,
+.section-advantages #iconReact {
   width: 50px;
   height: 50px;
   fill: #5d66fd;
+}
+
+.section-prices {
+  background: linear-gradient(45deg, #f5f4f4, transparent);
+  padding: 15px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.section-prices .wrp {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.section-prices .section-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
+  font-weight: normal;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.section-prices .listCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: 250px;
+      flex-basis: 250px;
+}
+
+.section-prices .listCards .card {
+  position: relative;
+  min-height: 450px;
+  background-color: #f8f7f7;
+  border: 1px solid #ffffff;
+  -ms-flex-preferred-size: 250px;
+      flex-basis: 250px;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0px 5px;
+  padding: 10px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.section-prices .listCards .card .title {
+  text-transform: uppercase;
+}
+
+.section-prices .listCards .card .salePercent {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 40%;
+  height: 30px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(25%, #ec1717), color-stop(55%, #ea4040), to(#f7a8a8));
+  background: linear-gradient(-90deg, #ec1717 25%, #ea4040 55%, #f7a8a8 100%);
+}
+
+.section-prices .listCards .card .title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Proxima Nova Cn Rg';
+  font-weight: bold;
+  font-style: normal;
+}
+
+.section-prices .listCards .card .subtitle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Proxima Nova Cn Rg';
+  font-weight: bold;
+  font-style: normal;
+}
+
+.section-prices .listCards .card .listitems {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section-prices .listCards .card .listitems .item {
+  font-family: 'Proxima Nova Cn Lt';
+  font-weight: 300;
+  font-style: normal;
+  position: relative;
+  padding-left: 30px;
+  line-height: 27px;
+}
+
+.section-prices .listCards .card .listitems .item:before {
+  background-image: url("../img/icon/iconTickMark.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 20px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section-prices .listCards .card:nth-child(3) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#5e62fe), color-stop(60%, #5994f3), to(#56adee));
+  background: linear-gradient(180deg, #5e62fe 0%, #5994f3 60%, #56adee);
+  color: #fff;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.section-prices .listCards .card:nth-child(3)::before {
+  background-image: url("../img/icon/iconTickMarkWhite.svg");
+}
+
+.section-prices .listCards .card .price {
+  font-family: 'Proxima Nova Cn Lt';
+  font-weight: 300;
+  font-style: normal;
+  color: #ec1717;
+  text-transform: uppercase;
+  font-style: oblique;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.section-prices .listCards .card .price .price {
+  width: 100%;
+  font-size: 1.20em;
+  text-decoration: line-through;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-prices .listCards .card .price .sale {
+  width: 100%;
+  color: #000;
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-prices .listCards .card .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #e1e1e1;
+  line-height: 3.5em;
+  border-radius: 7px;
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
+  font-weight: normal;
+  font-style: normal;
+  color: #1e1e1e;
+}
+
+@media (min-width: 1920px) {
+  .header .wrp {
+    width: 1768px;
+  }
+  .header .head .head-text {
+    margin: 50px 0 0 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,78 +1,132 @@
+#iconVk {
+  width: 24px;
+  height: 24px;
+}
+
 .header {
   position: relative;
+  background: linear-gradient(60deg, #5e62fe 0%, #5994f3 60%, #56adee);
+
+  & .wrp {
+    @include sectionWidth();
+  }
 
   & .top {
     max-width: 100%;
-    min-height: 120px;
+    min-height: 80px;
     background-color: #fff;
-    box-shadow: 4px 0 50px -15px #0c0c0c;
+    box-shadow: 4px 0 50px -25px #0c0c0c;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     @include fontRG;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: #355dcac9;
-    padding: 0 2rem;
+    // padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
     z-index: 200;
 
-    & .top-contact {
-    }
+    & .wrp {
+      height: 80px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-grow: 1;
 
-    & .top-button {
-      & .link-button {
-        width: 400px;
-        min-height: 4.5rem;
-        border: 1px solid #355dcac9;
-        border-radius: 5px;
-        @include fontBD;
-        font-size: 0.75em;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #355dcac9;
+      & .top-contact {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: row;
 
-        &:hover {
-          border: 1px solid #2150d3;
-          color: #2150d3;
-          box-shadow: 0px 5px 10px 2px #e1e1e1;
+        & .messenger {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+
+          .social-link {
+            margin: 0.3rem;
+            flex-shrink: 1;
+            flex-grow: 1;
+
+            & .whatsapp:hover ~ .iconWhatsappBg {
+              fill: #fff;
+            }
+
+            & .imgSVG {
+              width: 32px;
+              height: 32px;
+            }
+          }
         }
+      }
 
-        &:active {
+      & .top-button {
+        & .link-button {
+          width: 20rem;
+          min-height: 2.25em;
           border: 1px solid #355dcac9;
+          border-radius: 5px;
+          @include fontBD;
+          font-size: 0.75em;
+          text-transform: uppercase;
+          text-decoration: none;
           color: #355dcac9;
-          box-shadow: inset 0px 5px 10px 1px #e1e1e1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:hover {
+            border: 1px solid #2150d3;
+            color: #2150d3;
+            box-shadow: 0px 5px 10px 2px #e1e1e1;
+          }
+
+          &:active {
+            border: 1px solid #355dcac9;
+            color: #355dcac9;
+            box-shadow: inset 0px 5px 10px 1px #e1e1e1;
+          }
         }
       }
     }
   }
 
   & .head {
-    margin-top: 120px;
-    min-height: 860px;
-    // background-color: #355cca;
-    background: linear-gradient(60deg, #5e62fe 0%, #5994f3 60%, #56adee);
+    position: relative;
+    margin-top: 80px;
+    min-height: 300px;
     padding: 0 2rem 1rem 2rem;
+    /* display: -webkit-box; */
+    display: -ms-flexbox;
     display: flex;
+    /* -webkit-box-orient: horizontal; */
+    /* -webkit-box-direction: normal; */
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    /* -webkit-box-pack: start; */
+    -ms-flex-pack: start;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    // background-color: #355cca;
+    // background: linear-gradient(60deg, #5e62fe 0%, #5994f3 60%, #56adee);
 
     & .imgBg {
-      background: url("../img/html.png") no-repeat center;
-      background-size: cover;
-      // position: absolute;
-      // right: 30px;
-      // top: 150px;
-      width: 1010px;
-      height: 700px;
+      width: 35%;
+      background: url("../img/html.png") no-repeat top;
+      background-size: contain;
+      height: 300px;
+      flex-grow: 1;
+      flex-shrink: 1;
     }
 
     & .nav {
@@ -94,7 +148,7 @@
 
         & .item {
           font-family: "Proxima Nova Th";
-          font-size: 2em;
+          font-size: 0.75emem;
           font-weight: 700;
           text-transform: uppercase;
           color: #fff;
@@ -111,18 +165,19 @@
     }
 
     & .head-text {
-      width: 40%;
+      width: 60%;
       color: #fff;
-      margin: 150px 0 0 0;
+      // margin: 150px 0 0 0;
       position: relative;
       display: flex;
       justify-content: flex-start;
       flex-grow: 1;
+      flex-shrink: 1;
 
       &::before {
         content: "";
         display: block;
-        height: 300px;
+        height: 210px;
         width: 5px;
         background-color: #4ee3e4;
         margin-left: 50px;
@@ -137,32 +192,32 @@
         align-items: flex-start;
         flex-shrink: 1;
         @include fontRG;
-        font-size: 4rem;
+        font-size: 2em;
         color: currentColor;
         letter-spacing: 1.2;
         margin: 0 0 0 80px;
 
         & span:nth-child(1) {
           @include fontLT;
-          font-size: 0.5em;
+          font-size: 0.75em;
           text-transform: uppercase;
           color: currentColor;
         }
 
         & span:nth-child(2) {
           @include fontRG;
-          font-size: 1.25em;
+          font-size: 1.75em;
           color: #48eed3;
           // background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
-  //         -webkit-background-clip: text;
-  // -webkit-text-fill-color: transparent;
+          //         -webkit-background-clip: text;
+          // -webkit-text-fill-color: transparent;
           display: table;
         }
 
         & span:nth-child(3) {
           margin: 10px 0 0 0;
           @include fontLT;
-          font-size: 0.5em;
+          font-size: 0.75em;
           line-height: 1.5;
           color: currentColor;
         }
@@ -171,18 +226,3 @@
   }
 }
 
-@media (max-width: 1920px) {
-.header .head .imgBg {
-    background: url(../img/html.png) no-repeat center;
-    background-size: cover;
-    position: absolute;
-    right: 30px;
-    top: 150px;
-    width: 675px;
-    height: 470px;
-}
-
-.header .head .head-text {
-    margin: 50px 0 0 0;
-}
-}

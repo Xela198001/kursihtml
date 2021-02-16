@@ -1,0 +1,155 @@
+.section-prices {
+  background: linear-gradient(45deg, #f5f4f4, transparent);
+  padding: 15px 25px;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+
+  & .wrp {
+    @include sectionWidth;
+  }
+
+  & .section-title {
+    display: flex;
+    justify-content: center;
+    @include fontRG;
+    font-weight: bold;
+    font-size: 1.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  & .listCards {
+    display: flex;
+    justify-content: space-around;
+    flex-shrink: 1;
+    flex-basis: 250px;
+
+    & .card {
+      position: relative;
+      min-height: 450px;
+      background-color: #f8f7f7;
+      border: 1px solid #ffffff;
+      // border-radius: 7px;
+      flex-basis: 250px;
+      flex-shrink: 1;
+      flex-grow: 1;
+      margin: 0px 5px;
+      padding: 10px 15px;
+      box-sizing: border-box;
+
+      
+
+      & .title {
+        text-transform: uppercase;
+        
+      }
+
+      & .salePercent {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 10px;
+        width: 40%;
+        height: 30px;
+        background: linear-gradient(
+          -90deg,
+          #ec1717 25%,
+          #ea4040 55%,
+          #f7a8a8 100%
+        );
+      }
+
+      & .title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        @include fontBD;
+      }
+
+      & .subtitle {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        @include fontBD;
+      }
+
+      & .listitems {
+        list-style-type: none;
+        padding: 0;
+
+        & .item {
+          @include fontLT;
+          position: relative;
+          padding-left: 30px;
+          line-height: 27px;
+
+          &:before {
+            // content: "";
+            background-image: url("../img/icon/iconTickMark.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: block;
+            width: 20px;
+            height: 25px;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        background: linear-gradient(180deg, #5e62fe 0%, #5994f3 60%, #56adee);
+        color: #fff;
+        transform: scale(1.03);
+
+        &::before {
+          background-image: url('../img/icon/iconTickMarkWhite.svg');
+        }
+      }
+
+      & .price {
+        @include fontLT;
+        color: #ec1717;
+        text-transform: uppercase;
+        font-style: oblique;
+        display: flex;
+        // align-items: center;
+        flex-direction: column;
+        flex-shrink: 1;
+        flex-grow: 1;
+
+        & .price {
+          width: 100%;
+          font-size: 1.20em;
+          text-decoration: line-through;
+          display: block;
+          // justify-content: center;
+          align-items: center;
+        }
+
+        & .sale {
+          width: 100%;
+          color: #000;
+          font-size: 1.5em;
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      & .link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: 1px solid #e1e1e1;
+        line-height: 3.5em;
+        border-radius: 7px;
+        @include fontRG;
+        color: #1e1e1e;
+      }
+    }
+  }
+}
