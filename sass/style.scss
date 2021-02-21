@@ -1,13 +1,18 @@
 @import './fonts';
 
 @import './mixins';
+@import './variable';
 @import './preloader';
+@import './timer';
 @import './icons';
 @import './contaner'; 
 
 @import './_header';
 
 @import './advantages';
+@import './format';
 @import './prices';
+@import './extra';
+@import './footer';
 
 @import './media';

@@ -336,6 +336,12 @@
   font-style: italic;
 }
 
+/* Таблицы стилей Sass */
+/* Адрес цветовой схемы: https://colorscheme.ru/#0.b1Zw0w05iCh */
+/* HEX коды */
+/* Основной Цвет */
+/* Вторичный Цвет A */
+/* Вторичный Цвет B */
 .preloader {
   position: fixed;
   left: 0;
@@ -385,6 +391,96 @@
   display: none;
 }
 
+body {
+  text-align: center;
+  background: #f7f7f7;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.section-timer {
+  position: relative;
+}
+
+.section-timer .wrp {
+  width: 1170px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.countdown-title {
+  color: #ff9900;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 80px 0px 80px;
+}
+
+.countdown {
+  width: 100%;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  font-family: sans-serif;
+  color: #333399;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+.countdown-number {
+  width: 100px;
+  margin: 0 15px;
+  padding: 10px;
+  border-radius: 3px;
+  background: #ffffff;
+  display: inline-block;
+}
+
+.countdown-time {
+  padding: 15px;
+  border-radius: 3px;
+  background: #fff;
+  display: inline-block;
+  margin-bottom: -64px;
+}
+
+.countdown-text {
+  display: block;
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+/* 
+.seconds {
+  opacity: 0;
+  transition: opacity 0.5s;
+} */
+#iconClock,
+#iconCity,
+#iconMoney,
+#iconSpeedMeter,
+#iconReact {
+  width: 50px;
+  height: 50px;
+  fill: #ffcc99;
+}
+
 #iconVK, #iconWhatsapp, #iconViber, #iconTelegram {
   width: 28px;
   height: 28px;
@@ -421,7 +517,7 @@
 
 .header {
   position: relative;
-  background: linear-gradient(60deg, #5e62fe 0%, #5994f3 60%, #56adee);
+  background: linear-gradient(60deg, #792f07 0%, #d46f07 37%, #f57c00 65%, #ff9900 100%);
 }
 
 .header .wrp {
@@ -433,8 +529,8 @@
   max-width: 100%;
   min-height: 80px;
   background-color: #fff;
-  -webkit-box-shadow: 4px 0 50px -25px #0c0c0c;
-          box-shadow: 4px 0 50px -25px #0c0c0c;
+  -webkit-box-shadow: 4px 0 15px -14px #0c0c0c;
+          box-shadow: 4px 0 15px -14px #0c0c0c;
   position: fixed;
   top: 0;
   left: 0;
@@ -443,7 +539,7 @@
   font-weight: normal;
   font-style: normal;
   font-size: 1.5rem;
-  color: #355dcac9;
+  color: #ff9900;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,7 +580,7 @@
           flex-grow: 1;
 }
 
-.header .top .wrp .top-contact {
+.header .top .wrp .top-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -492,9 +588,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.header .top .wrp .top-contact .messenger {
+.header .top .wrp .top-contacts .messenger {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -502,26 +601,41 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.header .top .wrp .top-contact .messenger .social-link {
+.header .top .wrp .top-contacts .messenger .social-link {
   margin: 0.3rem;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  text-decoration: none;
 }
 
-.header .top .wrp .top-contact .messenger .social-link .whatsapp:hover ~ .iconWhatsappBg {
+.header .top .wrp .top-contacts .messenger .social-link svg {
+  opacity: 0.75;
+}
+
+.header .top .wrp .top-contacts .messenger .social-link .whatsapp:hover ~ .iconWhatsappBg {
   fill: #fff;
 }
 
-.header .top .wrp .top-contact .messenger .social-link .imgSVG {
+.header .top .wrp .top-contacts .messenger .social-link .imgSVG {
   width: 32px;
   height: 32px;
+}
+
+.header .top .wrp .top-contacts .phone {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header .top .wrp .top-button .link-button {
@@ -589,7 +703,6 @@
 
 .header .head .imgBg {
   width: 35%;
-  background: url("../img/html.png") no-repeat top;
   background-size: contain;
   height: 300px;
   -webkit-box-flex: 1;
@@ -674,7 +787,7 @@
   display: block;
   height: 210px;
   width: 5px;
-  background-color: #4ee3e4;
+  background-color: #333399;
   margin-left: 50px;
   position: absolute;
   left: 0;
@@ -717,7 +830,7 @@
   font-weight: normal;
   font-style: normal;
   font-size: 1.75em;
-  color: #48eed3;
+  color: #ff6600;
   display: table;
 }
 
@@ -740,6 +853,8 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  color: #9999cc;
+  background-color: #fdfdfd;
 }
 
 .section-advantages .wrp {
@@ -765,7 +880,7 @@
   font-size: 1.75em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #000;
+  color: #ff9900;
 }
 
 .section-advantages .listItems {
@@ -782,13 +897,11 @@
   /* overflow: hidden; */
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+      -ms-flex-direction: row;
+          flex-direction: row;
   align-items: flex-start;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 .section-advantages .listItems .item {
@@ -815,6 +928,7 @@
   font-weight: normal;
   font-style: normal;
   font-size: 1.5em;
+  color: #9999cc;
 }
 
 .section-advantages .listItems .item:hover {
@@ -835,14 +949,98 @@
   margin: 20px 0 0 0;
 }
 
-.section-advantages #iconClock,
-.section-advantages #iconCity,
-.section-advantages #iconMoney,
-.section-advantages #iconSpeedMeter,
-.section-advantages #iconReact {
-  width: 50px;
-  height: 50px;
-  fill: #5d66fd;
+.section-format {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: #9999cc;
+  background-color: #f7f7f7;
+}
+
+.section-format .wrp {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.section-format .wrp .section-title {
+  width: 100%;
+  margin: 65px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 65px 0 0 0;
+  font-family: 'Proxima Nova Cn Rg';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ff9900;
+}
+
+.section-format .wrp .format-listitems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  /* overflow: hidden; */
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-format .wrp .format-listitems .format-listitems-item {
+  width: 205px;
+  height: 205px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  border: 1px solid #fdfdfd;
+  -webkit-box-shadow: 0 0 20px -10px #e1e1e1;
+          box-shadow: 0 0 20px -10px #e1e1e1;
+  background-color: #fdfdfd;
+  overflow: hidden;
+  margin: 1.5rem 0.5rem;
+  padding: 0.75rem;
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.75em;
 }
 
 .section-prices {
@@ -856,6 +1054,7 @@
           flex-grow: 1;
   -ms-flex-negative: 1;
       flex-shrink: 1;
+  background-color: #fdfdfd;
 }
 
 .section-prices .wrp {
@@ -1050,6 +1249,47 @@
   font-weight: normal;
   font-style: normal;
   color: #1e1e1e;
+}
+
+.footer {
+  background-color: #3c3c3c;
+}
+
+.footer .wrp {
+  width: 1170px;
+  margin: 0 auto;
+  height: 100px;
+}
+
+@media screen and (min-width: 368px) and (max-width: 1168px) {
+  .section-advantages .wrp .listItems {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowap;
+        flex-wrap: nowap;
+  }
+  .section-advantages .wrp .listItems .item {
+    width: 100%;
+    min-height: 100px;
+  }
+  .section-prices .listCards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  .section-prices .listCards .card {
+    min-height: -webkit-max-content;
+    min-height: -moz-max-content;
+    min-height: max-content;
+    -ms-flex-preferred-size: content;
+        flex-basis: content;
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 1920px) {

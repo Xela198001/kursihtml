@@ -1,3 +1,30 @@
+@media screen and (min-width: 368px) and (max-width:1168px) {
+
+  .section-advantages {
+    
+    & .wrp .listItems {
+      flex-direction: column;
+      flex-wrap: nowap;
+
+      & .item {
+        width: 100%;
+        min-height: 100px;
+      }
+    }
+  }
+
+  .section-prices .listCards {
+    flex-direction: column;
+    flex-basis: auto;
+
+   & .card {
+min-height: max-content;
+flex-basis: content;
+margin-bottom: 20px;
+    }
+  }
+}
+
 @media (min-width: 1920px) {
 .header .wrp {
   width: 1768px;

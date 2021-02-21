@@ -2,6 +2,9 @@
   display: flex;
     flex-shrink: 1;
     flex-grow: 1;
+    color: $color-secondary-a-4;
+    background-color: $bg-color-primary-1;
+    
   & .wrp {
     @include sectionWidth();
   }
@@ -16,7 +19,7 @@
     font-size: 1.75em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #000;
+    color: $color-primary-0;
   }
 
   .listItems {
@@ -25,14 +28,8 @@
     flex-shrink: 1;
     align-items: flex-start;
     /* overflow: hidden; */
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: flex-start;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
 
     & .item {
@@ -49,6 +46,7 @@
       border-radius: 7px;
       @include fontRG;
       font-size: 1.5em;
+      color: $color-secondary-a-4;
 
       &:hover {
         box-shadow: 0px 0 5px 3px #f1f1f1;
@@ -67,15 +65,5 @@
         margin: 20px 0 0 0;
       }
     }
-  }
-
-  #iconClock,
-  #iconCity,
-  #iconMoney,
-  #iconSpeedMeter,
-  #iconReact {
-    width: 50px;
-    height: 50px;
-    fill: #5d66fd;
   }
 }

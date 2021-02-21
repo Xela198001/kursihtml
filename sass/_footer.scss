@@ -1,0 +1,9 @@
+.footer {
+  background-color: $bg-color-primary-2;
+
+  .wrp {
+    @include sectionWidth;
+    height: 100px;
+    
+  }
+}

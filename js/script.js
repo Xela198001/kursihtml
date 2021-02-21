@@ -1,7 +1,8 @@
 let title = document.querySelectorAll(".listItems .item .itemSVG");
 let imgSVG = document.querySelectorAll(".listItems .item .itemTitle");
 let desc = document.querySelectorAll(".listItems .item .itemText");
-let listi = document.querySelectorAll("div.item");
+let listi = document.querySelectorAll(".section-advantages .item");
+console.log(listi);
 
 var listItems = [
   {
