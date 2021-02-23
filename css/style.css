@@ -401,6 +401,8 @@
 }
 
 #hide.show {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 25px 25px 50px;
   top: 0;
   right: 0;
@@ -673,8 +675,8 @@ body ~ #hide.show {
 }
 
 .section-timer .wrp {
-  width: 1170px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -791,15 +793,13 @@ body ~ #hide.show {
 }
 
 .header .top {
-  max-width: 100%;
+  width: 100%;
   min-height: 80px;
   background-color: #fff;
   -webkit-box-shadow: 4px 0 15px -14px #0c0c0c;
           box-shadow: 4px 0 15px -14px #0c0c0c;
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
   font-family: 'Proxima Nova Cn Rg', 'sans-serif';
   font-weight: normal;
   font-style: normal;
@@ -1123,8 +1123,8 @@ body ~ #hide.show {
 }
 
 .section-advantages .wrp {
-  width: 1170px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
 }
 
 .section-advantages .title {
@@ -1228,8 +1228,8 @@ body ~ #hide.show {
 }
 
 .section-format .wrp {
-  width: 1170px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
 }
 
 .section-format .wrp .section-title {
@@ -1327,8 +1327,8 @@ body ~ #hide.show {
 }
 
 .section-prices .wrp {
-  width: 1170px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
 }
 
 .section-prices .section-title {
@@ -1525,48 +1525,85 @@ body ~ #hide.show {
 }
 
 .footer .wrp {
-  width: 1170px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   height: 100px;
 }
 
-@media (min-width: 368px) and (max-width: 1168px) {
-  .section-advantages .wrp .listItems {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowap;
-        flex-wrap: nowap;
+@media (max-width: 576px) {
+  .header .top .wrp .top-logo,
+  .header .top .wrp .top-button {
+    display: none;
   }
-  .section-advantages .wrp .listItems .item {
-    width: 100%;
-    min-height: 100px;
+  .header .head .nav {
+    display: none;
   }
-  .section-prices .listCards {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
+  .header .head .head-text .wrp span:nth-child(1) {
+    font-size: 0.5em;
   }
-  .section-prices .listCards .card {
-    min-height: -webkit-max-content;
-    min-height: -moz-max-content;
-    min-height: max-content;
-    -ms-flex-preferred-size: content;
-        flex-basis: content;
-    margin-bottom: 20px;
+  .header .head .head-text .wrp span:nth-child(2) {
+    font-size: 1em;
+  }
+  .header .head .head-text .wrp span:nth-child(3) {
+    font-size: calc((576px/ 36) / 2);
   }
 }
 
-@media (min-width: 1920px) {
-  .header .wrp {
-    width: 1768px;
+@media (max-width: 768px) {
+  #hide.show {
+    width: 100%;
+    padding: 50px;
   }
-  .header .head .head-text {
-    margin: 50px 0 0 0;
+  .header .top .wrp .top-logo {
+    display: none;
+  }
+  .header .top .wrp .top-button {
+    display: block;
+  }
+  .header .head .wrp {
+    padding: 1em;
+  }
+  .header .head .nav {
+    display: none;
+  }
+  .header .head .head-text:before {
+    content: none;
+  }
+  .header .head .head-text .wrp {
+    margin: 0;
+  }
+  .header .head .head-text .wrp span:nth-child(1) {
+    font-size: 0.5em;
+  }
+  .header .head .head-text .wrp span:nth-child(2) {
+    font-size: 1em;
+  }
+  .header .head .head-text .wrp span:nth-child(3) {
+    font-size: calc((768px/ 48) * 1.25);
+  }
+  .header .head .imgBg {
+    display: none;
+  }
+  .section-advantages .listItems {
+    -ms-flex-wrap: wap;
+        flex-wrap: wap;
+  }
+  .section-advantages .listItems .item {
+    width: 100%;
+    min-height: 100px;
+    margin: 0;
+  }
+  .section-format .wrp .format-listitems .format-listitems-item {
+    width: 100%;
+  }
+  .section-prices .listCards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .section-prices .listCards .card {
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

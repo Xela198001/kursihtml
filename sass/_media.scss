@@ -1,35 +1,128 @@
-@media (min-width: 368px) and (max-width:1168px) {
+@media (max-width: 576px) {
+  .header {
+    & .top {
+      & .wrp {
+        & .top-logo,
+        & .top-button {
+          display: none;
+        }
+      }
+    }
+    & .head {
+      & .nav {
+        display: none;
+      }
 
-  .section-advantages {
-    
-    & .wrp .listItems {
-      flex-direction: column;
-      flex-wrap: nowap;
+      & .head-text {
+        & .wrp {
+          & span:nth-child(1) {
+            font-size: 0.5em;
+          }
 
-      & .item {
-        width: 100%;
-        min-height: 100px;
+          & span:nth-child(2) {
+            font-size: 1em;
+          }
+
+          & span:nth-child(3) {
+            font-size: calc((#{$pageWidthSm}/ 36) / 2);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #hide.show {
+    width: 100%;
+    padding: 50px;
+  }
+
+  .header {
+    & .top {
+      & .wrp {
+        & .top-logo {
+          display: none;
+        }
+        & .top-button {
+          display: block;
+        }
+      }
+    }
+    & .head {
+      & .wrp {
+        padding: 1em;
+      }
+      & .nav {
+        display: none;
+      }
+
+      & .head-text {
+        &:before {
+          content: none;
+        }
+        & .wrp {
+          margin: 0;
+          & span:nth-child(1) {
+            font-size: 0.5em;
+          }
+
+          & span:nth-child(2) {
+            font-size: 1em;
+          }
+
+          & span:nth-child(3) {
+            font-size: calc((#{$pageWidthM}/ 48) * 1.25);
+          }
+        }
+      }
+
+      & .imgBg {
+        display: none;
       }
     }
   }
 
-  .section-prices .listCards {
-    flex-direction: column;
-    flex-basis: auto;
+  .section-advantages {
+    & .listItems {
+      flex-wrap: wap;
 
-   & .card {
-min-height: max-content;
-flex-basis: content;
-margin-bottom: 20px;
+      & .item {
+        width: 100%;
+        min-height: 100px;
+        margin: 0;
+      }
+    }
+  }
+
+  .section-format .wrp .format-listitems .format-listitems-item {
+    width: 100%;
+  }
+
+  .section-prices .listCards {
+    flex-wrap: wrap;
+
+    & .card {
+      width: 100%;
+      flex-basis: 100%;
     }
   }
 }
 
-@media (min-width: 1920px) {
-.header .wrp {
-  width: 1768px;
-    // margin: 0 auto;
+@media (max-width: 992px) {
 }
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (min-width: 1400px) {
+  .header .wrp {
+    // width: 1170px;
+    // margin: 0 auto;
+  }
 
   // .header .head .imgBg {
   //   background: url(../img/html.png) no-repeat center;
@@ -41,7 +134,7 @@ margin-bottom: 20px;
   //   height: 470px;
   // }
 
-  .header .head .head-text {
-    margin: 50px 0 0 0;
-  }
+  // .header .head .head-text {
+  //   margin: 50px 0 0 0;
+  // }
 }
