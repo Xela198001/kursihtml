@@ -1,3 +1,4 @@
+
 let title = document.querySelectorAll(".listItems .item .itemSVG");
 let imgSVG = document.querySelectorAll(".listItems .item .itemTitle");
 let desc = document.querySelectorAll(".listItems .item .itemText");
@@ -48,7 +49,7 @@ var listItems = [
 const listItemsPrice = [
   {
     id: 1,
-    title: "Начинающий",
+    title: "Курс Начинающий",
     list: ["HTML", "CSS"],
     skills: [
       "Знаниям и умениям применять на практике HTML",
@@ -61,9 +62,9 @@ const listItemsPrice = [
   },
   {
     id: 2,
-    title: "Продвинутый",
+    title: "Курс Продвинутый",
     list: [
-      "Начинающий в подарок",
+      "Курс Начинающий в подарок",
       "HTML5",
       "CSS3",
       "JavaScript базовый",
@@ -91,10 +92,10 @@ const listItemsPrice = [
   },
   {
     id: 3,
-    title: "Frontend-разработчик",
+    title: "Курс Frontend-разработчик",
     list: [
-      "Начинающий в подарок",
-      "Продвинутый в подарок",
+      "Курс Начинающий в подарок",
+      "Курс Продвинутый в подарок",
       "JavaScript продвинутый",
       "VueJS",
       "ReactJS",
@@ -180,6 +181,40 @@ function Price(price) {
 listPrice(1, "list");
 listPrice(3, "skills");
 Price(price);
+
+
+Side();
+
+function Side(params) {
+  const bodyPage = document.querySelector('body');
+  var card = document.querySelectorAll(".listCards .card");
+  var ShowHide = document.querySelector("#hide");
+  var hide = document.querySelector(".button.hide");
+
+  console.log(ShowHide);
+  card.forEach((item) => {
+    item.addEventListener("click", toggleShowHide, false);
+    let cardFixed = item.cloneNode(true);
+    function toggleShowHide() {
+      console.log(cardFixed);
+      if (!ShowHide.classList.contains("show")) {
+        bodyPage.style.overflow = "hidden";
+        ShowHide.classList.toggle("show");
+        ShowHide.appendChild(cardFixed);
+      }
+      //console.log(item);
+    }
+    hide.addEventListener("click", handleHide, false);
+    function handleHide() {
+      if (ShowHide.classList.contains("show")) {
+        bodyPage.style.overflow = "auto";
+        ShowHide.classList.remove("show");
+        ShowHide.querySelector(".card").remove();
+        // ShowHide.children[1].remove();
+      }
+    }
+  });
+}
 
 /**Подсчет ширины браузера в реальном времени */
 // const width = document.querySelector(".width");

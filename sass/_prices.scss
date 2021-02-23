@@ -1,3 +1,7 @@
+.contaner {
+  position: relative;
+}
+
 .section-prices {
   background: linear-gradient(45deg, #f5f4f4, transparent);
   padding: 15px 25px;
@@ -39,11 +43,8 @@
       padding: 10px 15px;
       box-sizing: border-box;
 
-      
-
       & .title {
         text-transform: uppercase;
-        
       }
 
       & .salePercent {
@@ -106,7 +107,7 @@
         transform: scale(1.03);
 
         &::before {
-          background-image: url('../img/icon/iconTickMarkWhite.svg');
+          background-image: url("../img/icon/iconTickMarkWhite.svg");
         }
       }
 
@@ -123,7 +124,7 @@
 
         & .price {
           width: 100%;
-          font-size: 1.20em;
+          font-size: 1.2em;
           text-decoration: line-through;
           display: block;
           // justify-content: center;
