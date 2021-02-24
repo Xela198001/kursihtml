@@ -688,9 +688,12 @@ body ~ #hide.show {
 
 .countdown-title {
   color: #ff9900;
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
+  font-weight: normal;
+  font-style: normal;
   font-weight: 100;
   font-size: 40px;
-  margin: 80px 0px 80px;
+  margin: 80px auto 80px;
 }
 
 .countdown {
@@ -750,7 +753,7 @@ body ~ #hide.show {
 #iconReact {
   width: 50px;
   height: 50px;
-  fill: #ffcc99;
+  fill: #ff9900;
 }
 
 #iconVK, #iconWhatsapp, #iconViber, #iconTelegram {
@@ -789,7 +792,12 @@ body ~ #hide.show {
 
 .header {
   position: relative;
-  background: linear-gradient(60deg, #792f07 0%, #d46f07 37%, #f57c00 65%, #ff9900 100%);
+  background: linear-gradient(60deg, #003399 0%, #6666cc 60%, #9999cc);
+}
+
+.header .wrp {
+  width: 100%;
+  margin: 0;
 }
 
 .header .top {
@@ -1118,7 +1126,7 @@ body ~ #hide.show {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  color: #9999cc;
+  color: #000;
   background-color: #fdfdfd;
 }
 
@@ -1145,7 +1153,7 @@ body ~ #hide.show {
   font-size: 1.75em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #ff9900;
+  color: #6666cc;
 }
 
 .section-advantages .listItems {
@@ -1170,7 +1178,7 @@ body ~ #hide.show {
 }
 
 .section-advantages .listItems .item {
-  width: 15%;
+  width: 18%;
   min-height: 300px;
   padding: 15px 15px 15px 15px;
   margin: 25px 5px;
@@ -1193,24 +1201,20 @@ body ~ #hide.show {
   font-weight: normal;
   font-style: normal;
   font-size: 1.5em;
-  color: #9999cc;
-}
-
-.section-advantages .listItems .item:hover {
-  -webkit-box-shadow: 0px 0 5px 3px #f1f1f1;
-          box-shadow: 0px 0 5px 3px #f1f1f1;
+  color: #000;
 }
 
 .section-advantages .listItems .item .itemTitle {
-  font-size: 0.75em;
+  font-size: 0.85em;
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
   font-weight: normal;
-  font-family: sans-serif;
-  text-align: center;
+  font-style: normal;
+  color: #000;
   margin: 15px 0 0 0;
 }
 
 .section-advantages .listItems .item .itemText {
-  font-size: 0.55em;
+  font-size: 0.65em;
   margin: 20px 0 0 0;
 }
 
@@ -1223,7 +1227,7 @@ body ~ #hide.show {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  color: #9999cc;
+  color: #000;
   background-color: #f7f7f7;
 }
 
@@ -1251,7 +1255,7 @@ body ~ #hide.show {
   font-size: 1.75em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #ff9900;
+  color: #6666cc;
 }
 
 .section-format .wrp .format-listitems {
@@ -1274,11 +1278,12 @@ body ~ #hide.show {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 0 3em 0;
 }
 
 .section-format .wrp .format-listitems .format-listitems-item {
-  width: 205px;
-  height: 205px;
+  width: calc(100%/5);
+  min-height: 205px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1286,9 +1291,13 @@ body ~ #hide.show {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
   text-align: center;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1300,12 +1309,47 @@ body ~ #hide.show {
           box-shadow: 0 0 20px -10px #e1e1e1;
   background-color: #fdfdfd;
   overflow: hidden;
-  margin: 1.5rem 0.5rem;
+  margin: 1.5rem 0.1rem;
   padding: 0.75rem;
   font-family: 'Proxima Nova Cn Rg', 'sans-serif';
   font-weight: normal;
   font-style: normal;
   font-size: 1.75em;
+}
+
+.section-format .wrp .format-listitems .format-listitems-item .item-title {
+  font-size: 0.85em;
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
+  font-weight: normal;
+  font-style: normal;
+  color: #000;
+}
+
+.section-format .wrp .format-listitems .format-listitems-item .item-text {
+  font-size: 0.65em;
+}
+
+.section-format .wrp .format-listitems .format-listitems-item .circle {
+  margin: 15px auto 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ff9900;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Proxima Nova Cn Rg';
+  font-weight: bold;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.5em;
 }
 
 .contaner {
@@ -1479,9 +1523,11 @@ body ~ #hide.show {
 
 .section-prices .listCards .card .price .price {
   width: 100%;
-  font-size: 1.2em;
+  font-size: 2.2em;
   text-decoration: line-through;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1490,7 +1536,10 @@ body ~ #hide.show {
 .section-prices .listCards .card .price .sale {
   width: 100%;
   color: #000;
-  font-size: 1.5em;
+  font-size: 3em;
+  font-family: 'Proxima Nova Cn Rg';
+  font-weight: bold;
+  font-style: normal;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1531,6 +1580,10 @@ body ~ #hide.show {
 }
 
 @media (max-width: 576px) {
+  #hide.show {
+    width: 100%;
+    padding: 50px;
+  }
   .countdown-number {
     width: 50px;
     margin: 0 5px;
@@ -1569,6 +1622,12 @@ body ~ #hide.show {
     margin: 0.5em 0;
     padding: 0 3em;
   }
+  .section-format .wrp .format-listitems .format-listitems-item .circle {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    border-radius: 50%;
+  }
   .section-format .wrp .format-listitems .format-listitems-item {
     width: 100%;
   }
@@ -1580,6 +1639,12 @@ body ~ #hide.show {
     width: 100%;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+  .section-prices .listCards .card .listItems .item {
+    padding: 0;
   }
 }
 

@@ -1,0 +1,36 @@
+@mixin sectionWidth {
+  width: 100%;
+  margin: 0;
+}
+
+@mixin fontRG {
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin fontBD {
+  font-family: 'Proxima Nova Cn Rg';
+	font-weight: bold;
+	font-style: normal;
+}
+
+@mixin fontLT {
+  font-family: 'Proxima Nova Cn Lt';
+	font-weight: 300;
+	font-style: normal;
+}
+
+@mixin h2 {
+  @include fontBD;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $color-secondary-a-3;
+}
+
+@mixin h3 {
+  font-size: 0.85em;
+        @include fontRG();
+      color: #000;
+}

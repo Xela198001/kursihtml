@@ -57,7 +57,11 @@ const listItemsPrice = [
       "Верстать статические сайты",
       "Изучите свойства и возможности применения HTML/CSS",
     ],
-    price: 5000,
+    time: "1 месяц",
+    long: "2 занятия в неделю по 1,5-2 часа",
+    express:
+      "Экспресс: 2 месяца, 4 занятия в неделю по 1.5-2 часа. Стоимость курса 28 777 руб.",
+    price: 9000,
     sale: 3555,
   },
   {
@@ -65,11 +69,11 @@ const listItemsPrice = [
     title: "Курс Продвинутый",
     list: [
       "Курс Начинающий в подарок",
-      "HTML5",
-      "CSS3",
+      "Курс HTML5/CSS3",
+      "Основы программирования",
       "JavaScript базовый",
       "Препроцессоры SASS/SCSS, LESS",
-      "Git",
+      "Git. Базовый курс",
     ],
     skills: [
       "Изучите свойства и возможности применения HTML/CSS",
@@ -87,7 +91,11 @@ const listItemsPrice = [
       "Управлять структурой страницы DOM",
       "Создавать и реагировать на различные события в браузере",
     ],
-    price: 15000,
+    time: "2 месяца",
+    long: "2 занятия в неделю по 1,5-2 часа",
+    express:
+      "Экспресс: 2 месяца, 4 занятия в неделю по 1.5-2 часа. Стоимость курса 28 777 руб.",
+    price: 20000,
     sale: 10555,
   },
   {
@@ -122,7 +130,11 @@ const listItemsPrice = [
       "Использовать возможности Webpack для сборки проекта",
       "Использовать возможности шаблонизатора Tailwindcss",
     ],
-    price: 25000,
+    time: "4 месяца",
+    long: "2 занятия в неделю по 1,5-2 часа",
+    express:
+      "Экспресс: 2 месяца, 4 занятия в неделю по 1.5-2 часа. Стоимость курса 28 777 руб.",
+    price: 35000,
     sale: 20555,
   },
 ];
@@ -172,8 +184,8 @@ console.log(price);
 function Price(price) {
   let i = 0;
   listItemsPrice.map((item, i) => {
-    price[i].children[0].innerHTML = item.price;
-    price[i].children[1].innerHTML = item.sale;
+    price[i].children[0].innerHTML = `${item.price.toLocaleString()} руб.`;
+    price[i].children[1].innerHTML = `${item.sale.toLocaleString()} руб.`;
     i++;
   });
 }

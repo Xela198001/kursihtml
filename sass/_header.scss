@@ -3,7 +3,9 @@
 }
 
 @mixin bgLgBlue {
-  background: linear-gradient(60deg, #5e62fe 0%, #5994f3 60%, #56adee);
+  background: linear-gradient(
+60deg
+, #003399 0%, #6666cc 60%, #9999cc);
 }
 
 @mixin bgLgOrange1 {
@@ -17,10 +19,10 @@
 
 .header {
   position: relative;
-  @include bgLgOrange1;
+  @include bgLgBlue;
 
   & .wrp {
-    // @include sectionWidth();
+    @include sectionWidth();
   }
 
   & .top {

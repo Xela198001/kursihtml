@@ -462,20 +462,3 @@
 	font-style: italic;
 }
 
-@mixin fontRG {
-  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
-  font-weight: normal;
-  font-style: normal;
-}
-
-@mixin fontBD {
-  font-family: 'Proxima Nova Cn Rg';
-	font-weight: bold;
-	font-style: normal;
-}
-
-@mixin fontLT {
-  font-family: 'Proxima Nova Cn Lt';
-	font-weight: 300;
-	font-style: normal;
-}
