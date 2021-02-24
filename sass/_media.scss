@@ -1,4 +1,19 @@
 @media (max-width: 576px) {
+  .countdown-number {
+    width: 50px;
+    margin: 0 5px;
+  }
+
+  .countdown-time {
+    padding: 15px;
+    margin-bottom: -64px;
+    font-size: 0.85em;
+  }
+
+  .countdown-text {
+    font-size: 0.5em;
+  }
+
   .header {
     & .top {
       & .wrp {
@@ -30,9 +45,34 @@
       }
     }
   }
+
+  .section-advantages {
+    & .listItems {
+      flex-wrap: wap;
+
+      & .item {
+        width: 100%;
+        min-height: 100px;
+        margin: 0.5em 0;
+        padding: 0 3em;
+      }
+    }
+  }
+  .section-format .wrp .format-listitems .format-listitems-item {
+    width: 100%;
+  }
+
+  .section-prices .listCards {
+    flex-wrap: wrap;
+
+    & .card {
+      width: 100%;
+      flex-basis: 100%;
+    }
+  }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   #hide.show {
     width: 100%;
     padding: 50px;
