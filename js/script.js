@@ -288,7 +288,7 @@ setTimeout(() => {
   popup.classList.toggle("show");
   setTimeout(() => {
     popup.querySelector(".body").remove();
-  }, 5000);
+  }, 10000);
 }, 20000);
 
 
