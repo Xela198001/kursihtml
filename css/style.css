@@ -684,6 +684,7 @@ body ~ #hide.show {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #f7f7f7;
 }
 
 .countdown-title {
@@ -693,7 +694,7 @@ body ~ #hide.show {
   font-style: normal;
   font-weight: 100;
   font-size: 40px;
-  margin: 80px auto 80px;
+  margin: 100px auto 80px;
 }
 
 .countdown {
@@ -702,7 +703,7 @@ body ~ #hide.show {
   top: -50px;
   left: 0;
   font-family: sans-serif;
-  color: #333399;
+  color: #ff6600;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -750,7 +751,7 @@ body ~ #hide.show {
 #iconCity,
 #iconMoney,
 #iconSpeedMeter,
-#iconReact {
+#iconReact, #iconPercent {
   width: 50px;
   height: 50px;
   fill: #ff9900;
@@ -761,8 +762,8 @@ body ~ #hide.show {
   height: 28px;
 }
 
-.iconWhatsappBg, .iconWhatsappBorder {
-  fill: #43d854;
+#iconWhatsappBg, #iconViberBg, #iconTelegramBg, #iconVkBg, #iconInstagramBg {
+  fill: #333399;
 }
 
 .iconWhatsappPhone, .iconWhatsappPhoneBorder {
@@ -812,7 +813,7 @@ body ~ #hide.show {
   font-weight: normal;
   font-style: normal;
   font-size: 1.5rem;
-  color: #ff9900;
+  color: #333399;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -914,7 +915,7 @@ body ~ #hide.show {
 .header .top .wrp .top-button .link-button {
   width: 20rem;
   min-height: 2.25em;
-  border: 1px solid #355dcac9;
+  border: 1px solid #333399;
   border-radius: 5px;
   font-family: 'Proxima Nova Cn Rg';
   font-weight: bold;
@@ -922,7 +923,7 @@ body ~ #hide.show {
   font-size: 0.75em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #355dcac9;
+  color: #333399;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -953,29 +954,28 @@ body ~ #hide.show {
   margin-top: 80px;
   min-height: 300px;
   padding: 0 2rem 1rem 2rem;
-  /* display: -webkit-box; */
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  /* -webkit-box-orient: horizontal; */
-  /* -webkit-box-direction: normal; */
-  -ms-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+      -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  /* -webkit-box-pack: start; */
-  -ms-flex-pack: start;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
 .header .head .imgBg {
   width: 35%;
+  display: none;
   background-size: contain;
   height: 300px;
   -webkit-box-flex: 1;
@@ -987,7 +987,7 @@ body ~ #hide.show {
 
 .header .head .nav {
   width: 100%;
-  min-height: 145px;
+  min-height: 50px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1005,7 +1005,7 @@ body ~ #hide.show {
 }
 
 .header .head .nav .listItems {
-  margin: 0 35px 0 0;
+  margin: 0 15px 0 0;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1024,7 +1024,7 @@ body ~ #hide.show {
 
 .header .head .nav .listItems .item {
   font-family: "Proxima Nova Th";
-  font-size: 0.75emem;
+  font-size: 0.45emem;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
@@ -1035,11 +1035,12 @@ body ~ #hide.show {
   background-color: transparent;
   color: currentColor;
   text-decoration: none;
-  letter-spacing: 4.1px;
+  letter-spacing: 1px;
+  font-size: 0.85em;
 }
 
 .header .head .head-text {
-  width: 60%;
+  width: 100%;
   color: #fff;
   position: relative;
   display: -webkit-box;
@@ -1115,6 +1116,132 @@ body ~ #hide.show {
   font-size: 0.75em;
   line-height: 1.5;
   color: currentColor;
+}
+
+.section-stat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: #000;
+  background-color: #f7f7f7;
+}
+
+.section-stat .wrp {
+  width: 100%;
+  margin: 0;
+  padding: 30px 0;
+}
+
+.section-stat .title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 65px 0 0 0;
+  font-family: 'Proxima Nova Cn Rg';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #6666cc;
+}
+
+.section-stat .listitems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  /* overflow: hidden; */
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 3em 0;
+}
+
+.section-stat .listitems .item {
+  width: calc(100% / 5);
+  min-height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  border: 1px solid #fdfdfd;
+  -webkit-box-shadow: 0 0 20px -10px #e1e1e1;
+          box-shadow: 0 0 20px -10px #e1e1e1;
+  background-color: #fdfdfd;
+  overflow: hidden;
+  margin: 1.5rem 0.1rem;
+  padding: 0.75rem;
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.75em;
+}
+
+.section-stat .listitems .item .stat {
+  width: 100%;
+  font-size: 0.85em;
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
+  font-weight: normal;
+  font-style: normal;
+  color: #000;
+  color: #fb8c00;
+  letter-spacing: 1.3px;
+  font-weight: bold;
+}
+
+.section-stat .listitems .item .body {
+  width: 100%;
+}
+
+.section-stat .listitems .item .text {
+  width: 100%;
+  display: block;
+  font-family: 'Proxima Nova Cn Lt';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.65em;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .section-advantages {
@@ -1196,6 +1323,11 @@ body ~ #hide.show {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
   border-radius: 7px;
   font-family: 'Proxima Nova Cn Rg', 'sans-serif';
   font-weight: normal;
@@ -1228,7 +1360,7 @@ body ~ #hide.show {
       -ms-flex-positive: 1;
           flex-grow: 1;
   color: #000;
-  background-color: #f7f7f7;
+  background-color: #fdfdfd;
 }
 
 .section-format .wrp {
@@ -1282,7 +1414,7 @@ body ~ #hide.show {
 }
 
 .section-format .wrp .format-listitems .format-listitems-item {
-  width: calc(100%/5);
+  width: calc(100% / 5);
   min-height: 205px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1318,6 +1450,7 @@ body ~ #hide.show {
 }
 
 .section-format .wrp .format-listitems .format-listitems-item .item-title {
+  width: 100%;
   font-size: 0.85em;
   font-family: 'Proxima Nova Cn Rg', 'sans-serif';
   font-weight: normal;
@@ -1326,7 +1459,12 @@ body ~ #hide.show {
 }
 
 .section-format .wrp .format-listitems .format-listitems-item .item-text {
+  width: 100%;
+  font-family: 'Proxima Nova Cn Lt';
+  font-weight: 300;
+  font-style: normal;
   font-size: 0.65em;
+  text-align: left;
 }
 
 .section-format .wrp .format-listitems .format-listitems-item .circle {

@@ -39,6 +39,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      flex-grow: 1;
+      flex-shrink: 1;
       border-radius: 7px;
       @include fontRG;
       font-size: 1.5em;

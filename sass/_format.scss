@@ -1,79 +1,86 @@
 .section-format {
-display: flex;
-    flex-shrink: 1;
-    flex-grow: 1;
-    color: #000;
-    background-color: $bg-color-primary-0;
-
-.wrp {
-  @include sectionWidth();
-
-.section-title {
-  width: 100%;
-  margin: 65px 0 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 65px 0 0 0;
-    @include fontBD;
-    font-size: 1.75em;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: $color-secondary-a-3;
-}
-
-.format-listitems {
-   display: flex;
-    flex-wrap: wrap;
-    flex-shrink: 1;
-    align-items: flex-start;
-    /* overflow: hidden; */
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 0 0 3em 0;
-
-.format-listitems-item {
-  width: calc(100%/5);
-  min-height: 205px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  // justify-content: center;
-  align-items: flex-start;
-  align-self: stretch;
-  text-align: center;
-  flex-grow: 1;
   flex-shrink: 1;
-  border: 1px solid #fdfdfd;
-  box-shadow: 0 0 20px -10px #e1e1e1;
+  flex-grow: 1;
+  color: #000;
   background-color: $bg-color-primary-1;
-  overflow: hidden;
-  margin: 1.5rem 0.1rem;
-  padding: 0.75rem;
-  @include fontRG;
-  font-size: 1.75em;
 
-  & .item-title {
-    @include h3;
-  }
+  .wrp {
+    @include sectionWidth();
 
-  & .item-text {
-    font-size: 0.65em;
-  }
+    .section-title {
+      width: 100%;
+      margin: 65px 0 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 65px 0 0 0;
+      @include fontBD;
+      font-size: 1.75em;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: $color-secondary-a-3;
+    }
 
-  & .circle {
-    margin: 15px auto 0;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: $color-primary-0;
-    color: #fff;
+    .format-listitems {
+      display: flex;
+      flex-wrap: wrap;
+      flex-shrink: 1;
+      align-items: flex-start;
+      /* overflow: hidden; */
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      margin: 0 0 3em 0;
+
+      .format-listitems-item {
+        width: calc(100% / 5);
+        min-height: 205px;
         display: flex;
-    justify-content: center;
-    align-items: center;
-    @include fontBD;
-    font-weight: 900;
-    font-size: 1.5em;
+        flex-direction: row;
+        flex-wrap: wrap;
+        // justify-content: center;
+        align-items: flex-start;
+        align-self: stretch;
+        text-align: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+        border: 1px solid #fdfdfd;
+        box-shadow: 0 0 20px -10px #e1e1e1;
+        background-color: $bg-color-primary-1;
+        overflow: hidden;
+        margin: 1.5rem 0.1rem;
+        padding: 0.75rem;
+        @include fontRG;
+        font-size: 1.75em;
+
+        & .item-title {
+          width: 100%;
+          @include h3;
+        }
+
+        & .item-text {
+          width: 100%;
+          @include fontLT;
+          font-size: 0.65em;
+          text-align: left;
+        }
+
+        & .circle {
+          margin: 15px auto 0;
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          background-color: $color-primary-0;
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include fontBD;
+          font-weight: 900;
+          font-size: 1.5em;
+        }
+      }
+    }
   }
-}}}}
+}
