@@ -1,9 +1,8 @@
-
 let title = document.querySelectorAll(".listItems .item .itemSVG");
 let imgSVG = document.querySelectorAll(".listItems .item .itemTitle");
 let desc = document.querySelectorAll(".listItems .item .itemText");
 let listi = document.querySelectorAll(".section-advantages .item");
-console.log(listi);
+const popup = document.querySelector("#popup");
 
 var listItems = [
   {
@@ -194,11 +193,10 @@ listPrice(1, "list");
 listPrice(3, "skills");
 Price(price);
 
-
 Side();
 
 function Side(params) {
-  const bodyPage = document.querySelector('body');
+  const bodyPage = document.querySelector("body");
   var card = document.querySelectorAll(".listCards .card");
   var ShowHide = document.querySelector("#hide");
   var hide = document.querySelector(".button.hide");
@@ -226,13 +224,13 @@ function Side(params) {
       }
     }
   });
-};
+}
 
 var pay = document.querySelector("#pay");
 var vacancies = document.querySelector("#vacancies");
 var scrolly;
 
-  window.addEventListener(
+window.addEventListener(
   "scroll",
   function scrollStat() {
     scrolly = window.scrollY;
@@ -242,32 +240,56 @@ var scrolly;
   false
 );
 
-function Stat(z, v,s) {
-  
+function Stat(z, v, s) {
+  console.log(scrolly);
+  var i = 0,
+    j = 0;
 
-  console.log(scrolly)
-  var i = 0, j = 0;
-  
   if (s > 250) {
     setInterval(() => {
       if (i <= z) {
         i = i + 137;
-        pay.innerHTML = i.toLocaleString() + "\ руб.";
+        pay.innerHTML = i.toLocaleString() + " руб.";
       }
     }, 30);
 
     setInterval(() => {
       if (j <= v) {
         j = j + 7;
-        vacancies.innerHTML = j.toLocaleString() + "\ +";
+        vacancies.innerHTML = j.toLocaleString() + " +";
       }
     }, 10);
-  };
-  
+  }
+}
+
+const paid = () => {
+  const frag = document.createDocumentFragment();
+  const body = document.createElement("div");
+  body.classList.add("body");
+  const sq = document.createElement("div");
+  sq.classList.add("square");
+  const text = document.createElement("div");
+  text.classList.add("text");
+  text.innerHTML = "Только что был приобретен курс \"Frontend-разработчик\""
+  frag.appendChild(body);
+  body.appendChild(sq);
+  body.appendChild(text);
+  popup.appendChild(frag);
+  popup.classList.add("show");
+  console.log(popup);
 };
 
 
+setTimeout(() => {
+  paid();
+}, 10000);
 
+setTimeout(() => {
+  popup.classList.toggle("show");
+  setTimeout(() => {
+    popup.querySelector(".body").remove();
+  }, 5000);
+}, 20000);
 
 
 /**Подсчет ширины браузера в реальном времени */
