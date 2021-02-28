@@ -166,14 +166,14 @@ function listPrice(j, n) {
         listLi.appendChild(list);
       });
     }
-    if (n === "skills") {
-      listItemsPrice[i].skills.map((item) => {
-        let list = document.createElement("li");
-        list.classList.add("item");
-        list.innerHTML = item;
-        listLi.appendChild(list);
-      });
-    }
+    // if (n === "skills") {
+    //   listItemsPrice[i].skills.map((item) => {
+    //     let list = document.createElement("li");
+    //     list.classList.add("item");
+    //     list.innerHTML = item;
+    //     listLi.appendChild(list);
+    //   });
+    // }
   }
 }
 
@@ -187,44 +187,138 @@ function Price(price) {
     price[i].children[1].innerHTML = `${item.sale.toLocaleString()} руб.`;
     i++;
   });
-}
+};
+
 
 listPrice(1, "list");
 listPrice(3, "skills");
 Price(price);
 
-Side();
+listCard.forEach((item, i) => {
+  item.addEventListener(
+    "click",
+    (event) => {
+      if (event.target.tagName !== "A") {
+        Side(i, event);        
+      }
+      else {
+        event.stopPropagation(); 
+      }
+    },
+    false
+  );
+  // console.log(item)
+});
 
-function Side(params) {
+const List = (i, p) => {
+  const ul = document.createElement("ul");
+
+  ul.classList.add("listitems");
+  if (p === "list") {
+    listItemsPrice[i].list.map((li) => {
+      const item = document.createElement("li");
+      item.classList.add("item");
+      item.innerHTML = li;
+      ul.appendChild(item);
+    });
+  }
+  if (p === "skills") {
+    listItemsPrice[i].skills.map((li) => {
+      const item = document.createElement("li");
+      item.classList.add("item");
+      item.innerHTML = li;
+      ul.appendChild(item);
+    });
+  }
+
+  return ul;
+};
+
+
+
+function Side(i,e) {
   const bodyPage = document.querySelector("body");
   var card = document.querySelectorAll(".listCards .card");
   var ShowHide = document.querySelector("#hide");
   var hide = document.querySelector(".button.hide");
 
-  console.log(ShowHide);
-  card.forEach((item) => {
-    item.addEventListener("click", toggleShowHide, false);
-    let cardFixed = item.cloneNode(true);
-    function toggleShowHide() {
-      console.log(cardFixed);
-      if (!ShowHide.classList.contains("show")) {
-        bodyPage.style.overflow = "hidden";
-        ShowHide.classList.toggle("show");
-        ShowHide.appendChild(cardFixed);
-      }
-      //console.log(item);
+  const cardFixed = document.createDocumentFragment();
+  if (!ShowHide.classList.contains("show")) {
+    bodyPage.style.overflow = "hidden";
+    ShowHide.classList.toggle("show");
+
+    const card = document.createElement("div");
+    card.classList.add("card");
+    const title = document.createElement("h3");
+    title.classList.add("title");
+    title.innerHTML = listItemsPrice[i].title;
+    const subtitle = document.createElement("h4");
+    subtitle.classList.add("subtitle");
+    subtitle.innerHTML = "Чему Вы научитесь";
+    card.appendChild(title);
+    const list = List(i, "list");
+    console.log(list);
+    card.appendChild(list);
+    const skills = List(i, "skills");
+    card.appendChild(subtitle);
+    card.appendChild(skills);
+    cardFixed.appendChild(card);
+    ShowHide.appendChild(cardFixed);
+  }
+  // card[i].addEventListener("click", toggleShowHide, false);
+  
+  // function toggleShowHide() {
+  //   console.log(cardFixed);
+  //   if (!ShowHide.classList.contains("show")) {
+  //     bodyPage.style.overflow = "hidden";
+  //     ShowHide.classList.toggle("show");
+  //     ShowHide.appendChild(cardFixed);
+  //   }
+  //   //console.log(item);
+  // }
+  hide.addEventListener("click", handleHide, false);
+  function handleHide() {
+    if (ShowHide.classList.contains("show")) {
+      bodyPage.style.overflow = "auto";
+      ShowHide.classList.remove("show");
+      ShowHide.querySelector(".card").remove();
+      // ShowHide.children[1].remove();
     }
-    hide.addEventListener("click", handleHide, false);
-    function handleHide() {
-      if (ShowHide.classList.contains("show")) {
-        bodyPage.style.overflow = "auto";
-        ShowHide.classList.remove("show");
-        ShowHide.querySelector(".card").remove();
-        // ShowHide.children[1].remove();
-      }
-    }
-  });
+  }
 }
+
+// Side();
+
+// function Side(params) {
+//   const bodyPage = document.querySelector("body");
+//   var card = document.querySelectorAll(".listCards .card");
+//   var ShowHide = document.querySelector("#hide");
+//   var hide = document.querySelector(".button.hide");
+
+//   console.log(ShowHide);
+//   card.forEach((item) => {
+//     item.addEventListener("click", toggleShowHide, false);
+//     let cardFixed = item.cloneNode(true);
+//     function toggleShowHide() {
+//       console.log(cardFixed);
+//       if (!ShowHide.classList.contains("show")) {
+//         bodyPage.style.overflow = "hidden";
+//         ShowHide.classList.toggle("show");
+//         ShowHide.appendChild(cardFixed);
+//       }
+//       //console.log(item);
+//     }
+//     hide.addEventListener("click", handleHide, false);
+//     function handleHide() {
+//       if (ShowHide.classList.contains("show")) {
+//         bodyPage.style.overflow = "auto";
+//         ShowHide.classList.remove("show");
+//         ShowHide.querySelector(".card").remove();
+//         // ShowHide.children[1].remove();
+//       }
+//     }
+//   });
+// }
 
 var pay = document.querySelector("#pay");
 var vacancies = document.querySelector("#vacancies");
@@ -270,7 +364,7 @@ const paid = () => {
   sq.classList.add("square");
   const text = document.createElement("div");
   text.classList.add("text");
-  text.innerHTML = "Только что был приобретен курс \"Frontend-разработчик\""
+  text.innerHTML = 'Только что был приобретен курс "Frontend-разработчик"';
   frag.appendChild(body);
   body.appendChild(sq);
   body.appendChild(text);
@@ -278,7 +372,6 @@ const paid = () => {
   popup.classList.add("show");
   console.log(popup);
 };
-
 
 setTimeout(() => {
   paid();
@@ -290,7 +383,6 @@ setTimeout(() => {
     popup.querySelector(".body").remove();
   }, 10000);
 }, 20000);
-
 
 /**Подсчет ширины браузера в реальном времени */
 // const width = document.querySelector(".width");

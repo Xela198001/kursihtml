@@ -1495,7 +1495,7 @@ body ~ #hide.show {
 }
 
 .section-prices {
-  background: linear-gradient(45deg, #f5f4f4, transparent);
+  background: linear-gradient(45deg, #003399 25%, #333399 40%, #6666cc);
   padding: 15px 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1544,7 +1544,7 @@ body ~ #hide.show {
 .section-prices .listCards .card {
   position: relative;
   min-height: 450px;
-  background-color: #f8f7f7;
+  background-color: transparent;
   border: 1px solid #ffffff;
   -ms-flex-preferred-size: 250px;
       flex-basis: 250px;
@@ -1557,6 +1557,7 @@ body ~ #hide.show {
   padding: 10px 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  color: #fff;
 }
 
 .section-prices .listCards .card .title {
@@ -1575,7 +1576,13 @@ body ~ #hide.show {
 }
 
 .section-prices .listCards .card .title {
-  width: 100%;
+  padding: 5% 2rem 0;
+  text-align: center;
+  border-radius: 2px;
+  margin: -10px -15px 0 -15px;
+  left: 0;
+  top: 0;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1585,6 +1592,7 @@ body ~ #hide.show {
   font-family: 'Proxima Nova Cn Rg';
   font-weight: bold;
   font-style: normal;
+  -webkit-backface-visibility: hidden;
 }
 
 .section-prices .listCards .card .subtitle {
@@ -1627,9 +1635,8 @@ body ~ #hide.show {
 }
 
 .section-prices .listCards .card:nth-child(3) {
-  background: -webkit-gradient(linear, left top, left bottom, from(#5e62fe), color-stop(60%, #5994f3), to(#56adee));
-  background: linear-gradient(180deg, #5e62fe 0%, #5994f3 60%, #56adee);
-  color: #fff;
+  background: #fff;
+  color: #000;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }
@@ -1673,7 +1680,7 @@ body ~ #hide.show {
 
 .section-prices .listCards .card .price .sale {
   width: 100%;
-  color: #000;
+  color: #fff;
   font-size: 3em;
   font-family: 'Proxima Nova Cn Rg';
   font-weight: bold;
