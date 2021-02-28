@@ -3,7 +3,7 @@
 }
 
 .section-prices {
-  background: linear-gradient(45deg, #f5f4f4, transparent);
+  background: linear-gradient(45deg, $color-secondary-a-0 25%, $color-secondary-a-1 40%, $color-secondary-a-3);
   padding: 15px 25px;
   display: flex;
   flex-grow: 1;
@@ -33,7 +33,7 @@
     & .card {
       position: relative;
       min-height: 450px;
-      background-color: #f8f7f7;
+      background-color: transparent;
       border: 1px solid #ffffff;
       // border-radius: 7px;
       flex-basis: 250px;
@@ -42,6 +42,7 @@
       margin: 0px 5px;
       padding: 10px 15px;
       box-sizing: border-box;
+      color: #fff;
 
       & .title {
         text-transform: uppercase;
@@ -63,10 +64,32 @@
       }
 
       & .title {
-        width: 100%;
+        padding: 5% 2rem 0;
+        text-align: center;
+        border-radius: 2px;
+        margin: -10px -15px 0 -15px;
+        left: 0;
+        top: 0;
+        position: relative;
         display: flex;
         justify-content: center;
         @include fontBD;
+        -webkit-backface-visibility: hidden;
+
+        // &:after {
+        //   content: "";
+        //   padding-top: 5%;
+        //   background: linear-gradient(to right top, transparent 48%, $color-secondary-a-3 55%) left/50.25% 100% no-repeat, linear-gradient(to left top, transparent 48.5%, $color-secondary-a-3 55%) right/50% 100% no-repeat;
+        //   position: absolute;
+        //   top: 100%;
+        //   left: 2px;
+        //   right: 2px;
+        //   -webkit-backface-visibility: hidden;
+        // }
+
+        // &:nth-child(3):after {
+        //   background: linear-gradient(to right top, transparent 48%, $color-primary-1 55%) left/50.25% 100% no-repeat, linear-gradient(to left top, transparent 48.5%, $color-primary-1 55%) right/50% 100% no-repeat;
+        // }
       }
 
       & .subtitle {
@@ -102,8 +125,8 @@
       }
 
       &:nth-child(3) {
-        background: linear-gradient(180deg, #5e62fe 0%, #5994f3 60%, #56adee);
-        color: #fff;
+        background: #fff;
+        color: #000;
         transform: scale(1.03);
 
         &::before {
@@ -133,7 +156,7 @@
 
         & .sale {
           width: 100%;
-          color: #000;
+          color: #fff;
           font-size: 3em;
           @include fontBD;
           display: flex;
