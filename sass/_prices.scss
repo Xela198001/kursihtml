@@ -3,7 +3,12 @@
 }
 
 .section-prices {
-  background: linear-gradient(45deg, $color-secondary-a-0 25%, $color-secondary-a-1 40%, $color-secondary-a-3);
+  background: linear-gradient(
+    45deg,
+    $color-secondary-a-0 25%,
+    $color-secondary-a-1 40%,
+    $color-secondary-a-3
+  );
   padding: 15px 25px;
   display: flex;
   flex-grow: 1;
@@ -22,6 +27,7 @@
     font-size: 1.75em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    color: #fff;
   }
 
   & .listCards {
@@ -39,6 +45,8 @@
       flex-basis: 250px;
       flex-shrink: 1;
       flex-grow: 1;
+      display: flex;
+      flex-direction: column;
       margin: 0px 5px;
       padding: 10px 15px;
       box-sizing: border-box;
@@ -140,6 +148,7 @@
         text-transform: uppercase;
         font-style: oblique;
         display: flex;
+        justify-content: flex-end;
         // align-items: center;
         flex-direction: column;
         flex-shrink: 1;
@@ -161,6 +170,10 @@
           @include fontBD;
           display: flex;
           justify-content: center;
+
+          & .frontend {
+            color: #000;
+          }
         }
       }
 
@@ -171,10 +184,83 @@
         text-transform: uppercase;
         text-decoration: none;
         border: 1px solid #e1e1e1;
-        line-height: 3.5em;
+        line-height: 2.5em;
         border-radius: 7px;
         @include fontRG;
-        color: #1e1e1e;
+        color: #fff;
+      }
+
+      &:nth-child(3) .price .sale{
+          color: #000;
+        }
+
+        &:nth-child(3) .link{
+          color: #000;
+        }
+
+      .more {
+        margin: 0 auto;
+        width: 50%;
+        background: linear-gradient(
+          45deg,
+          $color-primary-0 40%,
+          $color-primary-3
+        );
+        border-radius: 7px;
+        color: #fff;
+        line-height: 2;
+        @include fontRG();
+        text-align: center;
+        opacity: 0;
+        cursor: help;
+      }
+
+      // &:hover:nth-child(3) {
+      //   margin-top: 0;
+      //   background: linear-gradient(0deg, #00000078 40%, transparent);
+      // }
+      &:hover:nth-child(2),&:hover:nth-child(1) {
+        & .title, & .title {
+          color: #fff;
+        }
+
+        & .more.show, & .more.show {
+          opacity: 1;
+          background-color: #fff;
+          box-shadow: 0 0 10px 1px #555555;
+          color: #ffffff;
+          transition: opacity 0.5s ease-in-out;
+        }
+
+        & .link, & .link {
+          background-color: #fff;
+          color: #000;
+          box-shadow: 0 0 10px 1px #555;
+        }
+      }
+
+      &:hover:nth-child(3) {
+        & .title {
+          color: #000;
+        }
+
+        & .more.show {
+          opacity: 1;
+          transition: opacity 0.5s ease-in-out;
+        }
+
+        & .sale {
+          color: $color-primary-2;
+        }
+
+        & .link {
+          background: linear-gradient(
+            45deg,
+            $color-primary-0 40%,
+            $color-primary-3
+          );
+          color: #fff;
+        }
       }
     }
   }

@@ -1527,6 +1527,7 @@ body ~ #hide.show {
   font-size: 1.75em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  color: #fff;
 }
 
 .section-prices .listCards {
@@ -1553,6 +1554,13 @@ body ~ #hide.show {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0px 5px;
   padding: 10px 15px;
   -webkit-box-sizing: border-box;
@@ -1655,6 +1663,9 @@ body ~ #hide.show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1693,6 +1704,10 @@ body ~ #hide.show {
           justify-content: center;
 }
 
+.section-prices .listCards .card .price .sale .frontend {
+  color: #000;
+}
+
 .section-prices .listCards .card .link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1706,12 +1721,75 @@ body ~ #hide.show {
   text-transform: uppercase;
   text-decoration: none;
   border: 1px solid #e1e1e1;
-  line-height: 3.5em;
+  line-height: 2.5em;
   border-radius: 7px;
   font-family: 'Proxima Nova Cn Rg', 'sans-serif';
   font-weight: normal;
   font-style: normal;
-  color: #1e1e1e;
+  color: #fff;
+}
+
+.section-prices .listCards .card:nth-child(3) .price .sale {
+  color: #000;
+}
+
+.section-prices .listCards .card:nth-child(3) .link {
+  color: #000;
+}
+
+.section-prices .listCards .card .more {
+  margin: 0 auto;
+  width: 50%;
+  background: linear-gradient(45deg, #ff9900 40%, #ff9966);
+  border-radius: 7px;
+  color: #fff;
+  line-height: 2;
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  opacity: 0;
+  cursor: help;
+}
+
+.section-prices .listCards .card:hover:nth-child(2) .title, .section-prices .listCards .card:hover:nth-child(2) .title, .section-prices .listCards .card:hover:nth-child(1) .title, .section-prices .listCards .card:hover:nth-child(1) .title {
+  color: #fff;
+}
+
+.section-prices .listCards .card:hover:nth-child(2) .more.show, .section-prices .listCards .card:hover:nth-child(2) .more.show, .section-prices .listCards .card:hover:nth-child(1) .more.show, .section-prices .listCards .card:hover:nth-child(1) .more.show {
+  opacity: 1;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px 1px #555555;
+          box-shadow: 0 0 10px 1px #555555;
+  color: #ffffff;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.section-prices .listCards .card:hover:nth-child(2) .link, .section-prices .listCards .card:hover:nth-child(2) .link, .section-prices .listCards .card:hover:nth-child(1) .link, .section-prices .listCards .card:hover:nth-child(1) .link {
+  background-color: #fff;
+  color: #000;
+  -webkit-box-shadow: 0 0 10px 1px #555;
+          box-shadow: 0 0 10px 1px #555;
+}
+
+.section-prices .listCards .card:hover:nth-child(3) .title {
+  color: #000;
+}
+
+.section-prices .listCards .card:hover:nth-child(3) .more.show {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.section-prices .listCards .card:hover:nth-child(3) .sale {
+  color: #ff6600;
+}
+
+.section-prices .listCards .card:hover:nth-child(3) .link {
+  background: linear-gradient(45deg, #ff9900 40%, #ff9966);
+  color: #fff;
 }
 
 .footer {

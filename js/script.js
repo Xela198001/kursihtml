@@ -1,7 +1,7 @@
-let title = document.querySelectorAll(".listItems .item .itemSVG");
-let imgSVG = document.querySelectorAll(".listItems .item .itemTitle");
-let desc = document.querySelectorAll(".listItems .item .itemText");
-let listi = document.querySelectorAll(".section-advantages .item");
+const title = document.querySelectorAll(".listItems .item .itemSVG");
+const imgSVG = document.querySelectorAll(".listItems .item .itemTitle");
+const desc = document.querySelectorAll(".listItems .item .itemText");
+const listi = document.querySelectorAll(".section-advantages .item");
 const popup = document.querySelector("#popup");
 
 var listItems = [
