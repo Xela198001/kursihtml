@@ -62,6 +62,24 @@ const listItemsPrice = [
       "Экспресс: 2 месяца, 4 занятия в неделю по 1.5-2 часа. Стоимость курса 28 777 руб.",
     price: 9000,
     sale: 3555,
+    program: [
+      {
+        kurs: "HTML",
+        length: "Длительность 1 месяц.",
+        number: "2 занятия в неделю по 1-1,5 часа.",
+        time: "Вторник, четверг в 20-00 (по московскому времени).",
+        lessons: [
+          "1 урок. Основные понятия в веб-разработке",
+          "2 урок. Основы языка разметки документов HTML",
+          "3 урок. Основы языка оформления стилей документа CSS",
+          "4 урок. Основы языка оформления стилей документа CSS",
+          "5. урок. Формирование блочной модели, блочная верстка",
+          "6 урок. Работа с макетом дизайна в формате PSD",
+          "7 урок. Разметка сайта и знакомство с Bootstrap",
+          "8 урок. Стандарты web и вспомогательные инструменты",
+        ],
+      },
+    ],
   },
   {
     id: 2,
@@ -96,6 +114,40 @@ const listItemsPrice = [
       "Экспресс: 2 месяца, 4 занятия в неделю по 1.5-2 часа. Стоимость курса 28 777 руб.",
     price: 20000,
     sale: 10555,
+    program: [
+      {
+        kurs: "HTML",
+        length: "Длительность 1 месяц.",
+        number: "2 занятия в неделю по 1-1,5 часа.",
+        time: "Вторник, четверг в 20-00 (по московскому времени).",
+        lessons: [
+          "1 урок. Основные понятия в веб-разработке",
+          "2 урок. Основы языка разметки документов HTML",
+          "3 урок. Основы языка оформления стилей документа CSS",
+          "4 урок. Основы языка оформления стилей документа CSS",
+          "5. урок. Формирование блочной модели, блочная верстка",
+          "6 урок. Работа с макетом дизайна в формате PSD",
+          "7 урок. Разметка сайта и знакомство с Bootstrap",
+          "8 урок. Стандарты web и вспомогательные инструменты",
+        ],
+      },
+      {
+        kurs: "JavaScript. Основы.",
+        length: "Длительность 1 месяц.",
+        number: "2 занятия в неделю по 1-1,5 часа.",
+        time: "Вторник, четверг в 20-00 (по московскому времени).",
+        lessons: [
+          "1 урок. Основные понятия в веб-разработке",
+          "2 урок. Основы языка разметки документов HTML",
+          "3 урок. Основы языка оформления стилей документа CSS",
+          "4 урок. Основы языка оформления стилей документа CSS",
+          "5. урок. Формирование блочной модели, блочная верстка",
+          "6 урок. Работа с макетом дизайна в формате PSD",
+          "7 урок. Разметка сайта и знакомство с Bootstrap",
+          "8 урок. Стандарты web и вспомогательные инструменты",
+        ],
+      },
+    ],
   },
   {
     id: 3,
@@ -135,10 +187,29 @@ const listItemsPrice = [
       "Экспресс: 2 месяца, 4 занятия в неделю по 1.5-2 часа. Стоимость курса 28 777 руб.",
     price: 35000,
     sale: 20555,
+    program: [
+      {
+        kurs: "HTML",
+        length: "Длительность 1 месяц.",
+        number: "2 занятия в неделю по 1-1,5 часа.",
+        time: "Вторник, четверг в 20-00 (по московскому времени).",
+        lessons: [
+          "1 урок. Основные понятия в веб-разработке",
+          "2 урок. Основы языка разметки документов HTML",
+          "3 урок. Основы языка оформления стилей документа CSS",
+          "4 урок. Основы языка оформления стилей документа CSS",
+          "5. урок. Формирование блочной модели, блочная верстка",
+          "6 урок. Работа с макетом дизайна в формате PSD",
+          "7 урок. Разметка сайта и знакомство с Bootstrap",
+          "8 урок. Стандарты web и вспомогательные инструменты",
+        ],
+      },
+    ],
   },
 ];
 
 var i = 0;
+console.log(listItemsPrice);
 
 function listAdv(i) {
   // console.log(n.innerHTML);
@@ -152,6 +223,7 @@ function listAdv(i) {
 
 listAdv(0);
 
+/** Заполнение карточек цен из скрипта */
 let listCard = document.querySelectorAll(".card");
 
 function listPrice(j, n) {
@@ -187,22 +259,21 @@ function Price(price) {
     price[i].children[1].innerHTML = `${item.sale.toLocaleString()} руб.`;
     i++;
   });
-};
-
+}
 
 listPrice(1, "list");
 listPrice(3, "skills");
 Price(price);
 
+/**Окно с подробным описанием */
 listCard.forEach((item, i) => {
   item.addEventListener(
     "click",
     (event) => {
       if (event.target.tagName !== "A") {
-        Side(i, event);        
-      }
-      else {
-        event.stopPropagation(); 
+        Side(i, event);
+      } else {
+        event.stopPropagation();
       }
     },
     false
@@ -212,6 +283,7 @@ listCard.forEach((item, i) => {
 
 const List = (i, p) => {
   const ul = document.createElement("ul");
+  ul.id = "akkordion";
 
   ul.classList.add("listitems");
   if (p === "list") {
@@ -234,11 +306,46 @@ const List = (i, p) => {
   return ul;
 };
 
+const Program = (i, e) => {
+  const frag = document.createDocumentFragment();
+  const program = document.createElement("div");
+  program.id = "akkordion";
+  program.classList.add("listitems");
 
+  listItemsPrice[i].program.forEach((item) => {
+    const programtitle = document.createElement("div");
+    programtitle.innerHTML = item.kurs;
+    const length = document.createElement("span");
+    length.innerHTML = item.length;
+    const number = document.createElement("span");
+    number.innerHTML = item.number;
+    const time = document.createElement("span");
+    time.innerHTML = item.time;
+    const listlessons = document.createElement("ul");
 
-function Side(i,e) {
+    item.lessons.map((item) => {
+      const itemlesson = document.createElement("li");
+      itemlesson.innerHTML = item;
+      listlessons.appendChild(itemlesson);
+    });
+
+    
+    programtitle.appendChild(length);
+    programtitle.appendChild(number);
+    programtitle.appendChild(time);
+    frag.appendChild(programtitle);
+    frag.appendChild(listlessons);
+  });
+
+  program.appendChild(frag);
+  // program.innerHTML = listItemsPrice[i].program.kurs[i];
+
+  return program;
+};
+
+function Side(i, e) {
   const bodyPage = document.querySelector("body");
-  var card = document.querySelectorAll(".listCards .card");
+  // var card = document.querySelectorAll(".listCards .card");
   var ShowHide = document.querySelector("#hide");
   var hide = document.querySelector(".button.hide");
 
@@ -251,22 +358,67 @@ function Side(i,e) {
     card.classList.add("card");
     const title = document.createElement("h3");
     title.classList.add("title");
+    title.id = "kurs";
+    const icon = document.createElement("span");
+    icon.classList.add("icon");
     title.innerHTML = listItemsPrice[i].title;
     const subtitle = document.createElement("h4");
     subtitle.classList.add("subtitle");
     subtitle.innerHTML = "Чему Вы научитесь";
+    const subicon = document.createElement("span");
+    subicon.classList.add("icon");
+    const program = document.createElement("h4");
+    program.classList.add("program");
+    program.innerHTML = "Программа";
+    const programicon = document.createElement("span");
+    programicon.classList.add("icon");
     card.appendChild(title);
+    title.appendChild(icon);
     const list = List(i, "list");
-    console.log(list);
     card.appendChild(list);
     const skills = List(i, "skills");
+    subtitle.appendChild(subicon);
     card.appendChild(subtitle);
     card.appendChild(skills);
+    const programlist = Program(i, "program");
+    program.appendChild(programicon);
+    card.appendChild(program);
+    card.appendChild(programlist);
+
     cardFixed.appendChild(card);
     ShowHide.appendChild(cardFixed);
+
+    var tag = "";
+    title.addEventListener(
+      "click",
+      (event) => {
+        tag = event.target.tagName;
+        title.classList.toggle("show");
+        Akkordion(e, tag);
+      },
+      false
+    );
+    subtitle.addEventListener(
+      "click",
+      (event) => {
+        tag = event.target.tagName;
+        subtitle.classList.toggle("show");
+        Akkordion(e, tag);
+      },
+      false
+    );
+    program.addEventListener(
+      "click",
+      (event) => {
+        tag = event.target.classList.contains("program");
+        program.classList.toggle("show");
+        Akkordion(e, tag);
+      },
+      false
+    );
   }
   // card[i].addEventListener("click", toggleShowHide, false);
-  
+
   // function toggleShowHide() {
   //   console.log(cardFixed);
   //   if (!ShowHide.classList.contains("show")) {
@@ -320,6 +472,7 @@ function Side(i,e) {
 //   });
 // }
 
+/**Счетчик статистики */
 var pay = document.querySelector("#pay");
 var vacancies = document.querySelector("#vacancies");
 var scrolly;
@@ -356,6 +509,7 @@ function Stat(z, v, s) {
   }
 }
 
+/**Таймер обратного отсчета */
 const paid = () => {
   const frag = document.createDocumentFragment();
   const body = document.createElement("div");
@@ -370,7 +524,7 @@ const paid = () => {
   body.appendChild(text);
   popup.appendChild(frag);
   popup.classList.add("show");
-  console.log(popup);
+  // console.log(popup);
 };
 
 setTimeout(() => {
@@ -383,6 +537,22 @@ setTimeout(() => {
     popup.querySelector(".body").remove();
   }, 10000);
 }, 20000);
+
+/** Аккордион */
+const Akkordion = (e, t) => {
+  const kurs = document.querySelectorAll("#akkordion");
+  console.log(kurs);
+  // t == "H3" ? kurs[0].classList.toggle("show") : null;
+  if (t === "H3") {
+    kurs[0].classList.toggle("show");
+  }
+  t == "H4" ? kurs[1].classList.toggle("show") : null;
+  t == true ? kurs[2].classList.toggle("show") : null;
+  // event.target.
+  if (e.target) {
+    console.log(t);
+  }
+};
 
 /**Подсчет ширины браузера в реальном времени */
 // const width = document.querySelector(".width");
@@ -402,3 +572,49 @@ setTimeout(() => {
 //   list(imgSVG, item.imgSVG);
 //   list(desc, item.desc);
 // });
+
+/** Слайдер */
+
+/* Устанавливаем стартовый индекс слайда по умолчанию: */
+let slideIndex = 1;
+
+const Carousel = (n) => {
+  const cards = listCard;
+  /* Проверяем количество слайдов: */
+  if (n > cards.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = cards.length;
+  }
+
+  cards.forEach((item) => {
+    item.classList.add("hide");
+    item.classList.remove("show");
+  });
+  // cards[0].classList.add("hide");
+
+  /* Делаем элемент блочным: */
+  cards[slideIndex - 1].classList.toggle("hide");
+  cards[slideIndex - 1].classList.toggle("show");
+  console.log(slideIndex);
+};
+
+// Carousel(listCard)
+
+/* Вызываем функцию, которая реализована ниже: */
+Carousel(slideIndex);
+
+/* Увеличиваем индекс на 1 — показываем следующий слайд: */
+function nextSlide(event) {
+  Carousel((slideIndex += 1));
+}
+
+/* Уменьшаем индекс на 1 — показываем предыдущий слайд: */
+function previousSlide() {
+  Carousel((slideIndex -= 1));
+}
+/* Устанавливаем текущий слайд: */
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}

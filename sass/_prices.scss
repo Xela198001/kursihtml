@@ -30,11 +30,50 @@
     color: #fff;
   }
 
+  & .slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    & .previous {
+      display: block;
+      width: 50px;
+      height: 50px;
+      margin: 20% 2em 1em 0;
+      border-bottom: 2px solid #fff;
+      border-left: 2px solid #fff;
+      transform: rotate(45deg);
+      cursor: pointer;
+
+      &:hover {
+        border-color: $color-primary-2;
+      }
+    }
+
+    & .next {
+      display: block;
+      width: 50px;
+      height: 50px;
+      margin: 20% 2em 1em 0;
+      border-bottom: 2px solid #fff;
+      border-right: 2px solid #fff;
+      transform: rotate(-45deg);
+      cursor: pointer;
+
+      &:hover {
+        border-color: $color-primary-2;
+      }
+    }
+  }
+
   & .listCards {
+    position: relative;
     display: flex;
     justify-content: space-around;
     flex-shrink: 1;
-    flex-basis: 250px;
+    flex-basis: 350px;
+    overflow: hidden;
 
     & .card {
       position: relative;
@@ -42,9 +81,9 @@
       background-color: transparent;
       border: 1px solid #ffffff;
       // border-radius: 7px;
-      flex-basis: 250px;
-      flex-shrink: 1;
-      flex-grow: 1;
+      flex-basis: 450px;
+      // flex-shrink: 1;
+      // flex-grow: 1;
       display: flex;
       flex-direction: column;
       margin: 0px 5px;
@@ -132,6 +171,14 @@
         }
       }
 
+      &.hide {
+        display: none;
+      }
+
+      &.show {
+        display: block;
+      }
+
       &:nth-child(3) {
         background: #fff;
         color: #000;
@@ -190,13 +237,13 @@
         color: #fff;
       }
 
-      &:nth-child(3) .price .sale{
-          color: #000;
-        }
+      &:nth-child(3) .price .sale {
+        color: #000;
+      }
 
-        &:nth-child(3) .link{
-          color: #000;
-        }
+      &:nth-child(3) .link {
+        color: #000;
+      }
 
       .more {
         margin: 0 auto;
@@ -219,12 +266,15 @@
       //   margin-top: 0;
       //   background: linear-gradient(0deg, #00000078 40%, transparent);
       // }
-      &:hover:nth-child(2),&:hover:nth-child(1) {
-        & .title, & .title {
+      &:hover:nth-child(2),
+      &:hover:nth-child(1) {
+        & .title,
+        & .title {
           color: #fff;
         }
 
-        & .more.show, & .more.show {
+        & .more.show,
+        & .more.show {
           opacity: 1;
           background-color: #fff;
           box-shadow: 0 0 10px 1px #555555;
@@ -232,7 +282,8 @@
           transition: opacity 0.5s ease-in-out;
         }
 
-        & .link, & .link {
+        & .link,
+        & .link {
           background-color: #fff;
           color: #000;
           box-shadow: 0 0 10px 1px #555;

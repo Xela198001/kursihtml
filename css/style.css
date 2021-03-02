@@ -529,35 +529,206 @@ body ~ #hide.show {
 
 #hide .card .title {
   width: 100%;
+  padding: 10px 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: 'Proxima Nova Cn Rg';
   font-weight: bold;
   font-style: normal;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#hide .card .title .icon {
+  background: #f2f2f2;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+  /* flex-shrink: 0; */
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  margin-left: 15px;
+}
+
+#hide .card .title .icon:before {
+  content: "";
+  background: black;
+  position: absolute;
+  height: 10px;
+  width: 2px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#hide .card .title .icon:after {
+  content: "";
+  background: black;
+  position: absolute;
+  height: 2px;
+  width: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#hide .card .title.show .icon {
+  -webkit-transform: rotate(405deg);
+          transform: rotate(405deg);
+  background: #b5b5b5;
 }
 
 #hide .card .subtitle {
   width: 100%;
   border-bottom: 1px solid #9999cc;
-  padding: 10px 0;
+  padding: 10px 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: 'Proxima Nova Cn Rg';
   font-weight: bold;
   font-style: normal;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#hide .card .subtitle .icon {
+  background: #f2f2f2;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* flex-shrink: 0; */
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  margin-left: 15px;
+}
+
+#hide .card .subtitle .icon:before {
+  content: "";
+  background: black;
+  position: absolute;
+  height: 10px;
+  width: 2px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#hide .card .subtitle .icon:after {
+  content: "";
+  background: black;
+  position: absolute;
+  height: 2px;
+  width: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#hide .card .subtitle.show .icon {
+  -webkit-transform: rotate(405deg);
+          transform: rotate(405deg);
+  background: #b5b5b5;
+}
+
+#hide .card .program {
+  width: 100%;
+  border-bottom: 1px solid #9999cc;
+  padding: 10px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Proxima Nova Cn Rg';
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#hide .card .program .icon {
+  background: #f2f2f2;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* flex-shrink: 0; */
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  margin-left: 15px;
+}
+
+#hide .card .program .icon:before {
+  content: "";
+  background: black;
+  position: absolute;
+  height: 10px;
+  width: 2px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#hide .card .program .icon:after {
+  content: "";
+  background: black;
+  position: absolute;
+  height: 2px;
+  width: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#hide .card .program.show .icon {
+  -webkit-transform: rotate(405deg);
+          transform: rotate(405deg);
+  background: #b5b5b5;
 }
 
 #hide .card .listitems {
+  position: relative;
   list-style-type: none;
   padding: 0;
+  display: none;
 }
 
 #hide .card .listitems .item {
@@ -579,6 +750,10 @@ body ~ #hide.show {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+#hide .card .listitems.show {
+  display: block;
 }
 
 #hide .card:nth-child(3) {
@@ -1530,7 +1705,56 @@ body ~ #hide.show {
   color: #fff;
 }
 
+.section-prices .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.section-prices .slider .previous {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 20% 2em 1em 0;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.section-prices .slider .previous:hover {
+  border-color: #ff6600;
+}
+
+.section-prices .slider .next {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 20% 2em 1em 0;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  cursor: pointer;
+}
+
+.section-prices .slider .next:hover {
+  border-color: #ff6600;
+}
+
 .section-prices .listCards {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1538,8 +1762,9 @@ body ~ #hide.show {
       justify-content: space-around;
   -ms-flex-negative: 1;
       flex-shrink: 1;
-  -ms-flex-preferred-size: 250px;
-      flex-basis: 250px;
+  -ms-flex-preferred-size: 350px;
+      flex-basis: 350px;
+  overflow: hidden;
 }
 
 .section-prices .listCards .card {
@@ -1547,13 +1772,8 @@ body ~ #hide.show {
   min-height: 450px;
   background-color: transparent;
   border: 1px solid #ffffff;
-  -ms-flex-preferred-size: 250px;
-      flex-basis: 250px;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-preferred-size: 450px;
+      flex-basis: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1640,6 +1860,14 @@ body ~ #hide.show {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.section-prices .listCards .card.hide {
+  display: none;
+}
+
+.section-prices .listCards .card.show {
+  display: block;
 }
 
 .section-prices .listCards .card:nth-child(3) {
@@ -1752,11 +1980,15 @@ body ~ #hide.show {
   cursor: help;
 }
 
-.section-prices .listCards .card:hover:nth-child(2) .title, .section-prices .listCards .card:hover:nth-child(2) .title, .section-prices .listCards .card:hover:nth-child(1) .title, .section-prices .listCards .card:hover:nth-child(1) .title {
+.section-prices .listCards .card:hover:nth-child(2) .title,
+.section-prices .listCards .card:hover:nth-child(2) .title, .section-prices .listCards .card:hover:nth-child(1) .title,
+.section-prices .listCards .card:hover:nth-child(1) .title {
   color: #fff;
 }
 
-.section-prices .listCards .card:hover:nth-child(2) .more.show, .section-prices .listCards .card:hover:nth-child(2) .more.show, .section-prices .listCards .card:hover:nth-child(1) .more.show, .section-prices .listCards .card:hover:nth-child(1) .more.show {
+.section-prices .listCards .card:hover:nth-child(2) .more.show,
+.section-prices .listCards .card:hover:nth-child(2) .more.show, .section-prices .listCards .card:hover:nth-child(1) .more.show,
+.section-prices .listCards .card:hover:nth-child(1) .more.show {
   opacity: 1;
   background-color: #fff;
   -webkit-box-shadow: 0 0 10px 1px #555555;
@@ -1766,7 +1998,9 @@ body ~ #hide.show {
   transition: opacity 0.5s ease-in-out;
 }
 
-.section-prices .listCards .card:hover:nth-child(2) .link, .section-prices .listCards .card:hover:nth-child(2) .link, .section-prices .listCards .card:hover:nth-child(1) .link, .section-prices .listCards .card:hover:nth-child(1) .link {
+.section-prices .listCards .card:hover:nth-child(2) .link,
+.section-prices .listCards .card:hover:nth-child(2) .link, .section-prices .listCards .card:hover:nth-child(1) .link,
+.section-prices .listCards .card:hover:nth-child(1) .link {
   background-color: #fff;
   color: #000;
   -webkit-box-shadow: 0 0 10px 1px #555;
