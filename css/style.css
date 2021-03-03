@@ -406,11 +406,11 @@
   padding: 25px 25px 50px;
   top: 0;
   right: 0;
-  width: 50%;
+  width: 100%;
   height: 100vh;
   background-color: #fdfdfd;
   z-index: 1100;
-  translate: right 5.3s ease-in-out 6.3s;
+  translate: wigth 0.7s ease-in-out 0.2s;
 }
 
 body ~ #hide.show {
@@ -754,6 +754,35 @@ body ~ #hide.show {
 
 #hide .card .listitems.show {
   display: block;
+}
+
+#hide .card .kurs.listitems {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  font-family: 'Proxima Nova Cn Rg';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1em;
+}
+
+#hide .card .kurs.listitems span {
+  width: 100%;
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
+  font-weight: normal;
+  font-style: normal;
 }
 
 #hide .card:nth-child(3) {
@@ -1146,6 +1175,8 @@ body ~ #hide.show {
           align-items: start;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .header .head .imgBg {
@@ -1279,7 +1310,7 @@ body ~ #hide.show {
   font-weight: normal;
   font-style: normal;
   font-size: 1.75em;
-  color: #ff6600;
+  color: #ff9966;
   display: table;
 }
 
@@ -1385,11 +1416,13 @@ body ~ #hide.show {
   background-color: #fdfdfd;
   overflow: hidden;
   margin: 1.5rem 0.1rem;
-  padding: 0.75rem;
+  padding: 2em;
   font-family: 'Proxima Nova Cn Rg', 'sans-serif';
   font-weight: normal;
   font-style: normal;
   font-size: 1.75em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .section-stat .listitems .item .stat {
@@ -2130,17 +2163,31 @@ body ~ #hide.show {
   .header .top .wrp .top-button {
     display: none;
   }
+  .header .head {
+    padding: 1.5em 0.75em;
+  }
   .header .head .nav {
     display: none;
+  }
+  .header .head .head-text:before {
+    content: none;
+  }
+  .header .head .head-text .wrp {
+    margin: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header .head .head-text .wrp span:nth-child(1) {
     font-size: 0.5em;
   }
   .header .head .head-text .wrp span:nth-child(2) {
-    font-size: 1em;
+    font-size: 0.875em;
+    width: 100%;
+    text-align: center;
   }
   .header .head .head-text .wrp span:nth-child(3) {
-    font-size: calc((576px/ 36) / 2);
+    font-size: 0.5em;
   }
   .section-advantages .listItems {
     -ms-flex-wrap: wap;
@@ -2150,7 +2197,18 @@ body ~ #hide.show {
     width: 100%;
     min-height: 100px;
     margin: 0.5em 0;
-    padding: 0 3em;
+    padding: 0 0.75em;
+  }
+  .section-stat .wrp .listitems {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-stat .wrp .listitems .item {
+    width: 100%;
+    height: 150px;
   }
   .section-format .wrp .format-listitems .format-listitems-item .circle {
     width: 50px;
@@ -2175,6 +2233,13 @@ body ~ #hide.show {
   }
   .section-prices .listCards .card .listItems .item {
     padding: 0;
+  }
+  #popup {
+    width: 300px;
+    height: 90px;
+  }
+  #popup .show {
+    right: 5px;
   }
 }
 

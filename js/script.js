@@ -314,6 +314,7 @@ const Program = (i, e) => {
 
   listItemsPrice[i].program.forEach((item) => {
     const programtitle = document.createElement("div");
+    programtitle.classList.add("kurs", "listitems", "show");
     programtitle.innerHTML = item.kurs;
     const length = document.createElement("span");
     length.innerHTML = item.length;
@@ -322,9 +323,11 @@ const Program = (i, e) => {
     const time = document.createElement("span");
     time.innerHTML = item.time;
     const listlessons = document.createElement("ul");
+    listlessons.classList.add("listitems", "show");
 
     item.lessons.map((item) => {
       const itemlesson = document.createElement("li");
+      itemlesson.classList.add("item");
       itemlesson.innerHTML = item;
       listlessons.appendChild(itemlesson);
     });
@@ -481,8 +484,9 @@ window.addEventListener(
   "scroll",
   function scrollStat() {
     scrolly = window.scrollY;
+    console.log(scrolly);
     Stat(87400, 5233, scrolly);
-    window.removeEventListener("scroll", scrollStat, false);
+    // window.removeEventListener("scroll", scrollStat, false);
   },
   false
 );

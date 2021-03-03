@@ -138,6 +138,7 @@
     justify-content: space-between;
     align-items: start;
     align-content: flex-start;
+    box-sizing: border-box;
     // background-color: #355cca;
     // background: linear-gradient(60deg, #5e62fe 0%, #5994f3 60%, #56adee);
 
@@ -230,7 +231,7 @@
         & span:nth-child(2) {
           @include fontRG;
           font-size: 1.75em;
-          color: $color-primary-2;
+          color: $color-primary-3;
           // background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
           //         -webkit-background-clip: text;
           // -webkit-text-fill-color: transparent;

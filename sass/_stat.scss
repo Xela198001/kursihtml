@@ -50,9 +50,10 @@
       background-color: $bg-color-primary-1;
       overflow: hidden;
       margin: 1.5rem 0.1rem;
-      padding: 0.75rem;
+      padding: 2em;
       @include fontRG;
       font-size: 1.75em;
+      box-sizing: border-box;
 
       & .stat {
         width: 100%;

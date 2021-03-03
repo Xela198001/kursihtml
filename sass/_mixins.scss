@@ -34,3 +34,9 @@
         @include fontRG();
       color: #000;
 }
+
+@function em-calc($size, $font-size : 16px) {
+    $font-size: $font-size + 0px;
+    $remSize: $size / $font-size;
+    @return #{$remSize}em;
+}
