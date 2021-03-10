@@ -4,6 +4,12 @@
   .wrp {
     @include sectionWidth;
     height: 100px;
-    
+    @include fontRG;
+    color: #dfdfdf;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 3em;
+    box-sizing:border-box;
   }
 }
