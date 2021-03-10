@@ -9,24 +9,24 @@ var listItems = [
     id: 1,
     svgIcon:
       '<svg id="iconMoney" viewBox="0 0 24 16.92" xmlns="http://www.w3.org/2000/svg" width="50" height="50"><path d="M12,2.5a4,4,0,1,0,4,4A4,4,0,0,0,12,2.5Zm0,7a3,3,0,1,1,3-3A3,3,0,0,1,12,9.5Z"/><path d="M23.5,0H.5A.5.5,0,0,0,0,.5V16.42a.5.5,0,0,0,.5.5h23a.5.5,0,0,0,.5-.5V.5A.5.5,0,0,0,23.5,0ZM23,12H20.1A3.45,3.45,0,0,1,23,9.1Zm-3.89,0H4.89A4.41,4.41,0,0,0,1,8.11V4.89A4.41,4.41,0,0,0,4.89,1H19.11A4.41,4.41,0,0,0,23,4.89V8.11A4.41,4.41,0,0,0,19.11,12ZM3.9,12H1V9.1A3.45,3.45,0,0,1,3.9,12ZM1,13H23v1H1ZM23,1V3.9A3.45,3.45,0,0,1,20.1,1ZM1,1H3.9A3.45,3.45,0,0,1,1,3.9ZM23,15.92H1V15H23Z"/></svg>',
-    title: "Меньшая стоимость оплаты",
+    title: "Работа твоей мечты",
     desc:
-      "Например, новую профессию можно получить за сравнительно недорогую оплату",
+      "Возможность работать удаленно или на фрилансе. Уйти из душного офиса и зарабатывать, сидя на пляже или в путешествиях по миру.",
   },
   {
     id: 2,
     svgIcon:
       '<svg id="iconCity" version="1.0" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"  width="50" height="50"><path d="M22,47h4a1,1,0,0,0,1-1V42a1,1,0,0,0-1-1H22a1,1,0,0,0-1,1v4A1,1,0,0,0,22,47Zm1-4h2v2H23Z"/><path d="M30,47h4a1,1,0,0,0,1-1V42a1,1,0,0,0-1-1H30a1,1,0,0,0-1,1v4A1,1,0,0,0,30,47Zm1-4h2v2H31Z"/><path d="M22,55h4a1,1,0,0,0,1-1V50a1,1,0,0,0-1-1H22a1,1,0,0,0-1,1v4A1,1,0,0,0,22,55Zm1-4h2v2H23Z"/><path d="M30,55h4a1,1,0,0,0,1-1V50a1,1,0,0,0-1-1H30a1,1,0,0,0-1,1v4A1,1,0,0,0,30,55Zm1-4h2v2H31Z"/><polygon points="49.71 13.71 51.41 12 53 12 53 13.59 51.29 15.29 52.71 16.71 54 15.41 55.29 16.71 56.71 15.29 55 13.59 55 12 56.59 12 58.29 13.71 59.71 12.29 58.41 11 59.71 9.71 58.29 8.29 56.59 10 55 10 55 8.41 56.71 6.71 55.29 5.29 54 6.59 52.71 5.29 51.29 6.71 53 8.41 53 10 51.41 10 49.71 8.29 48.29 9.71 49.59 11 48.29 12.29 49.71 13.71"/><path d="M57,24a3,3,0,1,0,3-3A3,3,0,0,0,57,24Zm3-1a1,1,0,1,1-1,1A1,1,0,0,1,60,23Z"/><path d="M38,15a3,3,0,1,0-3-3A3,3,0,0,0,38,15Zm0-4a1,1,0,1,1-1,1A1,1,0,0,1,38,11Z"/><path d="M16,7a3,3,0,1,0-3-3A3,3,0,0,0,16,7Zm0-4a1,1,0,1,1-1,1A1,1,0,0,1,16,3Z"/><path d="M61,54a1,1,0,0,0-.29-.71l-6-6a1,1,0,0,0-1.42,0L51,49.59l-2.29-2.3a1,1,0,0,0-1.42,0l-6,6A1,1,0,0,0,41,54v7H39V41H62a1,1,0,0,0,.92-.62,1,1,0,0,0-.21-1.09L44.18,20.77a9.44,9.44,0,0,0-13.36,0L29,22.59V12a1,1,0,0,0-1-1H4a1,1,0,0,0-1,1V61H1v2H63V61H61Zm-7-4.59,5,5V61H55V54a1,1,0,0,0-.29-.71L52.41,51Zm-11,5,5-5,5,5V61H43ZM20,23v8H12V23Zm-8-2V13h8v8ZM37,57H19V39H37ZM18,37a1,1,0,0,0-1,1v3H12V33h8v4Zm4,0V33h5v4Zm0-6V23h5v8ZM10,31H5V23h5Zm0,2v8H5V33Zm0,10v8H5V43Zm2,0h5v8H12Zm7,16H37v2H19ZM39,39V38a1,1,0,0,0-1-1H29V34h1a4,4,0,0,0,4-4,1,1,0,0,1,2,0v1a3,3,0,0,0,6,0V28a1,1,0,0,1,2,0,3,3,0,0,0,3,3h4.59l8,8ZM32.23,22.18a7.46,7.46,0,0,1,10.54,0L49.59,29H47a1,1,0,0,1-1-1,3,3,0,0,0-6,0v3a1,1,0,0,1-2,0V30a3,3,0,0,0-6,0,2,2,0,0,1-2,2H29V25.41ZM27,21H22V13h5ZM10,13v8H5V13ZM5,53H17v8H5Z"/><path d="M50,54H46a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1h4a1,1,0,0,0,1-1V55A1,1,0,0,0,50,54Zm-1,4H47V56h2Z"/></svg>',
     title: "Можно учиться, где угодно и как угодно",
-    desc: "",
+    desc: "Возможность учиться в любое время. На работе, в метро, в кафе, в парке.",
   },
   {
     id: 3,
     svgIcon:
       '<svg version="1.1" id="iconSpeedMeter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 28 28"  width="50" height="50"><path d="M15.391,19.341L14,11l-1.39,8.341C11.653,19.842,11,20.845,11,22c0,1.657,1.343,3,3,3s3-1.343,3-3	C17,20.845,16.348,19.842,15.391,19.341z"/><path d="M14,3C6.268,3,0,9.268,0,17c0,2.059,0.444,4.014,1.242,5.773c0.544-0.312,1.147-0.605,1.8-0.875 C2.372,20.402,2,18.745,2,17C2,10.373,7.373,5,14,5s12,5.373,12,12c0,1.745-0.372,3.402-1.042,4.898 c0.653,0.27,1.256,0.562,1.8,0.875C27.557,21.014,28,19.059,28,17C28,9.268,21.732,3,14,3z"/><path d="M3.828,21.377l-0.617-1.901l3.805-1.235l0.617,1.902L3.828,21.377z M9.063,11.929l-2.35-3.236 l1.62-1.176l2.35,3.237L9.063,11.929z M13,6h2v4h-2V6z M7.015,15.801l-3.804-1.236l0.619-1.902l3.804,1.236L7.015,15.801z M20.983,15.8l-0.617-1.902l3.806-1.235l0.617,1.901L20.983,15.8z M17.316,10.753l2.352-3.235l1.619,1.176l-2.351,3.236 L17.316,10.753z M24.172,21.377l-3.805-1.235l0.617-1.901l3.805,1.235L24.172,21.377z"/></svg>',
-    title: "Индивидуальный темп обучения",
+    title: "Индивидуальный, комфортный темп обучения",
     desc:
-      "Вы можете много раз пересматривать видео лекций или презентаций если вам что-то стало не понятно, при этом не отвлекая остальную группу",
+      "Вы можете много раз пересматривать видео лекций если вам что-то стало не понятно, при этом не отвлекая остальную группу",
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ var listItems = [
       '<svg version="1.1" id="iconPercent" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42.667 42.667" style="enable-background:new 0 0 426.667 426.667;" xml:space="preserve">< rect x="181.343" y="-43.104" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 213.3582 515.0159)" style="fill:#F05228;"/><path style="fill:#F05228;" d="M326.272,426.667c-55.351,0-100.382-45.035-100.382-100.386s45.03-100.39,100.382-100.39 c55.356,0,100.386,45.035,100.386,100.386S381.624,426.667,326.272,426.667z M326.272,289.89 c-20.062,0-36.382,16.324-36.382,36.386c0,20.062,16.32,36.39,36.382,36.39c20.062,0,36.386-16.324,36.386-36.386 S346.334,289.89,326.272,289.89z"/> <path style="fill:#F05228;" d="M100.395,200.772c-55.356,0-100.386-45.035-100.386-100.386C0.009,45.035,45.043,0,100.395,0 s100.382,45.035,100.382,100.382C200.781,155.738,155.746,200.772,100.395,200.772z M100.395,64 c-20.062,0-36.386,16.32-36.386,36.382c0,20.066,16.324,36.386,36.386,36.386s36.382-16.32,36.382-36.386 C136.781,80.32,120.457,64,100.395,64z"/></svg>',
     title: "Восемьдесят процентов практики",
     desc:
-      "Подобное обучение обычно дает точечные практические навыки, которые будут применимы для реальной жизни",
+      "Подобное обучение обычно дает практические навыки, которые будут применимы для реальной жизни",
   },
 ];
 
@@ -64,7 +64,7 @@ const listItemsPrice = [
     sale: 3555,
     program: [
       {
-        kurs: "HTML",
+        kurs: "HTML/CSS",
         length: "Длительность 1 месяц.",
         number: "2 занятия в неделю по 1-1,5 часа.",
         time: "Вторник, четверг в 20-00 (по московскому времени).",
@@ -72,8 +72,8 @@ const listItemsPrice = [
           "1 урок. Основные понятия в веб-разработке",
           "2 урок. Основы языка разметки документов HTML",
           "3 урок. Основы языка оформления стилей документа CSS",
-          "4 урок. Основы языка оформления стилей документа CSS",
-          "5. урок. Формирование блочной модели, блочная верстка",
+          "4 урок. Псевдоклассы и псевдоэлементы, табличная верстка",
+          "5 урок. Формирование блочной модели, блочная верстка",
           "6 урок. Работа с макетом дизайна в формате PSD",
           "7 урок. Разметка сайта и знакомство с Bootstrap",
           "8 урок. Стандарты web и вспомогательные инструменты",
@@ -116,7 +116,7 @@ const listItemsPrice = [
     sale: 10555,
     program: [
       {
-        kurs: "HTML",
+        kurs: "HTML/CSS",
         length: "Длительность 1 месяц.",
         number: "2 занятия в неделю по 1-1,5 часа.",
         time: "Вторник, четверг в 20-00 (по московскому времени).",
@@ -124,11 +124,27 @@ const listItemsPrice = [
           "1 урок. Основные понятия в веб-разработке",
           "2 урок. Основы языка разметки документов HTML",
           "3 урок. Основы языка оформления стилей документа CSS",
-          "4 урок. Основы языка оформления стилей документа CSS",
-          "5. урок. Формирование блочной модели, блочная верстка",
+          "4 урок. Псевдоклассы и псевдоэлементы, табличная верстка",
+          "5 урок. Формирование блочной модели, блочная верстка",
           "6 урок. Работа с макетом дизайна в формате PSD",
           "7 урок. Разметка сайта и знакомство с Bootstrap",
           "8 урок. Стандарты web и вспомогательные инструменты",
+        ],
+      },
+      {
+        kurs: "HTML5/CSS3",
+        length: "Длительность 1 месяц.",
+        number: "2 занятия в неделю по 1-1,5 часа.",
+        time: "Вторник, четверг в 20-00 (по московскому времени).",
+        lessons: [
+          "1 урок. HTML5: Семантические элементы.",
+          "2 урок. Позиционирование элементов, Практическая вёрстка.",
+          "3 урок. CSS3 Углубленное изучение.SASS. Flexbox.",
+          "4 урок. Параметры CSS для фона. Использование SVG.",
+          "5 урок. Работа с текстом. Границы в CSS3.",
+          "6 урок. Эффекты перехода и трансформации CSS3.",
+          "7 урок. Адаптивная вёрстка.",
+          "8 урок. HTML5 формы. Добавление Аудио и Видео на страницу.",
         ],
       },
       {
@@ -137,15 +153,29 @@ const listItemsPrice = [
         number: "2 занятия в неделю по 1-1,5 часа.",
         time: "Вторник, четверг в 20-00 (по московскому времени).",
         lessons: [
-          "1 урок. Основные понятия в веб-разработке",
-          "2 урок. Основы языка разметки документов HTML",
-          "3 урок. Основы языка оформления стилей документа CSS",
-          "4 урок. Основы языка оформления стилей документа CSS",
-          "5. урок. Формирование блочной модели, блочная верстка",
-          "6 урок. Работа с макетом дизайна в формате PSD",
-          "7 урок. Разметка сайта и знакомство с Bootstrap",
-          "8 урок. Стандарты web и вспомогательные инструменты",
+          "1 урок. Основы языка JavaScript",
+          "2 урок. Основные операторы JavaScript",
+          "3 урок. Циклы, массивы, структуры данных",
+          "4 урок. Объекты в JavaScript",
+          "5 урок. Введение в DOM",
+          "6 урок. Обработка событий в JavaScript",
+          "7 урок. Урок-практикум",
+          "8 урок. Анонимные функции, замыкания",
         ],
+      },
+      {
+        kurs: "Препроцессоры SASS/SCSS, LESS",
+        length: "Длительность 1 день",
+        number: "1 занятие 1-1,5 часа.",
+        time: "Вторник или четверг в 20-00 (по московскому времени).",
+        lessons: ["1 урок. Препроцессоры SASS/SCSS, LESS"],
+      },
+      {
+        kurs: "Git. Основы.",
+        length: "Длительность 1 день",
+        number: "1 занятие 1-1,5 часа.",
+        time: "Вторник или четверг в 20-00 (по московскому времени).",
+        lessons: ["1 урок. Длительность 1 день"],
       },
     ],
   },
@@ -186,10 +216,88 @@ const listItemsPrice = [
     express:
       "Экспресс: 2 месяца, 4 занятия в неделю по 1.5-2 часа. Стоимость курса 28 777 руб.",
     price: 35000,
-    sale: 20555,
+    sale: 25555,
     program: [
       {
-        kurs: "HTML",
+        kurs: "HTML/CSS",
+        length: "Длительность 1 месяц.",
+        number: "2 занятия в неделю по 1-1,5 часа.",
+        time: "Вторник, четверг в 20-00 (по московскому времени).",
+        lessons: [
+          "1 урок. Основные понятия в веб-разработке",
+          "2 урок. Основы языка разметки документов HTML",
+          "3 урок. Основы языка оформления стилей документа CSS",
+          "4 урок. Псевдоклассы и псевдоэлементы, табличная верстка",
+          "5 урок. Формирование блочной модели, блочная верстка",
+          "6 урок. Работа с макетом дизайна в формате PSD",
+          "7 урок. Разметка сайта и знакомство с Bootstrap",
+          "8 урок. Стандарты web и вспомогательные инструменты",
+        ],
+      },
+      {
+        kurs: "HTML5/CSS3",
+        length: "Длительность 1 месяц.",
+        number: "2 занятия в неделю по 1-1,5 часа.",
+        time: "Вторник, четверг в 20-00 (по московскому времени).",
+        lessons: [
+          "1 урок. HTML5: Семантические элементы.",
+          "2 урок. Позиционирование элементов, Практическая вёрстка.",
+          "3 урок. CSS3 Углубленное изучение.SASS. Flexbox.",
+          "4 урок. Параметры CSS для фона. Использование SVG.",
+          "5 урок. Работа с текстом. Границы в CSS3.",
+          "6 урок. Эффекты перехода и трансформации CSS3.",
+          "7 урок. Адаптивная вёрстка.",
+          "8 урок. HTML5 формы. Добавление Аудио и Видео на страницу.",
+        ],
+      },
+      {
+        kurs: "JavaScript. Основы.",
+        length: "Длительность 1 месяц.",
+        number: "2 занятия в неделю по 1-1,5 часа.",
+        time: "Вторник, четверг в 20-00 (по московскому времени).",
+        lessons: [
+          "1 урок. Основы языка JavaScript",
+          "2 урок. Основные операторы JavaScript",
+          "3 урок. Циклы, массивы, структуры данных",
+          "4 урок. Объекты в JavaScript",
+          "5 урок. Введение в DOM",
+          "6 урок. Обработка событий в JavaScript",
+          "7 урок. Урок-практикум",
+          "8 урок. Анонимные функции, замыкания",
+        ],
+      },
+      {
+        kurs: "Препроцессоры SASS/SCSS, LESS",
+        length: "Длительность 1 день",
+        number: "1 занятие 1-1,5 часа.",
+        time: "Вторник или четверг в 20-00 (по московскому времени).",
+        lessons: ["1 урок. Препроцессоры SASS/SCSS, LESS"],
+      },
+      {
+        kurs: "Git. Основы.",
+        length: "Длительность 1 день",
+        number: "1 занятие 1-1,5 часа.",
+        time: "Вторник или четверг в 20-00 (по московскому времени).",
+        lessons: ["1 урок. Длительность 1 день"],
+      },
+      {
+        kurs: "JavaScript. Продвинутый.",
+        length: "Длительность 1 месяц.",
+        number: "2 занятия в неделю по 1-1,5 часа.",
+        time: "Вторник, четверг в 20-00 (по московскому времени).",
+        lessons: [
+          "1 урок. Современный JavaScript",
+          "2 урок. ООП в JavaScript",
+          "3 урок. Асинхронные запросы",
+          "4 урок. Регулярные выражения",
+          "5 урок. Фреймворк Vue.js",
+          "6 урок. Компоненты Vue.js",
+          "7 урок. JavaScript на сервере",
+          "8 урок. Тестирование и сборка",
+        ],
+      },
+      {
+        kurs: "ReactJS",
         length: "Длительность 1 месяц.",
         number: "2 занятия в неделю по 1-1,5 часа.",
         time: "Вторник, четверг в 20-00 (по московскому времени).",
@@ -198,7 +306,7 @@ const listItemsPrice = [
           "2 урок. Основы языка разметки документов HTML",
           "3 урок. Основы языка оформления стилей документа CSS",
           "4 урок. Основы языка оформления стилей документа CSS",
-          "5. урок. Формирование блочной модели, блочная верстка",
+          "5 урок. Формирование блочной модели, блочная верстка",
           "6 урок. Работа с макетом дизайна в формате PSD",
           "7 урок. Разметка сайта и знакомство с Bootstrap",
           "8 урок. Стандарты web и вспомогательные инструменты",
@@ -332,7 +440,6 @@ const Program = (i, e) => {
       listlessons.appendChild(itemlesson);
     });
 
-    
     programtitle.appendChild(length);
     programtitle.appendChild(number);
     programtitle.appendChild(time);
@@ -419,6 +526,15 @@ function Side(i, e) {
       },
       false
     );
+    program.addEventListener(
+      "click",
+      (event) => {
+        tag = event.target.classList.contains("extra");
+        program.classList.toggle("show");
+        Akkordion(e, tag);
+      },
+      false
+    );
   }
   // card[i].addEventListener("click", toggleShowHide, false);
 
@@ -484,15 +600,30 @@ window.addEventListener(
   "scroll",
   function scrollStat() {
     scrolly = window.scrollY;
-    console.log(scrolly);
     Stat(87400, 5233, scrolly);
-    // window.removeEventListener("scroll", scrollStat, false);
+    window.removeEventListener("scroll", scrollStat, false);
+  },
+  false
+);
+
+// window.addEventListener("touchmove", (event) => { console.log(event.targetTouches[0].pageY); }, false);
+
+document.addEventListener(
+  "touchstart",
+  function scrollStat(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    scrolly = event.targetTouches[0].pageY;
+    console.log(scrolly, "Touch");
+    if (scrolly > 1300) {
+      Stat(87400, 5233, scrolly);
+      document.removeEventListener("touchstart", scrollStat, false);
+    };
   },
   false
 );
 
 function Stat(z, v, s) {
-  console.log(scrolly);
   var i = 0,
     j = 0;
 
@@ -514,7 +645,7 @@ function Stat(z, v, s) {
 }
 
 /**Таймер обратного отсчета */
-const paid = () => {
+const paid = (status) => {
   const frag = document.createDocumentFragment();
   const body = document.createElement("div");
   body.classList.add("body");
@@ -539,7 +670,7 @@ setTimeout(() => {
   popup.classList.toggle("show");
   setTimeout(() => {
     popup.querySelector(".body").remove();
-  }, 10000);
+  }, 2000);
 }, 20000);
 
 /** Аккордион */
@@ -622,3 +753,211 @@ function previousSlide() {
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
+
+/** Ajax запрос и отправка на сервер */
+
+const ajaxTelegram = () => {
+  const userName = document.querySelector("#user_name").value;
+  const userPhone = document.querySelector("#user_phone").value;
+  const userEmail = document.querySelector("#user_email").value;
+
+  // Создаем экземпляр класса XMLHttpRequest
+  // const request = new XMLHttpRequest();
+
+  // Указываем путь до файла на сервере, который будет обрабатывать наш запрос
+  const url = "../telegram/telegram.php";
+
+  // Так же как и в GET составляем строку с данными, но уже без пути к файлу
+  const params =
+    "user_name=" +
+    userName +
+    "&user_phone=" +
+    userPhone +
+    "&user_email=" +
+    userEmail;
+  console.log(params);
+  var xhr;
+
+  if (window.XMLHttpRequest) {
+    xhr = new XMLHttpRequest();
+  } else if (window.ActiveXObject) {
+    xhr = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+  xhr.responseType = "json";
+  xhr.open("POST", url, true);
+  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+  xhr.send(params);
+
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      Message("Заявка отправлена");
+    }
+  };
+};
+
+/** Проверка значений полей формы */
+
+const Forms = () => {
+  const userName = document.querySelector("#user_name");
+  const userPhone = document.querySelector("#user_phone");
+  const userEmail = document.querySelector("#user_email");
+  const submit = document.querySelector("#submit");
+
+  const patternEmail = /[A-Z0-9._%+-]+@[A-Z0-9-]+\.[A-Z]{2,4}/i;
+  constpatternPhone = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+
+  userName.addEventListener(
+    "input",
+    (event) => {
+      if (userName.value.length < 10) {
+        userName.style.border = "1px solid red";
+      } else {
+        userName.style.border = "1px solid green";
+      }
+    },
+    false
+  );
+
+  userEmail.addEventListener(
+    "input",
+    (event) => {
+      console.log(patternEmail.test(userEmail.value));
+      if (patternEmail.test(userEmail.value) !== true) {
+        userEmail.style.border = "1px solid red";
+      }
+      if (patternEmail.test(userEmail.value) === true) {
+        userEmail.style.border = "1px solid green";
+      }
+      console.log(userEmail.value);
+    },
+    false
+  );
+
+  userEmail.addEventListener(
+    "input",
+    (event) => {
+      if (userPhone.value.length < 10) {
+        userPhone.style.border = "1px solid red";
+      } else {
+        userPhone.style.border = "1px solid green";
+      }
+      console.log(userPhone.value);
+    },
+    false
+  );
+  const form = document.querySelector("form");
+  form.addEventListener(
+    "submit",
+    (event) => {
+      event.preventDefault();
+
+      console.log("нажата кнопка отправки");
+      return false;
+    },
+    false
+  );
+  submit.addEventListener(
+    "click",
+    (event) => {
+      ajaxTelegram();
+    },
+    false
+  );
+};
+
+Forms();
+
+const Message = (message) => {
+  const frag = document.createDocumentFragment();
+  const body = document.createElement("div");
+  body.classList.add("body");
+  const sq = document.createElement("div");
+  sq.classList.add("square");
+  const text = document.createElement("div");
+  text.classList.add("text");
+  text.innerHTML = message;
+  frag.appendChild(body);
+  body.appendChild(sq);
+  body.appendChild(text);
+  popup.appendChild(frag);
+  popup.classList.add("message");
+
+  setTimeout(() => {
+    setTimeout(() => {
+      popup.querySelector(".body").remove();
+    }, 2000);
+    popup.classList.remove("message");
+  }, 10000);
+  // console.log(popup);
+};
+
+
+/** Swipe */
+
+var startPoint = {};
+var nowPoint;
+var ldelay;
+document.addEventListener(
+  "touchstart",
+  function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    startPoint.x = event.changedTouches[0].pageX;
+    startPoint.y = event.changedTouches[0].pageY;
+    ldelay = new Date();
+  },
+  false
+);
+/*Ловим движение пальцем*/
+document.addEventListener(
+  "touchmove",
+  function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    var otk = {};
+    nowPoint = event.changedTouches[0];
+    otk.x = nowPoint.pageX - startPoint.x;
+    /*Обработайте данные*/
+    /*Для примера*/
+    if (Math.abs(otk.x) > 200) {
+      if (otk.x < 0) {
+        /*СВАЙП ВЛЕВО(ПРЕД.СТРАНИЦА)*/
+      }
+      if (otk.x > 0) {
+        /*СВАЙП ВПРАВО(СЛЕД.СТРАНИЦА)*/
+      }
+      startPoint = { x: nowPoint.pageX, y: nowPoint.pageY };
+    }
+  },
+  false
+);
+/*Ловим отпускание пальца*/
+document.addEventListener(
+  "touchend",
+  function (event) {
+    var pdelay = new Date();
+    nowPoint = event.changedTouches[0];
+    var xAbs = Math.abs(startPoint.x - nowPoint.pageX);
+    var yAbs = Math.abs(startPoint.y - nowPoint.pageY);
+    if ((xAbs > 20 || yAbs > 20) && pdelay.getTime() - ldelay.getTime() < 200) {
+      if (xAbs > yAbs) {
+        if (nowPoint.pageX < startPoint.x) {
+          /*СВАЙП ВЛЕВО*/
+          console.log("Влево");
+        } else {
+          /*СВАЙП ВПРАВО*/
+          console.log("Вправо")
+        }
+      } else {
+        if (nowPoint.pageY < startPoint.y) {
+          /*СВАЙП ВВЕРХ*/
+        } else {
+          /*СВАЙП ВНИЗ*/
+        }
+      }
+    }
+  },
+  false
+);
