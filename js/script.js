@@ -64,7 +64,7 @@ const listItemsPrice = [
     sale: 3555,
     program: [
       {
-        kurs: "HTML",
+        kurs: "HTML/CSS",
         length: "Длительность 1 месяц.",
         number: "2 занятия в неделю по 1-1,5 часа.",
         time: "Вторник, четверг в 20-00 (по московскому времени).",
@@ -72,8 +72,8 @@ const listItemsPrice = [
           "1 урок. Основные понятия в веб-разработке",
           "2 урок. Основы языка разметки документов HTML",
           "3 урок. Основы языка оформления стилей документа CSS",
-          "4 урок. Основы языка оформления стилей документа CSS",
-          "5. урок. Формирование блочной модели, блочная верстка",
+          "4 урок. Псевдоклассы и псевдоэлементы, табличная верстка",
+          "5 урок. Формирование блочной модели, блочная верстка",
           "6 урок. Работа с макетом дизайна в формате PSD",
           "7 урок. Разметка сайта и знакомство с Bootstrap",
           "8 урок. Стандарты web и вспомогательные инструменты",
@@ -116,7 +116,7 @@ const listItemsPrice = [
     sale: 10555,
     program: [
       {
-        kurs: "HTML",
+        kurs: "HTML/CSS",
         length: "Длительность 1 месяц.",
         number: "2 занятия в неделю по 1-1,5 часа.",
         time: "Вторник, четверг в 20-00 (по московскому времени).",
@@ -124,11 +124,27 @@ const listItemsPrice = [
           "1 урок. Основные понятия в веб-разработке",
           "2 урок. Основы языка разметки документов HTML",
           "3 урок. Основы языка оформления стилей документа CSS",
-          "4 урок. Основы языка оформления стилей документа CSS",
-          "5. урок. Формирование блочной модели, блочная верстка",
+          "4 урок. Псевдоклассы и псевдоэлементы, табличная верстка",
+          "5 урок. Формирование блочной модели, блочная верстка",
           "6 урок. Работа с макетом дизайна в формате PSD",
           "7 урок. Разметка сайта и знакомство с Bootstrap",
           "8 урок. Стандарты web и вспомогательные инструменты",
+        ],
+      },
+      {
+        kurs: "HTML5/CSS3",
+        length: "Длительность 1 месяц.",
+        number: "2 занятия в неделю по 1-1,5 часа.",
+        time: "Вторник, четверг в 20-00 (по московскому времени).",
+        lessons: [
+          "1 урок. HTML5: Семантические элементы.",
+          "2 урок. Позиционирование элементов, Практическая вёрстка.",
+          "3 урок. CSS3 Углубленное изучение.SASS. Flexbox.",
+          "4 урок. Параметры CSS для фона. Использование SVG.",
+          "5 урок. Работа с текстом. Границы в CSS3.",
+          "6 урок. Эффекты перехода и трансформации CSS3.",
+          "7 урок. Адаптивная вёрстка.",
+          "8 урок. HTML5 формы. Добавление Аудио и Видео на страницу.",
         ],
       },
       {
@@ -137,15 +153,29 @@ const listItemsPrice = [
         number: "2 занятия в неделю по 1-1,5 часа.",
         time: "Вторник, четверг в 20-00 (по московскому времени).",
         lessons: [
-          "1 урок. Основные понятия в веб-разработке",
-          "2 урок. Основы языка разметки документов HTML",
-          "3 урок. Основы языка оформления стилей документа CSS",
-          "4 урок. Основы языка оформления стилей документа CSS",
-          "5. урок. Формирование блочной модели, блочная верстка",
-          "6 урок. Работа с макетом дизайна в формате PSD",
-          "7 урок. Разметка сайта и знакомство с Bootstrap",
-          "8 урок. Стандарты web и вспомогательные инструменты",
+          "1 урок. Основы языка JavaScript",
+          "2 урок. Основные операторы JavaScript",
+          "3 урок. Циклы, массивы, структуры данных",
+          "4 урок. Объекты в JavaScript",
+          "5 урок. Введение в DOM",
+          "6 урок. Обработка событий в JavaScript",
+          "7 урок. Урок-практикум",
+          "8 урок. Анонимные функции, замыкания",
         ],
+      },
+      {
+        kurs: "Препроцессоры SASS/SCSS, LESS",
+        length: "Длительность 1 день",
+        number: "1 занятие 1-1,5 часа.",
+        time: "Вторник или четверг в 20-00 (по московскому времени).",
+        lessons: ["1 урок. Препроцессоры SASS/SCSS, LESS"],
+      },
+      {
+        kurs: "Git. Основы.",
+        length: "Длительность 1 день",
+        number: "1 занятие 1-1,5 часа.",
+        time: "Вторник или четверг в 20-00 (по московскому времени).",
+        lessons: ["1 урок. Длительность 1 день"],
       },
     ],
   },
@@ -186,10 +216,88 @@ const listItemsPrice = [
     express:
       "Экспресс: 2 месяца, 4 занятия в неделю по 1.5-2 часа. Стоимость курса 28 777 руб.",
     price: 35000,
-    sale: 20555,
+    sale: 25555,
     program: [
       {
-        kurs: "HTML",
+        kurs: "HTML/CSS",
+        length: "Длительность 1 месяц.",
+        number: "2 занятия в неделю по 1-1,5 часа.",
+        time: "Вторник, четверг в 20-00 (по московскому времени).",
+        lessons: [
+          "1 урок. Основные понятия в веб-разработке",
+          "2 урок. Основы языка разметки документов HTML",
+          "3 урок. Основы языка оформления стилей документа CSS",
+          "4 урок. Псевдоклассы и псевдоэлементы, табличная верстка",
+          "5 урок. Формирование блочной модели, блочная верстка",
+          "6 урок. Работа с макетом дизайна в формате PSD",
+          "7 урок. Разметка сайта и знакомство с Bootstrap",
+          "8 урок. Стандарты web и вспомогательные инструменты",
+        ],
+      },
+      {
+        kurs: "HTML5/CSS3",
+        length: "Длительность 1 месяц.",
+        number: "2 занятия в неделю по 1-1,5 часа.",
+        time: "Вторник, четверг в 20-00 (по московскому времени).",
+        lessons: [
+          "1 урок. HTML5: Семантические элементы.",
+          "2 урок. Позиционирование элементов, Практическая вёрстка.",
+          "3 урок. CSS3 Углубленное изучение.SASS. Flexbox.",
+          "4 урок. Параметры CSS для фона. Использование SVG.",
+          "5 урок. Работа с текстом. Границы в CSS3.",
+          "6 урок. Эффекты перехода и трансформации CSS3.",
+          "7 урок. Адаптивная вёрстка.",
+          "8 урок. HTML5 формы. Добавление Аудио и Видео на страницу.",
+        ],
+      },
+      {
+        kurs: "JavaScript. Основы.",
+        length: "Длительность 1 месяц.",
+        number: "2 занятия в неделю по 1-1,5 часа.",
+        time: "Вторник, четверг в 20-00 (по московскому времени).",
+        lessons: [
+          "1 урок. Основы языка JavaScript",
+          "2 урок. Основные операторы JavaScript",
+          "3 урок. Циклы, массивы, структуры данных",
+          "4 урок. Объекты в JavaScript",
+          "5 урок. Введение в DOM",
+          "6 урок. Обработка событий в JavaScript",
+          "7 урок. Урок-практикум",
+          "8 урок. Анонимные функции, замыкания",
+        ],
+      },
+      {
+        kurs: "Препроцессоры SASS/SCSS, LESS",
+        length: "Длительность 1 день",
+        number: "1 занятие 1-1,5 часа.",
+        time: "Вторник или четверг в 20-00 (по московскому времени).",
+        lessons: ["1 урок. Препроцессоры SASS/SCSS, LESS"],
+      },
+      {
+        kurs: "Git. Основы.",
+        length: "Длительность 1 день",
+        number: "1 занятие 1-1,5 часа.",
+        time: "Вторник или четверг в 20-00 (по московскому времени).",
+        lessons: ["1 урок. Длительность 1 день"],
+      },
+      {
+        kurs: "JavaScript. Продвинутый.",
+        length: "Длительность 1 месяц.",
+        number: "2 занятия в неделю по 1-1,5 часа.",
+        time: "Вторник, четверг в 20-00 (по московскому времени).",
+        lessons: [
+          "1 урок. Современный JavaScript",
+          "2 урок. ООП в JavaScript",
+          "3 урок. Асинхронные запросы",
+          "4 урок. Регулярные выражения",
+          "5 урок. Фреймворк Vue.js",
+          "6 урок. Компоненты Vue.js",
+          "7 урок. JavaScript на сервере",
+          "8 урок. Тестирование и сборка",
+        ],
+      },
+      {
+        kurs: "ReactJS",
         length: "Длительность 1 месяц.",
         number: "2 занятия в неделю по 1-1,5 часа.",
         time: "Вторник, четверг в 20-00 (по московскому времени).",
@@ -198,7 +306,7 @@ const listItemsPrice = [
           "2 урок. Основы языка разметки документов HTML",
           "3 урок. Основы языка оформления стилей документа CSS",
           "4 урок. Основы языка оформления стилей документа CSS",
-          "5. урок. Формирование блочной модели, блочная верстка",
+          "5 урок. Формирование блочной модели, блочная верстка",
           "6 урок. Работа с макетом дизайна в формате PSD",
           "7 урок. Разметка сайта и знакомство с Bootstrap",
           "8 урок. Стандарты web и вспомогательные инструменты",
@@ -332,7 +440,6 @@ const Program = (i, e) => {
       listlessons.appendChild(itemlesson);
     });
 
-    
     programtitle.appendChild(length);
     programtitle.appendChild(number);
     programtitle.appendChild(time);
@@ -419,6 +526,15 @@ function Side(i, e) {
       },
       false
     );
+    program.addEventListener(
+      "click",
+      (event) => {
+        tag = event.target.classList.contains("extra");
+        program.classList.toggle("show");
+        Akkordion(e, tag);
+      },
+      false
+    );
   }
   // card[i].addEventListener("click", toggleShowHide, false);
 
@@ -484,15 +600,30 @@ window.addEventListener(
   "scroll",
   function scrollStat() {
     scrolly = window.scrollY;
-    console.log(scrolly);
     Stat(87400, 5233, scrolly);
-    // window.removeEventListener("scroll", scrollStat, false);
+    window.removeEventListener("scroll", scrollStat, false);
+  },
+  false
+);
+
+// window.addEventListener("touchmove", (event) => { console.log(event.targetTouches[0].pageY); }, false);
+
+document.addEventListener(
+  "touchstart",
+  function scrollStat(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    scrolly = event.targetTouches[0].pageY;
+    console.log(scrolly, "Touch");
+    if (scrolly > 1300) {
+      Stat(87400, 5233, scrolly);
+      document.removeEventListener("touchstart", scrollStat, false);
+    };
   },
   false
 );
 
 function Stat(z, v, s) {
-  console.log(scrolly);
   var i = 0,
     j = 0;
 
@@ -514,7 +645,7 @@ function Stat(z, v, s) {
 }
 
 /**Таймер обратного отсчета */
-const paid = () => {
+const paid = (status) => {
   const frag = document.createDocumentFragment();
   const body = document.createElement("div");
   body.classList.add("body");
@@ -539,7 +670,7 @@ setTimeout(() => {
   popup.classList.toggle("show");
   setTimeout(() => {
     popup.querySelector(".body").remove();
-  }, 10000);
+  }, 2000);
 }, 20000);
 
 /** Аккордион */
@@ -622,3 +753,211 @@ function previousSlide() {
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
+
+/** Ajax запрос и отправка на сервер */
+
+const ajaxTelegram = () => {
+  const userName = document.querySelector("#user_name").value;
+  const userPhone = document.querySelector("#user_phone").value;
+  const userEmail = document.querySelector("#user_email").value;
+
+  // Создаем экземпляр класса XMLHttpRequest
+  // const request = new XMLHttpRequest();
+
+  // Указываем путь до файла на сервере, который будет обрабатывать наш запрос
+  const url = "../telegram/telegram.php";
+
+  // Так же как и в GET составляем строку с данными, но уже без пути к файлу
+  const params =
+    "user_name=" +
+    userName +
+    "&user_phone=" +
+    userPhone +
+    "&user_email=" +
+    userEmail;
+  console.log(params);
+  var xhr;
+
+  if (window.XMLHttpRequest) {
+    xhr = new XMLHttpRequest();
+  } else if (window.ActiveXObject) {
+    xhr = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+  xhr.responseType = "json";
+  xhr.open("POST", url, true);
+  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+  xhr.send(params);
+
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      Message("Заявка отправлена");
+    }
+  };
+};
+
+/** Проверка значений полей формы */
+
+const Forms = () => {
+  const userName = document.querySelector("#user_name");
+  const userPhone = document.querySelector("#user_phone");
+  const userEmail = document.querySelector("#user_email");
+  const submit = document.querySelector("#submit");
+
+  const patternEmail = /[A-Z0-9._%+-]+@[A-Z0-9-]+\.[A-Z]{2,4}/i;
+  constpatternPhone = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+
+  userName.addEventListener(
+    "input",
+    (event) => {
+      if (userName.value.length < 10) {
+        userName.style.border = "1px solid red";
+      } else {
+        userName.style.border = "1px solid green";
+      }
+    },
+    false
+  );
+
+  userEmail.addEventListener(
+    "input",
+    (event) => {
+      console.log(patternEmail.test(userEmail.value));
+      if (patternEmail.test(userEmail.value) !== true) {
+        userEmail.style.border = "1px solid red";
+      }
+      if (patternEmail.test(userEmail.value) === true) {
+        userEmail.style.border = "1px solid green";
+      }
+      console.log(userEmail.value);
+    },
+    false
+  );
+
+  userEmail.addEventListener(
+    "input",
+    (event) => {
+      if (userPhone.value.length < 10) {
+        userPhone.style.border = "1px solid red";
+      } else {
+        userPhone.style.border = "1px solid green";
+      }
+      console.log(userPhone.value);
+    },
+    false
+  );
+  const form = document.querySelector("form");
+  form.addEventListener(
+    "submit",
+    (event) => {
+      event.preventDefault();
+
+      console.log("нажата кнопка отправки");
+      return false;
+    },
+    false
+  );
+  submit.addEventListener(
+    "click",
+    (event) => {
+      ajaxTelegram();
+    },
+    false
+  );
+};
+
+Forms();
+
+const Message = (message) => {
+  const frag = document.createDocumentFragment();
+  const body = document.createElement("div");
+  body.classList.add("body");
+  const sq = document.createElement("div");
+  sq.classList.add("square");
+  const text = document.createElement("div");
+  text.classList.add("text");
+  text.innerHTML = message;
+  frag.appendChild(body);
+  body.appendChild(sq);
+  body.appendChild(text);
+  popup.appendChild(frag);
+  popup.classList.add("message");
+
+  setTimeout(() => {
+    setTimeout(() => {
+      popup.querySelector(".body").remove();
+    }, 2000);
+    popup.classList.remove("message");
+  }, 10000);
+  // console.log(popup);
+};
+
+
+/** Swipe */
+
+var startPoint = {};
+var nowPoint;
+var ldelay;
+document.addEventListener(
+  "touchstart",
+  function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    startPoint.x = event.changedTouches[0].pageX;
+    startPoint.y = event.changedTouches[0].pageY;
+    ldelay = new Date();
+  },
+  false
+);
+/*Ловим движение пальцем*/
+document.addEventListener(
+  "touchmove",
+  function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    var otk = {};
+    nowPoint = event.changedTouches[0];
+    otk.x = nowPoint.pageX - startPoint.x;
+    /*Обработайте данные*/
+    /*Для примера*/
+    if (Math.abs(otk.x) > 200) {
+      if (otk.x < 0) {
+        /*СВАЙП ВЛЕВО(ПРЕД.СТРАНИЦА)*/
+      }
+      if (otk.x > 0) {
+        /*СВАЙП ВПРАВО(СЛЕД.СТРАНИЦА)*/
+      }
+      startPoint = { x: nowPoint.pageX, y: nowPoint.pageY };
+    }
+  },
+  false
+);
+/*Ловим отпускание пальца*/
+document.addEventListener(
+  "touchend",
+  function (event) {
+    var pdelay = new Date();
+    nowPoint = event.changedTouches[0];
+    var xAbs = Math.abs(startPoint.x - nowPoint.pageX);
+    var yAbs = Math.abs(startPoint.y - nowPoint.pageY);
+    if ((xAbs > 20 || yAbs > 20) && pdelay.getTime() - ldelay.getTime() < 200) {
+      if (xAbs > yAbs) {
+        if (nowPoint.pageX < startPoint.x) {
+          /*СВАЙП ВЛЕВО*/
+          console.log("Влево");
+        } else {
+          /*СВАЙП ВПРАВО*/
+          console.log("Вправо")
+        }
+      } else {
+        if (nowPoint.pageY < startPoint.y) {
+          /*СВАЙП ВВЕРХ*/
+        } else {
+          /*СВАЙП ВНИЗ*/
+        }
+      }
+    }
+  },
+  false
+);

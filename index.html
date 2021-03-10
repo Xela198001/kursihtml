@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <title>онлайн курсы HTML-верстальщик / Frontend-разработчик</title>
   </head>
   <body>
@@ -26,12 +28,8 @@
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 512 512"
       >
-        <linearGradient id="linear-gradient">
-          <stop offset="0%" stop-color="#ffffff" />
-          <stop offset="100%" stop-color="#ff9900" />
-        </linearGradient>
         <path
-          fill="url(#linear-gradient)"
+          fill="#003399"
           width="100%"
           height="100%"
           d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"
@@ -44,8 +42,9 @@
           <div class="top">
             <div class="wrp">
               <div class="top-logo">
-                от HTML-верстальщика<br />
-                до Frontend-разработчика
+                <span>FS</span>
+                <span>freeschol</span>
+                <span>Frontend-разработчика</span>
               </div>
               <div class="top-contacts">
                 <span class="messenger">
@@ -105,7 +104,7 @@
                     </svg>
                   </a>
                   <a
-                    href=""
+                    href="https://t.me/freeschoolfe_bot"
                     class="social-link"
                     title="social link Telegram"
                     target="_blank"
@@ -222,7 +221,7 @@ c1.182,0.812,2.079,0.633,2.079,0.633l4.181-0.056c0,0,2.186-0.136,1.149-1.858C38.
             <div class="head-text">
               <h1 class="wrp">
                 <span class="kurs">Онлайн-курсы</span>
-                <span class="">с нуля <br />до Frontend-разработчика</span>
+                <span class="">от начинающего HTML-верстальщика <br />до Frontend-разработчика</span>
                 <span class="subTitle"
                   >Освой востребованную, высокооплачиваемую профессию</span
                 >
@@ -401,13 +400,31 @@ c1.182,0.812,2.079,0.633,2.079,0.633l4.181-0.056c0,0,2.186-0.136,1.149-1.858C38.
                     <span class="price"></span>
                     <span class="sale frontend"></span>
                   </div>
-                  <a href="http://127.0.0.1:5500/" id="buy" class="link"
+                  <a href="./payment/frontend.html" id="buy" class="link"
                     >Купить курс</a
                   >
                 </div>
               </div>
               <a class="next" onclick="nextSlide()"></a>
             </div>
+          </div>
+        </div>
+        <div class="section-form">
+          <div class="wrp">
+            <h2 class="title">оставь заявку на покупку курса</h2>
+            <form action="" method="post">
+              <label for="user_name">ФИО<span>*</span></label>
+              <input type="text" name="user_name" id="user_name">
+              <label for="user_name">Телефон<span>*</span></label>
+              <input type="text" name="user_phone" id="user_phone">
+              <label for="user_name">E-Mail<span>*</span></label>
+              <input type="email" name="user_email" id="user_email">
+              <div>
+                <input type="checkbox" name="user_personal" id="user_personal"> 
+                <label for="user_personal">Я даю согласие на обработку персональных данных и согласен на получение информационных рассылок</label>
+              </div>
+              <input type="submit" id="submit" value="Оставить заявку">
+            </form>
           </div>
         </div>
         <div class="section-extra">
@@ -438,9 +455,9 @@ c1.182,0.812,2.079,0.633,2.079,0.633l4.181-0.056c0,0,2.186-0.136,1.149-1.858C38.
     </div>
     <div id="popup"></div>
     <div class="width"></div>
-    <script src="./js/side.js"></script>
-    <script type="text/javascript" src="./js/timer.js"></script>
-    <script type="text/javascript" async src="./js/script.js"></script>
+    <script src="js/side.js"></script>
+    <script type="text/javascript" src="js/timer.js"></script>
+    <script type="text/javascript" async src="js/script.js"></script>
     <!-- <script type="text/javascript"  defer src="./js/card.js"></script> -->
   </body>
 </html>

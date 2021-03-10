@@ -10,6 +10,7 @@
     $color-secondary-a-3
   );
   padding: 15px 25px;
+  min-height: 575px;
   display: flex;
   flex-grow: 1;
   flex-shrink: 1;
@@ -38,9 +39,12 @@
 
     & .previous {
       display: block;
-      width: 50px;
-      height: 50px;
-      margin: 20% 2em 1em 0;
+      width: 25px;
+      height: 25px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      align-self: center;
+      margin: 0 0.5em 1em 0;
       border-bottom: 2px solid #fff;
       border-left: 2px solid #fff;
       transform: rotate(45deg);
@@ -53,9 +57,12 @@
 
     & .next {
       display: block;
-      width: 50px;
-      height: 50px;
-      margin: 20% 2em 1em 0;
+      width: 25px;
+      height: 25px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      align-self: center;
+      margin: 0 0.5em 1em 0;
       border-bottom: 2px solid #fff;
       border-right: 2px solid #fff;
       transform: rotate(-45deg);
@@ -176,7 +183,7 @@
       }
 
       &.show {
-        display: block;
+        display: flex;
       }
 
       &:nth-child(3) {
@@ -203,7 +210,7 @@
 
         & .price {
           width: 100%;
-          font-size: 2.2em;
+          font-size: 1.5em;
           text-decoration: line-through;
           display: flex;
           // justify-content: center;
@@ -213,7 +220,7 @@
         & .sale {
           width: 100%;
           color: #fff;
-          font-size: 3em;
+          font-size: 2em;
           @include fontBD;
           display: flex;
           justify-content: center;
@@ -228,6 +235,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 200px;
+        margin: 0 auto;
         text-transform: uppercase;
         text-decoration: none;
         border: 1px solid #e1e1e1;

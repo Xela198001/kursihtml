@@ -1058,6 +1058,51 @@ body ~ #hide.show {
           flex-grow: 1;
 }
 
+.header .top .wrp .top-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0.1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header .top .wrp .top-logo span {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header .top .wrp .top-logo span:first-child {
+  font-family: 'Proxima Nova Cn Rg';
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
+
+.header .top .wrp .top-logo span:nth-child(2) {
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 0.65em;
+}
+
+.header .top .wrp .top-logo span:nth-child(3) {
+  font-family: 'Proxima Nova Cn Lt';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.5em;
+}
+
 .header .top .wrp .top-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1705,6 +1750,7 @@ body ~ #hide.show {
 .section-prices {
   background: linear-gradient(45deg, #003399 25%, #333399 40%, #6666cc);
   padding: 15px 25px;
+  min-height: 575px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1756,9 +1802,17 @@ body ~ #hide.show {
 
 .section-prices .slider .previous {
   display: block;
-  width: 50px;
-  height: 50px;
-  margin: 20% 2em 1em 0;
+  width: 25px;
+  height: 25px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 0.5em 1em 0;
   border-bottom: 2px solid #fff;
   border-left: 2px solid #fff;
   -webkit-transform: rotate(45deg);
@@ -1772,9 +1826,17 @@ body ~ #hide.show {
 
 .section-prices .slider .next {
   display: block;
-  width: 50px;
-  height: 50px;
-  margin: 20% 2em 1em 0;
+  width: 25px;
+  height: 25px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 0.5em 1em 0;
   border-bottom: 2px solid #fff;
   border-right: 2px solid #fff;
   -webkit-transform: rotate(-45deg);
@@ -1900,7 +1962,9 @@ body ~ #hide.show {
 }
 
 .section-prices .listCards .card.show {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .section-prices .listCards .card:nth-child(3) {
@@ -1940,7 +2004,7 @@ body ~ #hide.show {
 
 .section-prices .listCards .card .price .price {
   width: 100%;
-  font-size: 2.2em;
+  font-size: 1.5em;
   text-decoration: line-through;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1953,7 +2017,7 @@ body ~ #hide.show {
 .section-prices .listCards .card .price .sale {
   width: 100%;
   color: #fff;
-  font-size: 3em;
+  font-size: 2em;
   font-family: 'Proxima Nova Cn Rg';
   font-weight: bold;
   font-style: normal;
@@ -1979,6 +2043,8 @@ body ~ #hide.show {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 200px;
+  margin: 0 auto;
   text-transform: uppercase;
   text-decoration: none;
   border: 1px solid #e1e1e1;
@@ -2059,6 +2125,151 @@ body ~ #hide.show {
   color: #fff;
 }
 
+.section-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: #000;
+  background-color: #f7f7f7;
+  padding: 3em 0;
+}
+
+.section-form .wrp {
+  width: 100%;
+  margin: 0;
+}
+
+.section-form .title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 5px 0 0 0;
+  font-family: 'Proxima Nova Cn Rg';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #6666cc;
+}
+
+.section-form form {
+  width: 450px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-form form label {
+  margin: 15px 0 5px 10px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 0.95em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.section-form form label span {
+  color: red;
+  font-size: 1.25em;
+  margin: 5px;
+}
+
+.section-form form input[type="text"],
+.section-form form input[type="email"],
+.section-form form input[type="checkbox"] {
+  height: 30px;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid #e1e1e1;
+  padding: 15px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Proxima Nova Cn Lt';
+  font-weight: 300;
+  font-style: normal;
+}
+
+.section-form form input[type="checkbox"] {
+  opacity: 0;
+  display: none;
+}
+
+.section-form form input[type="checkbox"] label {
+  font-size: 0.65em;
+}
+
+.section-form form #user_personal + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.section-form form #user_personal + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.section-form form #user_personal:checked + label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.section-form form input[type="submit"] {
+  margin: 30px auto 0px;
+  width: 170px;
+  height: 35px;
+  border: 1px solid #3f51b5;
+  border-radius: 7px;
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
+  font-weight: normal;
+  font-style: normal;
+}
+
 .footer {
   background-color: #3c3c3c;
 }
@@ -2072,7 +2283,7 @@ body ~ #hide.show {
 #popup {
   position: fixed;
   right: -999%;
-  top: 0;
+  top: auto;
   width: 350px;
   height: 90px;
   opacity: 0;
@@ -2137,6 +2348,15 @@ body ~ #hide.show {
 #popup.show {
   opacity: 1;
   top: 100px;
+  right: 50px;
+  -webkit-transition: right 2.5s ease-in-out;
+  transition: right 2.5s ease-in-out;
+}
+
+#popup.message {
+  opacity: 1;
+  top: auto;
+  bottom: 100px;
   right: 50px;
   -webkit-transition: right 2.5s ease-in-out;
   transition: right 2.5s ease-in-out;
@@ -2219,6 +2439,9 @@ body ~ #hide.show {
   .section-format .wrp .format-listitems .format-listitems-item {
     width: 100%;
   }
+  .section-prices {
+    padding: 15px 10px;
+  }
   .section-prices .listCards {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2229,17 +2452,24 @@ body ~ #hide.show {
         flex-basis: 100%;
     padding: 0;
     background-color: transparent;
-    border: none;
+    padding: 15px 10px;
+    border: 1px solid #fff;
   }
   .section-prices .listCards .card .listItems .item {
     padding: 0;
+  }
+  .section-form form {
+    width: 300px;
   }
   #popup {
     width: 300px;
     height: 90px;
   }
   #popup .show {
-    right: 5px;
+    right: 10px;
+  }
+  .slider:focus, .slider:focus-within, .slider:focus-visible {
+    background-color: black;
   }
 }
 
