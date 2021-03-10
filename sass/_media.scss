@@ -1,7 +1,11 @@
 @media (max-width: 576px) {
   #hide.show {
     width: 100%;
-    padding: 50px;
+    padding: 50px 5px;
+  }
+
+  .button.hide {
+    margin-right: 30px;
   }
 
   .countdown-number {
@@ -10,7 +14,7 @@
   }
 
   .countdown-time {
-    padding: 15px;
+    padding: 5px;
     margin-bottom: -64px;
     font-size: 0.85em;
   }
@@ -223,7 +227,21 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (min-width: 577px) and (max-width: 992px) {
+.header .head .head-text .wrp span:nth-child(2) {
+font-size: 1.25em;
+}
+
+.section-advantages .listItems .item {
+width: #{(100% / 2)-4};
+min-height: 160px;
+}
+
+  .section-format .wrp .format-listitems {
+    & .format-listitems-item {
+      width: #{((100% / 2)-5)};
+    }
+  }
 }
 
 @media (max-width: 1200px) {

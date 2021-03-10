@@ -1391,6 +1391,7 @@ body ~ #hide.show {
 
 .section-stat .title {
   width: 100%;
+  padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1406,8 +1407,22 @@ body ~ #hide.show {
   font-style: normal;
   font-size: 1.75em;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 0.1em;
   color: #6666cc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.section-stat .text {
+  width: 100%;
+  padding: 1em 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.85em;
 }
 
 .section-stat .listitems {
@@ -2299,6 +2314,10 @@ body ~ #hide.show {
           box-sizing: border-box;
 }
 
+.ya-share2__container.ya-share2__container_color-scheme_blackwhite .ya-share2__badge, .ya-share2__container.ya-share2__container_color-scheme_blackwhite .ya-share2__mobile-popup-badge {
+  background-color: #404040;
+}
+
 #popup {
   position: fixed;
   right: -999%;
@@ -2384,14 +2403,17 @@ body ~ #hide.show {
 @media (max-width: 576px) {
   #hide.show {
     width: 100%;
-    padding: 50px;
+    padding: 50px 5px;
+  }
+  .button.hide {
+    margin-right: 30px;
   }
   .countdown-number {
     width: 50px;
     margin: 0 5px;
   }
   .countdown-time {
-    padding: 15px;
+    padding: 5px;
     margin-bottom: -64px;
     font-size: 0.85em;
   }
@@ -2547,6 +2569,19 @@ body ~ #hide.show {
     width: 100%;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .header .head .head-text .wrp span:nth-child(2) {
+    font-size: 1.25em;
+  }
+  .section-advantages .listItems .item {
+    width: 46%;
+    min-height: 160px;
+  }
+  .section-format .wrp .format-listitems .format-listitems-item {
+    width: 45%;
   }
 }
 /*# sourceMappingURL=style.css.map */
