@@ -3,7 +3,7 @@
   flex-shrink: 1;
   flex-grow: 1;
   color: #000;
-  background-color: $bg-color-primary-1;
+  background-color: $bg-color-primary-0;
 
   .wrp {
     @include sectionWidth();
@@ -17,6 +17,7 @@
       margin: 65px 0 0 0;
       @include fontBD;
       font-size: 1.75em;
+      text-align: center;
       text-transform: uppercase;
       letter-spacing: 0.1em;
       color: $color-secondary-a-3;

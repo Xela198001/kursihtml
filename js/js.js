@@ -18,7 +18,8 @@ var listItems = [
     svgIcon:
       '<svg id="iconCity" version="1.0" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"  width="50" height="50"><path d="M22,47h4a1,1,0,0,0,1-1V42a1,1,0,0,0-1-1H22a1,1,0,0,0-1,1v4A1,1,0,0,0,22,47Zm1-4h2v2H23Z"/><path d="M30,47h4a1,1,0,0,0,1-1V42a1,1,0,0,0-1-1H30a1,1,0,0,0-1,1v4A1,1,0,0,0,30,47Zm1-4h2v2H31Z"/><path d="M22,55h4a1,1,0,0,0,1-1V50a1,1,0,0,0-1-1H22a1,1,0,0,0-1,1v4A1,1,0,0,0,22,55Zm1-4h2v2H23Z"/><path d="M30,55h4a1,1,0,0,0,1-1V50a1,1,0,0,0-1-1H30a1,1,0,0,0-1,1v4A1,1,0,0,0,30,55Zm1-4h2v2H31Z"/><polygon points="49.71 13.71 51.41 12 53 12 53 13.59 51.29 15.29 52.71 16.71 54 15.41 55.29 16.71 56.71 15.29 55 13.59 55 12 56.59 12 58.29 13.71 59.71 12.29 58.41 11 59.71 9.71 58.29 8.29 56.59 10 55 10 55 8.41 56.71 6.71 55.29 5.29 54 6.59 52.71 5.29 51.29 6.71 53 8.41 53 10 51.41 10 49.71 8.29 48.29 9.71 49.59 11 48.29 12.29 49.71 13.71"/><path d="M57,24a3,3,0,1,0,3-3A3,3,0,0,0,57,24Zm3-1a1,1,0,1,1-1,1A1,1,0,0,1,60,23Z"/><path d="M38,15a3,3,0,1,0-3-3A3,3,0,0,0,38,15Zm0-4a1,1,0,1,1-1,1A1,1,0,0,1,38,11Z"/><path d="M16,7a3,3,0,1,0-3-3A3,3,0,0,0,16,7Zm0-4a1,1,0,1,1-1,1A1,1,0,0,1,16,3Z"/><path d="M61,54a1,1,0,0,0-.29-.71l-6-6a1,1,0,0,0-1.42,0L51,49.59l-2.29-2.3a1,1,0,0,0-1.42,0l-6,6A1,1,0,0,0,41,54v7H39V41H62a1,1,0,0,0,.92-.62,1,1,0,0,0-.21-1.09L44.18,20.77a9.44,9.44,0,0,0-13.36,0L29,22.59V12a1,1,0,0,0-1-1H4a1,1,0,0,0-1,1V61H1v2H63V61H61Zm-7-4.59,5,5V61H55V54a1,1,0,0,0-.29-.71L52.41,51Zm-11,5,5-5,5,5V61H43ZM20,23v8H12V23Zm-8-2V13h8v8ZM37,57H19V39H37ZM18,37a1,1,0,0,0-1,1v3H12V33h8v4Zm4,0V33h5v4Zm0-6V23h5v8ZM10,31H5V23h5Zm0,2v8H5V33Zm0,10v8H5V43Zm2,0h5v8H12Zm7,16H37v2H19ZM39,39V38a1,1,0,0,0-1-1H29V34h1a4,4,0,0,0,4-4,1,1,0,0,1,2,0v1a3,3,0,0,0,6,0V28a1,1,0,0,1,2,0,3,3,0,0,0,3,3h4.59l8,8ZM32.23,22.18a7.46,7.46,0,0,1,10.54,0L49.59,29H47a1,1,0,0,1-1-1,3,3,0,0,0-6,0v3a1,1,0,0,1-2,0V30a3,3,0,0,0-6,0,2,2,0,0,1-2,2H29V25.41ZM27,21H22V13h5ZM10,13v8H5V13ZM5,53H17v8H5Z"/><path d="M50,54H46a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1h4a1,1,0,0,0,1-1V55A1,1,0,0,0,50,54Zm-1,4H47V56h2Z"/></svg>',
     title: "Можно учиться, где угодно и как угодно",
-    desc: "Возможность учиться в любое время. На работе, в метро, в кафе, в парке.",
+    desc:
+      "Возможность учиться в любое время. На работе, в метро, в кафе, в парке.",
   },
   {
     id: 3,
@@ -64,7 +65,7 @@ const listItemsPrice = [
     time: "1 месяц",
     long: "2 занятия в неделю по 1,5-2 часа",
     express:
-      "Экспресс: 2 недели, 4 занятия в неделю по 1.5-2 часа. Стоимость курса 5 555 руб.",
+      "Экспресс: 2 месяца, 4 занятия в неделю по 1.5-2 часа. Стоимость курса 28 777 руб.",
     price: 9000,
     sale: 3555,
     program: [
@@ -113,10 +114,10 @@ const listItemsPrice = [
       "Управлять структурой страницы DOM",
       "Создавать и реагировать на различные события в браузере",
     ],
-    time: "3 месяца",
+    time: "2 месяца",
     long: "2 занятия в неделю по 1,5-2 часа",
     express:
-      "Экспресс: 1,5 месяца, 4 занятия в неделю по 1.5-2 часа. Стоимость курса 17 555 руб.",
+      "Экспресс: 2 месяца, 4 занятия в неделю по 1.5-2 часа. Стоимость курса 28 777 руб.",
     price: 20000,
     sale: 10555,
     program: [
@@ -216,11 +217,11 @@ const listItemsPrice = [
       "Использовать возможности Webpack для сборки проекта",
       "Использовать возможности шаблонизатора Tailwindcss",
     ],
-    time: "5 месяцев",
+    time: "4 месяца",
     long: "2 занятия в неделю по 1,5-2 часа",
     express:
-      "Экспресс: 2,5 месяца, 4 занятия в неделю по 1.5-2 часа. Стоимость курса 35 555 руб.",
-    price: 35555,
+      "Экспресс: 2 месяца, 4 занятия в неделю по 1.5-2 часа. Стоимость курса 28 777 руб.",
+    price: 35000,
     sale: 25555,
     program: [
       {
@@ -307,14 +308,14 @@ const listItemsPrice = [
         number: "2 занятия в неделю по 1-1,5 часа.",
         time: "Вторник, четверг в 20-00 (по московскому времени).",
         lessons: [
-          "1 урок. Введение в ReactJS: современный Javascript",
-          "2 урок. Жизненный цикл React-компонента",
-          "3 урок. Продолжаем погружение в React и подключаем UI-библиотеку",
-          "4 урок. Роутинг в React: разбиваем мессенджер на чаты",
-          "5 урок. Redux. Управление состоянием приложения",
-          "6 урок. Redux middlewares, подключение роутера к Redux и хранение данных с помощью Redux-persist",
-          "7 урок. Работа с API",
-          "8 урок. Progressive Web App",
+          "1 урок. Основные понятия в веб-разработке",
+          "2 урок. Основы языка разметки документов HTML",
+          "3 урок. Основы языка оформления стилей документа CSS",
+          "4 урок. Основы языка оформления стилей документа CSS",
+          "5 урок. Формирование блочной модели, блочная верстка",
+          "6 урок. Работа с макетом дизайна в формате PSD",
+          "7 урок. Разметка сайта и знакомство с Bootstrap",
+          "8 урок. Стандарты web и вспомогательные инструменты",
         ],
       },
     ],
@@ -322,8 +323,10 @@ const listItemsPrice = [
 ];
 
 var i = 0;
+console.log(listItemsPrice);
 
 function listAdv(i) {
+  // console.log(n.innerHTML);
   listi.forEach((item) => {
     item.children[0].innerHTML = listItems[i].svgIcon;
     item.children[1].innerHTML = listItems[i].title;
@@ -362,6 +365,7 @@ function listPrice(j, n) {
 
 let price = document.querySelectorAll("div.price");
 
+console.log(price);
 function Price(price) {
   let i = 0;
   listItemsPrice.map((item, i) => {
@@ -388,6 +392,7 @@ listCard.forEach((item, i) => {
     },
     false
   );
+  // console.log(item)
 });
 
 const List = (i, p) => {
@@ -540,11 +545,13 @@ function Side(i, e) {
   // card[i].addEventListener("click", toggleShowHide, false);
 
   // function toggleShowHide() {
+  //   console.log(cardFixed);
   //   if (!ShowHide.classList.contains("show")) {
   //     bodyPage.style.overflow = "hidden";
   //     ShowHide.classList.toggle("show");
   //     ShowHide.appendChild(cardFixed);
   //   }
+  //   //console.log(item);
   // }
   hide.addEventListener("click", handleHide, false);
   function handleHide() {
@@ -565,15 +572,18 @@ function Side(i, e) {
 //   var ShowHide = document.querySelector("#hide");
 //   var hide = document.querySelector(".button.hide");
 
+//   console.log(ShowHide);
 //   card.forEach((item) => {
 //     item.addEventListener("click", toggleShowHide, false);
 //     let cardFixed = item.cloneNode(true);
 //     function toggleShowHide() {
+//       console.log(cardFixed);
 //       if (!ShowHide.classList.contains("show")) {
 //         bodyPage.style.overflow = "hidden";
 //         ShowHide.classList.toggle("show");
 //         ShowHide.appendChild(cardFixed);
 //       }
+//       //console.log(item);
 //     }
 //     hide.addEventListener("click", handleHide, false);
 //     function handleHide() {
@@ -610,10 +620,11 @@ document.addEventListener(
     event.preventDefault();
     event.stopPropagation();
     scrolly = event.targetTouches[0].pageY;
+    console.log(scrolly, "Touch");
     if (scrolly > 1300) {
       Stat(87400, 5233, scrolly);
       document.removeEventListener("touchstart", scrollStat, false);
-    };
+    }
   },
   false
 );
@@ -654,28 +665,34 @@ const paid = (status) => {
   body.appendChild(text);
   popup.appendChild(frag);
   popup.classList.add("show");
+  // console.log(popup);
 };
 
 setTimeout(() => {
   paid();
-}, 30000);
+}, 10000);
 
 setTimeout(() => {
   popup.classList.toggle("show");
   setTimeout(() => {
     popup.querySelector(".body").remove();
   }, 2000);
-}, 40000);
+}, 20000);
 
 /** Аккордион */
 const Akkordion = (e, t) => {
   const kurs = document.querySelectorAll("#akkordion");
+  console.log(kurs);
   // t == "H3" ? kurs[0].classList.toggle("show") : null;
   if (t === "H3") {
     kurs[0].classList.toggle("show");
   }
   t == "H4" ? kurs[1].classList.toggle("show") : null;
   t == true ? kurs[2].classList.toggle("show") : null;
+  // event.target.
+  if (e.target) {
+    console.log(t);
+  }
 };
 
 /**Подсчет ширины браузера в реальном времени */
@@ -690,6 +707,7 @@ const Akkordion = (e, t) => {
 // );
 /**------------------------------------------ */
 
+// console.log(listLi)
 // listItems.map((item) => {
 //   list(title, item.title);
 //   list(imgSVG, item.imgSVG);
@@ -720,6 +738,7 @@ const Carousel = (n) => {
   /* Делаем элемент блочным: */
   cards[slideIndex - 1].classList.toggle("hide");
   cards[slideIndex - 1].classList.toggle("show");
+  console.log(slideIndex);
 };
 
 // Carousel(listCard)
@@ -762,6 +781,7 @@ const ajaxTelegram = () => {
     userPhone +
     "&user_email=" +
     userEmail;
+  console.log(params);
   var xhr;
 
   if (window.XMLHttpRequest) {
@@ -790,7 +810,6 @@ const Forms = () => {
   const userPhone = document.querySelector("#user_phone");
   const userEmail = document.querySelector("#user_email");
   const submit = document.querySelector("#submit");
-  const outputText = document.querySelector("#input");
 
   const patternEmail = /[A-Z0-9._%+-]+@[A-Z0-9-]+\.[A-Z]{2,4}/i;
   constpatternPhone = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
@@ -810,12 +829,14 @@ const Forms = () => {
   userEmail.addEventListener(
     "input",
     (event) => {
+      console.log(patternEmail.test(userEmail.value));
       if (patternEmail.test(userEmail.value) !== true) {
         userEmail.style.border = "1px solid red";
       }
       if (patternEmail.test(userEmail.value) === true) {
         userEmail.style.border = "1px solid green";
       }
+      console.log(userEmail.value);
     },
     false
   );
@@ -828,6 +849,7 @@ const Forms = () => {
       } else {
         userPhone.style.border = "1px solid green";
       }
+      console.log(userPhone.value);
     },
     false
   );
@@ -836,6 +858,8 @@ const Forms = () => {
     "submit",
     (event) => {
       event.preventDefault();
+
+      console.log("нажата кнопка отправки");
       return false;
     },
     false
@@ -872,87 +896,73 @@ const Message = (message) => {
     }, 2000);
     popup.classList.remove("message");
   }, 10000);
+  // console.log(popup);
 };
-
-
-listCard[0].addEventListener('touchstart', (e) => {
-  listCard[2].classList.toggle("hover");
-}, false);
-
-listCard[1].addEventListener(
-  "touchstart",
-  (e) => {
-    listCard[2].classList.toggle("hover");
-  },
-  false
-);
-
-listCard[2].addEventListener('touchstart', (e) => {
-  listCard[2].classList.toggle("hover");
-}, false);
 
 /** Swipe */
 
 var startPoint = {};
 var nowPoint;
 var ldelay;
-// document.addEventListener(
-//   "touchstart",
-//   function (event) {
-//     event.preventDefault();
-//     event.stopPropagation();
-//     startPoint.x = event.changedTouches[0].pageX;
-//     startPoint.y = event.changedTouches[0].pageY;
-//     ldelay = new Date();
-//   },
-//   false
-// );
-// /*Ловим движение пальцем*/
-// document.addEventListener(
-//   "touchmove",
-//   function (event) {
-//     event.preventDefault();
-//     event.stopPropagation();
-//     var otk = {};
-//     nowPoint = event.changedTouches[0];
-//     otk.x = nowPoint.pageX - startPoint.x;
-//     /*Обработайте данные*/
-//     /*Для примера*/
-//     if (Math.abs(otk.x) > 200) {
-//       if (otk.x < 0) {
-//         /*СВАЙП ВЛЕВО(ПРЕД.СТРАНИЦА)*/
-//       }
-//       if (otk.x > 0) {
-//         /*СВАЙП ВПРАВО(СЛЕД.СТРАНИЦА)*/
-//       }
-//       startPoint = { x: nowPoint.pageX, y: nowPoint.pageY };
-//     }
-//   },
-//   false
-// );
-// /*Ловим отпускание пальца*/
-// document.addEventListener(
-//   "touchend",
-//   function (event) {
-//     var pdelay = new Date();
-//     nowPoint = event.changedTouches[0];
-//     var xAbs = Math.abs(startPoint.x - nowPoint.pageX);
-//     var yAbs = Math.abs(startPoint.y - nowPoint.pageY);
-//     if ((xAbs > 20 || yAbs > 20) && pdelay.getTime() - ldelay.getTime() < 200) {
-//       if (xAbs > yAbs) {
-//         if (nowPoint.pageX < startPoint.x) {
-//           /*СВАЙП ВЛЕВО*/
-//         } else {
-//           /*СВАЙП ВПРАВО*/
-//         }
-//       } else {
-//         if (nowPoint.pageY < startPoint.y) {
-//           /*СВАЙП ВВЕРХ*/
-//         } else {
-//           /*СВАЙП ВНИЗ*/
-//         }
-//       }
-//     }
-//   },
-//   false
-// );
+document.addEventListener(
+  "touchstart",
+  function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    startPoint.x = event.changedTouches[0].pageX;
+    startPoint.y = event.changedTouches[0].pageY;
+    ldelay = new Date();
+  },
+  false
+);
+/*Ловим движение пальцем*/
+document.addEventListener(
+  "touchmove",
+  function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    var otk = {};
+    nowPoint = event.changedTouches[0];
+    otk.x = nowPoint.pageX - startPoint.x;
+    /*Обработайте данные*/
+    /*Для примера*/
+    if (Math.abs(otk.x) > 200) {
+      if (otk.x < 0) {
+        /*СВАЙП ВЛЕВО(ПРЕД.СТРАНИЦА)*/
+      }
+      if (otk.x > 0) {
+        /*СВАЙП ВПРАВО(СЛЕД.СТРАНИЦА)*/
+      }
+      startPoint = { x: nowPoint.pageX, y: nowPoint.pageY };
+    }
+  },
+  false
+);
+/*Ловим отпускание пальца*/
+document.addEventListener(
+  "touchend",
+  function (event) {
+    var pdelay = new Date();
+    nowPoint = event.changedTouches[0];
+    var xAbs = Math.abs(startPoint.x - nowPoint.pageX);
+    var yAbs = Math.abs(startPoint.y - nowPoint.pageY);
+    if ((xAbs > 20 || yAbs > 20) && pdelay.getTime() - ldelay.getTime() < 200) {
+      if (xAbs > yAbs) {
+        if (nowPoint.pageX < startPoint.x) {
+          /*СВАЙП ВЛЕВО*/
+          console.log("Влево");
+        } else {
+          /*СВАЙП ВПРАВО*/
+          console.log("Вправо");
+        }
+      } else {
+        if (nowPoint.pageY < startPoint.y) {
+          /*СВАЙП ВВЕРХ*/
+        } else {
+          /*СВАЙП ВНИЗ*/
+        }
+      }
+    }
+  },
+  false
+);

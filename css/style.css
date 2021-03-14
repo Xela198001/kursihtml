@@ -881,6 +881,7 @@ body ~ #hide.show {
 .section-timer .wrp {
   width: 100%;
   margin: 0;
+  padding: 1em 1em 1em 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1003,6 +1004,7 @@ body ~ #hide.show {
 .header .wrp {
   width: 100%;
   margin: 0;
+  padding: 0 0 0 0;
 }
 
 .header .top {
@@ -1386,6 +1388,7 @@ body ~ #hide.show {
 .section-stat .wrp {
   width: 100%;
   margin: 0;
+  padding: 1em 1em 1em 1em;
   padding: 30px 0;
 }
 
@@ -1414,7 +1417,7 @@ body ~ #hide.show {
           box-sizing: border-box;
 }
 
-.section-stat .text {
+.section-stat .title-text {
   width: 100%;
   padding: 1em 2em;
   -webkit-box-sizing: border-box;
@@ -1422,7 +1425,7 @@ body ~ #hide.show {
   font-family: 'Proxima Nova Cn Rg', 'sans-serif';
   font-weight: normal;
   font-style: normal;
-  font-size: 0.85em;
+  font-size: 1em;
 }
 
 .section-stat .listitems {
@@ -1477,7 +1480,7 @@ body ~ #hide.show {
   background-color: #fdfdfd;
   overflow: hidden;
   margin: 1.5rem 0.1rem;
-  padding: 2em;
+  padding: 2em 0.5em;
   font-family: 'Proxima Nova Cn Rg', 'sans-serif';
   font-weight: normal;
   font-style: normal;
@@ -1529,6 +1532,7 @@ body ~ #hide.show {
 .section-advantages .wrp {
   width: 100%;
   margin: 0;
+  padding: 1em 1em 1em 1em;
 }
 
 .section-advantages .title {
@@ -1619,7 +1623,7 @@ body ~ #hide.show {
   margin: 20px 0 0 0;
 }
 
-.section-format {
+.section-who {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1632,9 +1636,116 @@ body ~ #hide.show {
   background-color: #fdfdfd;
 }
 
+.section-who .wrp {
+  width: 100%;
+  margin: 0;
+  padding: 4.0625em 2em 4.0625em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-who .wrp .title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 5px 0 0 0;
+  text-align: center;
+  font-family: 'Proxima Nova Cn Rg';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #6666cc;
+}
+
+.section-who .wrp .forwho-listitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.section-who .wrp .forwho-listitem .forwho-item {
+  width: calc(95% / 3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.75em;
+}
+
+.section-who .wrp .forwho-listitem .forwho-item .forwho-item-title {
+  width: 100%;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.85em;
+}
+
+.section-who .wrp .forwho-listitem .forwho-item .forwho-item-text {
+  font-family: 'Proxima Nova Cn Lt';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.65em;
+}
+
+.section-format {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: #000;
+  background-color: #f7f7f7;
+}
+
 .section-format .wrp {
   width: 100%;
   margin: 0;
+  padding: 1em 1em 1em 1em;
 }
 
 .section-format .wrp .section-title {
@@ -1654,6 +1765,7 @@ body ~ #hide.show {
   font-weight: bold;
   font-style: normal;
   font-size: 1.75em;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #6666cc;
@@ -1768,7 +1880,7 @@ body ~ #hide.show {
 .section-prices {
   background: linear-gradient(45deg, #003399 25%, #333399 40%, #6666cc);
   padding: 15px 25px;
-  min-height: 575px;
+  min-height: 675px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1783,6 +1895,7 @@ body ~ #hide.show {
 .section-prices .wrp {
   width: 100%;
   margin: 0;
+  padding: 1em 1em 1em 1em;
 }
 
 .section-prices .section-title {
@@ -1877,12 +1990,11 @@ body ~ #hide.show {
       flex-shrink: 1;
   -ms-flex-preferred-size: 350px;
       flex-basis: 350px;
-  overflow: hidden;
 }
 
 .section-prices .listCards .card {
   position: relative;
-  min-height: 450px;
+  min-height: 500px;
   background-color: transparent;
   border: 1px solid #ffffff;
   -ms-flex-preferred-size: 450px;
@@ -1903,6 +2015,20 @@ body ~ #hide.show {
 
 .section-prices .listCards .card .title {
   text-transform: uppercase;
+}
+
+.section-prices .listCards .card .length {
+  width: 100%;
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
+  font-weight: normal;
+  font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.25em;
 }
 
 .section-prices .listCards .card .salePercent {
@@ -2065,7 +2191,7 @@ body ~ #hide.show {
   margin: 0 auto;
   text-transform: uppercase;
   text-decoration: none;
-  border: 1px solid #e1e1e1;
+  border: 1px solid #ffffff;
   line-height: 2.5em;
   border-radius: 7px;
   font-family: 'Proxima Nova Cn Rg', 'sans-serif';
@@ -2080,21 +2206,59 @@ body ~ #hide.show {
 
 .section-prices .listCards .card:nth-child(3) .link {
   color: #000;
+  border: 1px solid #242424;
 }
 
 .section-prices .listCards .card .more {
   margin: 0 auto;
   width: 50%;
-  background: linear-gradient(45deg, #ff9900 40%, #ff9966);
+  background-color: transparent;
   border-radius: 7px;
+  border: 1px solid #fff;
   color: #fff;
   line-height: 2;
   font-family: 'Proxima Nova Cn Rg', 'sans-serif';
   font-weight: normal;
   font-style: normal;
   text-align: center;
-  opacity: 0;
+  opacity: 0.75;
   cursor: help;
+}
+
+.section-prices .listCards .card:nth-child(3) .more {
+  opacity: 1;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.section-prices .listCards .card:nth-child(2) .hover .title,
+.section-prices .listCards .card:nth-child(2) .hover .title,
+.section-prices .listCards .card:nth-child(1) .hover .title,
+.section-prices .listCards .card:nth-child(1) .hover .title {
+  color: #fff;
+}
+
+.section-prices .listCards .card:nth-child(2) .hover .more.show,
+.section-prices .listCards .card:nth-child(2) .hover .more.show,
+.section-prices .listCards .card:nth-child(1) .hover .more.show,
+.section-prices .listCards .card:nth-child(1) .hover .more.show {
+  opacity: 1;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px 1px #555555;
+          box-shadow: 0 0 10px 1px #555555;
+  color: #000;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.section-prices .listCards .card:nth-child(2) .hover .link,
+.section-prices .listCards .card:nth-child(2) .hover .link,
+.section-prices .listCards .card:nth-child(1) .hover .link,
+.section-prices .listCards .card:nth-child(1) .hover .link {
+  background-color: #fff;
+  color: #000;
+  -webkit-box-shadow: 0 0 10px 1px #555;
+          box-shadow: 0 0 10px 1px #555;
 }
 
 .section-prices .listCards .card:hover:nth-child(2) .title,
@@ -2110,7 +2274,7 @@ body ~ #hide.show {
   background-color: #fff;
   -webkit-box-shadow: 0 0 10px 1px #555555;
           box-shadow: 0 0 10px 1px #555555;
-  color: #ffffff;
+  color: #000;
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 }
@@ -2129,7 +2293,12 @@ body ~ #hide.show {
 }
 
 .section-prices .listCards .card:hover:nth-child(3) .more.show {
+  background-color: #ff9900;
+  color: #fff;
   opacity: 1;
+  border: 1px solid #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 }
@@ -2141,6 +2310,32 @@ body ~ #hide.show {
 .section-prices .listCards .card:hover:nth-child(3) .link {
   background: linear-gradient(45deg, #ff9900 40%, #ff9966);
   color: #fff;
+  border: 1px solid #fff;
+}
+
+.section-prices .listCards .card:nth-child(3) .hover .title {
+  color: #000;
+}
+
+.section-prices .listCards .card:nth-child(3) .hover .more.show {
+  background-color: #ff9900;
+  color: #fff;
+  opacity: 1;
+  border: 1px solid #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.section-prices .listCards .card:nth-child(3) .hover .sale {
+  color: #ff6600;
+}
+
+.section-prices .listCards .card:nth-child(3) .hover .link {
+  background: linear-gradient(45deg, #ff9900 40%, #ff9966);
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 .section-form {
@@ -2160,6 +2355,7 @@ body ~ #hide.show {
 .section-form .wrp {
   width: 100%;
   margin: 0;
+  padding: 1em 1em 1em 1em;
 }
 
 .section-form .title {
@@ -2174,6 +2370,7 @@ body ~ #hide.show {
       -ms-flex-align: start;
           align-items: flex-start;
   margin: 5px 0 0 0;
+  text-align: center;
   font-family: 'Proxima Nova Cn Rg';
   font-weight: bold;
   font-style: normal;
@@ -2295,6 +2492,7 @@ body ~ #hide.show {
 .footer .wrp {
   width: 100%;
   margin: 0;
+  padding: 1em 1em 1em 1em;
   height: 100px;
   font-family: 'Proxima Nova Cn Rg', 'sans-serif';
   font-weight: normal;
@@ -2508,9 +2706,6 @@ body ~ #hide.show {
   }
   #popup .show {
     right: 10px;
-  }
-  .slider:focus, .slider:focus-within, .slider:focus-visible {
-    background-color: black;
   }
 }
 

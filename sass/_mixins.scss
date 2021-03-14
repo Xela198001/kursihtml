@@ -1,6 +1,7 @@
-@mixin sectionWidth {
+@mixin sectionWidth($top: 1em, $right: 1em, $buttom:1em, $left: 1em) {
   width: 100%;
   margin: 0;
+  padding: $top $right $buttom $left;
 }
 
 @mixin fontRG {
@@ -35,8 +36,28 @@
       color: #000;
 }
 
+@mixin sectionTitle {
+  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 5px 0 0 0;
+    text-align: center;
+    @include h2;
+}
+
+@mixin sectionParam($bgc: #fff) {
+  display: flex;
+  flex-shrink: 1;
+  flex-grow: 1;
+  color: #000;
+  background-color: $bgc;
+}
+
 @function em-calc($size, $font-size : 16px) {
     $font-size: $font-size + 0px;
     $remSize: $size / $font-size;
     @return #{$remSize}em;
 }
+
+

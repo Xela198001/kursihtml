@@ -6,12 +6,10 @@
 //     item.addEventListener("click", toggleShowHide, false);
 //     let cardFixed = item.cloneNode(true);
 //     function toggleShowHide() {
-//       console.log(cardFixed);
 //       if (!ShowHide.classList.contains("show")) {
 //         ShowHide.classList.toggle("show");
 //         ShowHide.appendChild(cardFixed);
 //       }
-//       //console.log(item);
 //     }
 
 //     hide.addEventListener("click", handleHide, false);
@@ -24,7 +22,3 @@
 //   });
 // }
 
-
-// function foo(count) {
-//   console.log(count);
-// };
