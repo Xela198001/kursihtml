@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+Disallow: /yandex_ed5446e554d4bef4.html
+Disallow: /touch.html

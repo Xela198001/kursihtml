@@ -25,12 +25,12 @@
     box-sizing: border-box;
   }
 
-  & .text {
+  & .title-text {
     width: 100%;
     padding: 1em 2em;
     box-sizing: border-box;
     @include fontRG;
-    font-size: 0.85em;
+    font-size: 1em;
   }
 
   & .listitems {
@@ -61,7 +61,7 @@
       background-color: $bg-color-primary-1;
       overflow: hidden;
       margin: 1.5rem 0.1rem;
-      padding: 2em;
+      padding: 2em 0.5em;
       @include fontRG;
       font-size: 1.75em;
       box-sizing: border-box;
