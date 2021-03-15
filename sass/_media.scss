@@ -114,21 +114,21 @@
   .section-prices {
     padding: 15px 10px;
     & .listCards {
-    flex-wrap: wrap;
+      flex-wrap: wrap;
 
-    & .card {
-      width: 100%;
-      flex-basis: 100%;
-      padding: 0;
-      background-color: transparent;
-      padding: 15px 10px;
-      border: 1px solid #fff;
-
-      & .listItems .item {
+      & .card {
+        width: 100%;
+        flex-basis: 100%;
         padding: 0;
+        background-color: transparent;
+        padding: 15px 10px;
+        border: 1px solid #fff;
+
+        & .listItems .item {
+          padding: 0;
+        }
       }
     }
-  }
   }
 
   .section-form {
@@ -225,14 +225,22 @@
 }
 
 @media (min-width: 577px) and (max-width: 992px) {
-.header .head .head-text .wrp span:nth-child(2) {
-font-size: 1.25em;
-}
+  .header .head .head-text .wrp span:nth-child(2) {
+    font-size: 1.25em;
 
-.section-advantages .listItems .item {
-width: #{(100% / 2)-4};
-min-height: 160px;
-}
+    .section-know {
+      .know-listitem {
+        .know-item {
+          width: calc(95% / 2);
+        }
+      }
+    }
+  }
+
+  .section-advantages .listItems .item {
+    width: #{(100% / 2)-4};
+    min-height: 160px;
+  }
 
   .section-format .wrp .format-listitems {
     & .format-listitems-item {
