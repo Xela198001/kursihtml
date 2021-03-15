@@ -700,6 +700,7 @@ const Akkordion = (e, t) => {
 
 /* Устанавливаем стартовый индекс слайда по умолчанию: */
 let slideIndex = 1;
+const pagination = document.querySelectorAll(".pagination .item");
 
 const Carousel = (n) => {
   const cards = listCard;
@@ -711,15 +712,17 @@ const Carousel = (n) => {
     slideIndex = cards.length;
   }
 
-  cards.forEach((item) => {
+  cards.forEach((item, i) => {
     item.classList.add("hide");
     item.classList.remove("show");
+    pagination[i].classList.remove("action");
   });
   // cards[0].classList.add("hide");
 
   /* Делаем элемент блочным: */
   cards[slideIndex - 1].classList.toggle("hide");
   cards[slideIndex - 1].classList.toggle("show");
+  pagination[slideIndex - 1].classList.toggle("action");
 };
 
 // Carousel(listCard)
