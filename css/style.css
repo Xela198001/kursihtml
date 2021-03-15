@@ -882,6 +882,8 @@ body ~ #hide.show {
   width: 100%;
   margin: 0;
   padding: 1em 1em 1em 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1005,6 +1007,8 @@ body ~ #hide.show {
   width: 100%;
   margin: 0;
   padding: 0 0 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .header .top {
@@ -1389,6 +1393,8 @@ body ~ #hide.show {
   width: 100%;
   margin: 0;
   padding: 1em 1em 1em 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 30px 0;
 }
 
@@ -1533,6 +1539,8 @@ body ~ #hide.show {
   width: 100%;
   margin: 0;
   padding: 1em 1em 1em 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .section-advantages .title {
@@ -1624,6 +1632,7 @@ body ~ #hide.show {
 }
 
 .section-who {
+  display: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1640,6 +1649,8 @@ body ~ #hide.show {
   width: 100%;
   margin: 0;
   padding: 4.0625em 2em 4.0625em 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1686,6 +1697,8 @@ body ~ #hide.show {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
 }
 
 .section-who .wrp .forwho-listitem .forwho-item {
@@ -1719,14 +1732,12 @@ body ~ #hide.show {
   font-family: 'Proxima Nova Cn Rg', 'sans-serif';
   font-weight: normal;
   font-style: normal;
-  font-size: 0.85em;
 }
 
 .section-who .wrp .forwho-listitem .forwho-item .forwho-item-text {
   font-family: 'Proxima Nova Cn Lt';
   font-weight: 300;
   font-style: normal;
-  font-size: 0.65em;
 }
 
 .section-know {
@@ -1746,6 +1757,8 @@ body ~ #hide.show {
   width: 100%;
   margin: 0;
   padding: 4.0625em 2em 4.0625em 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1854,6 +1867,8 @@ body ~ #hide.show {
   width: 100%;
   margin: 0;
   padding: 1em 1em 1em 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .section-format .wrp .section-title {
@@ -2004,6 +2019,8 @@ body ~ #hide.show {
   width: 100%;
   margin: 0;
   padding: 1em 1em 1em 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2016,6 +2033,7 @@ body ~ #hide.show {
 }
 
 .section-prices .section-title {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2126,12 +2144,11 @@ body ~ #hide.show {
   content: "";
   width: 6px;
   height: 6px;
-  border: 1px solid #b5b4b4;
-  background-color: #777777;
+  background-color: #dadada;
   border-radius: 50%;
   position: absolute;
-  left: 1px;
-  top: 1px;
+  left: 2px;
+  top: 2px;
 }
 
 .section-prices .listCards {
@@ -2511,6 +2528,8 @@ body ~ #hide.show {
   width: 100%;
   margin: 0;
   padding: 1em 1em 1em 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .section-form .title {
@@ -2648,6 +2667,8 @@ body ~ #hide.show {
   width: 100%;
   margin: 0;
   padding: 1em 1em 1em 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 100px;
   font-family: 'Proxima Nova Cn Rg', 'sans-serif';
   font-weight: normal;
@@ -2663,8 +2684,7 @@ body ~ #hide.show {
       -ms-flex-align: center;
           align-items: center;
   padding: 1em 3em;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .ya-share2__container.ya-share2__container_color-scheme_blackwhite .ya-share2__badge, .ya-share2__container.ya-share2__container_color-scheme_blackwhite .ya-share2__mobile-popup-badge {
@@ -2833,6 +2853,9 @@ body ~ #hide.show {
   .section-format .wrp .format-listitems .format-listitems-item {
     width: 100%;
   }
+  .section-who .wrp .forwho-listitem .forwho-item {
+    width: calc(95% / 1);
+  }
   .section-know .wrp .know-listitem .know-item {
     width: calc(95% / 1);
   }
@@ -2842,6 +2865,8 @@ body ~ #hide.show {
   .section-prices .listCards {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
   }
   .section-prices .listCards .card {
     width: 100%;
@@ -2852,8 +2877,8 @@ body ~ #hide.show {
     padding: 15px 10px;
     border: 1px solid #fff;
   }
-  .section-prices .listCards .card .listItems .item {
-    padding: 0;
+  .section-prices .listCards .card .listitems .item {
+    padding: 5px;
   }
   .section-form form {
     width: 300px;
@@ -2928,6 +2953,9 @@ body ~ #hide.show {
 @media (min-width: 577px) and (max-width: 992px) {
   .header .head .head-text .wrp span:nth-child(2) {
     font-size: 1.25em;
+  }
+  .section-who .wrp .forwho-listitem .forwho-item {
+    width: calc(95% / 1);
   }
   .section-know .wrp .know-listitem .know-item {
     width: calc(95% / 2);

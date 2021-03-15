@@ -111,6 +111,16 @@
     width: 100%;
   }
 
+  .section-who {
+    & .wrp {
+      & .forwho-listitem {
+        & .forwho-item {
+          width: calc(95% / 1);
+        }
+      }
+    }
+  }
+
   .section-know {
     & .wrp {
       & .know-listitem {
@@ -125,6 +135,7 @@
     padding: 15px 10px;
     & .listCards {
       flex-wrap: wrap;
+      flex-basis: 200px;
 
       & .card {
         width: 100%;
@@ -134,8 +145,8 @@
         padding: 15px 10px;
         border: 1px solid #fff;
 
-        & .listItems .item {
-          padding: 0;
+        & .listitems .item {
+          padding: 5px;
         }
       }
     }
@@ -237,6 +248,16 @@
 @media (min-width: 577px) and (max-width: 992px) {
   .header .head .head-text .wrp span:nth-child(2) {
     font-size: 1.25em;
+  }
+
+  .section-who {
+    .wrp {
+      .forwho-listitem {
+        .forwho-item {
+          width: calc(95% / 1);
+        }
+      }
+    }
   }
 
   .section-know {
