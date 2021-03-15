@@ -1,4 +1,5 @@
 .section-who {
+  display: none
   @include sectionParam($bg-color-primary-1);
 
   .wrp {

@@ -1896,6 +1896,15 @@ body ~ #hide.show {
   width: 100%;
   margin: 0;
   padding: 1em 1em 1em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .section-prices .section-title {
@@ -1916,13 +1925,14 @@ body ~ #hide.show {
 }
 
 .section-prices .slider {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1977,6 +1987,43 @@ body ~ #hide.show {
 
 .section-prices .slider .next:hover {
   border-color: #ff6600;
+}
+
+.section-prices .slider .pagination {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-prices .slider .pagination .item {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb8b8;
+  margin: 20px 15px;
+  border-radius: 50%;
+}
+
+.section-prices .slider .pagination .item.action {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  background-color: #fff;
+  position: relative;
+}
+
+.section-prices .slider .pagination .item.action:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border: 1px solid #b5b4b4;
+  background-color: #777777;
+  border-radius: 50%;
+  position: absolute;
+  left: 1px;
+  top: 1px;
 }
 
 .section-prices .listCards {
