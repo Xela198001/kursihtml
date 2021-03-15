@@ -111,6 +111,16 @@
     width: 100%;
   }
 
+  .section-know {
+    & .wrp {
+      & .know-listitem {
+        & .know-item {
+          width: calc(95% / 1);
+        }
+      }
+    }
+  }
+
   .section-prices {
     padding: 15px 10px;
     & .listCards {
@@ -227,10 +237,12 @@
 @media (min-width: 577px) and (max-width: 992px) {
   .header .head .head-text .wrp span:nth-child(2) {
     font-size: 1.25em;
+  }
 
-    .section-know {
-      .know-listitem {
-        .know-item {
+  .section-know {
+    & .wrp {
+      & .know-listitem {
+        & .know-item {
           width: calc(95% / 2);
         }
       }

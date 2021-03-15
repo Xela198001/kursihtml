@@ -2786,6 +2786,9 @@ body ~ #hide.show {
   .section-format .wrp .format-listitems .format-listitems-item {
     width: 100%;
   }
+  .section-know .wrp .know-listitem .know-item {
+    width: calc(95% / 1);
+  }
   .section-prices {
     padding: 15px 10px;
   }
@@ -2879,7 +2882,7 @@ body ~ #hide.show {
   .header .head .head-text .wrp span:nth-child(2) {
     font-size: 1.25em;
   }
-  .header .head .head-text .wrp span:nth-child(2) .section-know .know-listitem .know-item {
+  .section-know .wrp .know-listitem .know-item {
     width: calc(95% / 2);
   }
   .section-advantages .listItems .item {
