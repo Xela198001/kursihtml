@@ -625,14 +625,14 @@ function Stat(z, v, s) {
   if (s > 250) {
     setInterval(() => {
       if (i <= z) {
-        i = i + 137;
+        i = i + 400;
         pay.innerHTML = i.toLocaleString() + " руб.";
       }
     }, 30);
 
     setInterval(() => {
       if (j <= v) {
-        j = j + 7;
+        j = j + 30;
         vacancies.innerHTML = j.toLocaleString() + " +";
       }
     }, 10);
@@ -701,7 +701,7 @@ const Akkordion = (e, t) => {
 /** Слайдер */
 
 /** Устанавливаем стартовый индекс слайда по умолчанию: */
-let slideIndex = 1;
+let slideIndex = 3;
 const pagination = document.querySelectorAll(".pagination .item");
 
 const Carousel = (n) => {

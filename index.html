@@ -6,8 +6,8 @@
     <meta name="keywords" content="курсы, ронтенд, Frontend-разработчик, для всех, практическе заданияб профессия, карьера, IT, веб разработчик">
     <meta name="description" content="Курсы Frontend-разработчик для всех. Практические занятия помогут освоить ппрофессию и подготовят к старту карьеры в IT">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/normalize.css?v=3.0" />
+    <link rel="stylesheet" href="./css/style.css?v=3.0" />
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <title>FreeSchool - онлайн курсы от HTML-верстальщика до Frontend-разработчика</title>
@@ -30,15 +30,24 @@
   <body>
     <script>
       window.onload = function () {
-        document.body.classList.add("loaded_hiding");
+        const preloader = document.querySelector("#preloader");
+        const timeOut = preloader.getAttribute("data-time");
+        console.log(timeOut)
+        
+        window.setTimeout(() => {
+          document.body.classList.add("loaded_hiding");
+          window.setTimeout(function () {
+          document.body.classList.add("loaded");
+          document.body.classList.remove("loaded_hiding");
+        }, timeOut*1000);
+        }, timeOut*1000);
         window.setTimeout(function () {
           document.body.classList.add("loaded");
           document.body.classList.remove("loaded_hiding");
-        }, 500);
+        }, timeOut*1000);
       };
     </script>
-    <div class="your-loader"></div>
-    <div class="preloader">
+    <div id="preloader" class="preloader" data-time="2">
       <div class="logo">
                 <span>FS</span>
                 <span>freeschool</span>
@@ -535,8 +544,8 @@ c1.182,0.812,2.079,0.633,2.079,0.633l4.181-0.056c0,0,2.186-0.136,1.149-1.858C38.
     </div>
     <div id="popup"></div>
     <div class="width"></div>
-    <script type="text/javascript" src="js/timer.js"></script>
-    <script type="text/javascript" async src="js/script.js"></script>
+    <script type="text/javascript" src="js/timer.js?v=3.0"></script>
+    <script type="text/javascript" async src="js/script.js?v=3.0"></script>
 <script async src="https://usocial.pro/usocial/usocial.js?uid=b2d0a1c947f59842&v=6.1.5" data-script="usocial" charset="utf-8"></script>
     <!-- <script type="text/javascript"  defer src="./js/card.js"></script> -->
   </body>

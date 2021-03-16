@@ -26,7 +26,9 @@
   .header {
     & .top {
       & .wrp {
-        & .top-logo,
+        & .top-logo{
+
+        }
         & .top-button {
           display: none;
         }
@@ -188,10 +190,10 @@
     & .top {
       & .wrp {
         & .top-logo {
-          display: none;
+          // display: block;
         }
         & .top-button {
-          display: block;
+          display: none;
         }
       }
     }

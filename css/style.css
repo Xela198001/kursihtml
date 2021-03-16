@@ -395,7 +395,7 @@
   font-weight: bold;
   font-style: normal;
   text-transform: uppercase;
-  font-size: 1.25em;
+  font-size: 1.5em;
   color: #ff9900;
 }
 
@@ -404,14 +404,14 @@
   font-weight: normal;
   font-style: normal;
   text-transform: uppercase;
-  font-size: 0.65em;
+  font-size: 0.85em;
 }
 
 .preloader .logo span:nth-child(3) {
   font-family: 'Proxima Nova Cn Lt';
   font-weight: 300;
   font-style: normal;
-  font-size: 0.5em;
+  font-size: 0.75em;
 }
 
 .preloader__image {
@@ -440,13 +440,15 @@
 }
 
 .loaded_hiding .preloader {
-  -webkit-transition: 0.3s opacity;
-  transition: 0.3s opacity;
-  opacity: 0;
+  opacity: 1;
+  -webkit-transition: opacity 1.75s ease-in-out;
+  transition: opacity 1.75s ease-in-out;
 }
 
 .loaded .preloader {
-  display: none;
+  top: 100%;
+  -webkit-transition: top 0.5s ease-in-out, display 1.75s ease-in-out;
+  transition: top 0.5s ease-in-out, display 1.75s ease-in-out;
 }
 
 #hide {
@@ -1708,7 +1710,7 @@ body ~ #hide.show {
 .section-who .wrp {
   width: 100%;
   margin: 0;
-  padding: 4.0625em 2em 4.0625em 2em;
+  padding: 4.0625em 1em 4.0625em 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -1780,6 +1782,10 @@ body ~ #hide.show {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0.75em;
+  background-color: white;
+  margin: 5px 2.5px 0;
+  -webkit-box-shadow: 0 0 5px 1px #eaeaea;
+          box-shadow: 0 0 5px 1px #eaeaea;
 }
 
 .section-who .wrp .forwho-listitem .forwho-item .forwho-item-title {
@@ -1816,7 +1822,7 @@ body ~ #hide.show {
 .section-know .wrp {
   width: 100%;
   margin: 0;
-  padding: 4.0625em 2em 4.0625em 2em;
+  padding: 4.0625em 1em 4.0625em 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -1889,6 +1895,10 @@ body ~ #hide.show {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0.75em;
+  background-color: white;
+  margin: 5px 2.5px 0;
+  -webkit-box-shadow: 0 0 5px 1px #eaeaea;
+          box-shadow: 0 0 5px 1px #eaeaea;
 }
 
 .section-know .wrp .know-listitem .know-item .know-item-title {
@@ -2853,7 +2863,6 @@ body ~ #hide.show {
   .countdown-text {
     font-size: 0.5em;
   }
-  .header .top .wrp .top-logo,
   .header .top .wrp .top-button {
     display: none;
   }
@@ -2966,11 +2975,8 @@ body ~ #hide.show {
     width: 100%;
     padding: 50px;
   }
-  .header .top .wrp .top-logo {
-    display: none;
-  }
   .header .top .wrp .top-button {
-    display: block;
+    display: none;
   }
   .header .head .wrp {
     padding: 1em;

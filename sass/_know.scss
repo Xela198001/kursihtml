@@ -2,7 +2,7 @@
   @include sectionParam($bg-color-primary-0);
 
   .wrp {
-    @include sectionWidth(4.0625em, 2em, 4.0625em, 2em);
+    @include sectionWidth(4.0625em, 1em, 4.0625em, 1em);
 
     display: flex;
     flex-shrink: 1;
@@ -16,8 +16,8 @@
 
     .know-listitem {
       display: flex;
-    flex: 1 1;
-    flex-flow: row wrap;
+      flex: 1 1;
+      flex-flow: row wrap;
 
       .know-item {
         width: calc(95% / 4);
@@ -28,6 +28,9 @@
         flex-wrap: wrap;
         box-sizing: border-box;
         padding: 0.75em;
+        background-color: white;
+        margin: 5px 2.5px 0;
+        box-shadow: 0 0 5px 1px #eaeaea;
 
         .know-item-title {
           width: 100%;
@@ -35,7 +38,7 @@
           flex-grow: 1;
           @include fontRG;
           // font-size: 0.85em;
-          text-align: center
+          text-align: center;
         }
         .know-item-text {
           @include fontLT;
