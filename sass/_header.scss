@@ -1,15 +1,24 @@
 @mixin bgLgOrange {
-  background: linear-gradient(60deg, $color-primary-2 0%, $color-primary-0, $color-primary-0)
+  background: linear-gradient(
+    60deg,
+    $color-primary-2 0%,
+    $color-primary-0,
+    $color-primary-0
+  );
 }
 
 @mixin bgLgBlue {
-  background: linear-gradient(
-60deg
-, #003399 0%, #6666cc 60%, #9999cc);
+  background: linear-gradient(60deg, #003399 0%, #6666cc 60%, #9999cc);
 }
 
 @mixin bgLgOrange1 {
-  background: linear-gradient(60deg, #792f07 0%, #d46f07 37%,#f57c00 65%, #ff9900 100%);
+  background: linear-gradient(
+    60deg,
+    #792f07 0%,
+    #d46f07 37%,
+    #f57c00 65%,
+    #ff9900 100%
+  );
 }
 
 #iconVk {
@@ -22,7 +31,7 @@
   @include bgLgBlue;
 
   & .wrp {
-    @include sectionWidth(0,0,0,0);
+    @include sectionWidth(0, 0, 0, 0);
   }
 
   & .top {
@@ -57,33 +66,33 @@
 
       & .top-logo {
         display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0.1em;
-    box-sizing: border-box;
-    & span {
-      width: 100%;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0.1em;
+        box-sizing: border-box;
+        & span {
+          width: 100%;
+          text-align: center;
+          margin: 0;
+          padding: 0;
+        }
 
-    & span:first-child {
-      @include fontBD;
-      text-transform: uppercase;
-      font-size: 1.25em;
-      color: $color-primary-1;
-    }
-    & span:nth-child(2) {
-      @include fontRG;
-      text-transform: uppercase;
-      font-size: 0.65em;
-    }
+        & span:first-child {
+          @include fontBD;
+          text-transform: uppercase;
+          font-size: 1.25em;
+          color: $color-primary-1;
+        }
+        & span:nth-child(2) {
+          @include fontRG;
+          text-transform: uppercase;
+          font-size: 0.65em;
+        }
 
-    & span:nth-child(3) {
-      @include fontLT;
-      font-size: 0.5em;
-    }
+        & span:nth-child(3) {
+          @include fontLT;
+          font-size: 0.5em;
+        }
       }
 
       & .top-contacts {
@@ -97,7 +106,7 @@
           flex-direction: row;
           justify-content: center;
 
-         & .social-link {
+          & .social-link {
             margin: 0.3rem;
             text-decoration: none;
             // flex-shrink: 1;
@@ -212,8 +221,8 @@
             background-color: transparent;
             color: currentColor;
             text-decoration: none;
-                letter-spacing: 1px;
-    font-size: 0.85em;
+            letter-spacing: 1px;
+            font-size: 0.85em;
           }
         }
       }
@@ -280,4 +289,3 @@
     }
   }
 }
-

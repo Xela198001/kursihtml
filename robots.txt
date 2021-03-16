@@ -1,4 +1,13 @@
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /touch.html
+Disallow: /.htaccess
 Disallow: /yandex_ed5446e554d4bef4.html
 Disallow: /touch.html
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /img/
+Disallow: /js/
+Disallow: /payment/
+Disallow: /sass/
+Disallow: /telegram/

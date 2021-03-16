@@ -604,7 +604,7 @@ window.addEventListener(
 
 // window.addEventListener("touchmove", (event) => { console.log(event.targetTouches[0].pageY); }, false);
 
-document.addEventListener(
+window.addEventListener(
   "touchstart",
   function scrollStat(event) {
     event.preventDefault();
@@ -612,7 +612,7 @@ document.addEventListener(
     scrolly = event.targetTouches[0].pageY;
     if (scrolly > 1300) {
       Stat(87400, 5233, scrolly);
-      document.removeEventListener("touchstart", scrollStat, false);
+      window.removeEventListener("touchstart", scrollStat, false);
     };
   },
   false
