@@ -133,9 +133,19 @@
 
   .section-prices {
     padding: 15px 10px;
+
+    & .slider {
+      justify-content: center;
+
+      & .previous, & .next {
+      display: none;
+    }
+    }
+
     & .listCards {
+      height: 600px;
       flex-wrap: wrap;
-      flex-basis: 200px;
+      flex-basis: 300px;
 
       & .card {
         width: 100%;

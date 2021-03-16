@@ -2922,11 +2922,20 @@ body ~ #hide.show {
   .section-prices {
     padding: 15px 10px;
   }
+  .section-prices .slider {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-prices .slider .previous, .section-prices .slider .next {
+    display: none;
+  }
   .section-prices .listCards {
+    height: 600px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-preferred-size: 200px;
-        flex-basis: 200px;
+    -ms-flex-preferred-size: 300px;
+        flex-basis: 300px;
   }
   .section-prices .listCards .card {
     width: 100%;

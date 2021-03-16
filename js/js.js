@@ -901,10 +901,12 @@ const Message = (message) => {
 
 /** Swipe */
 
+const slider = document.querySelector(".slider");
+
 var startPoint = {};
 var nowPoint;
 var ldelay;
-document.addEventListener(
+slider.addEventListener(
   "touchstart",
   function (event) {
     event.preventDefault();
@@ -916,7 +918,7 @@ document.addEventListener(
   false
 );
 /*Ловим движение пальцем*/
-document.addEventListener(
+slider.addEventListener(
   "touchmove",
   function (event) {
     event.preventDefault();
@@ -939,7 +941,7 @@ document.addEventListener(
   false
 );
 /*Ловим отпускание пальца*/
-document.addEventListener(
+slider.addEventListener(
   "touchend",
   function (event) {
     var pdelay = new Date();

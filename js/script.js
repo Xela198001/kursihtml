@@ -639,7 +639,7 @@ function Stat(z, v, s) {
   }
 }
 
-/**Таймер обратного отсчета */
+/**popup покупки */
 const paid = (status) => {
   const frag = document.createDocumentFragment();
   const body = document.createElement("div");
@@ -666,6 +666,8 @@ setTimeout(() => {
     popup.querySelector(".body").remove();
   }, 2000);
 }, 40000);
+
+/**----------------------------------- */
 
 /** Аккордион */
 const Akkordion = (e, t) => {
@@ -698,7 +700,7 @@ const Akkordion = (e, t) => {
 
 /** Слайдер */
 
-/* Устанавливаем стартовый индекс слайда по умолчанию: */
+/** Устанавливаем стартовый индекс слайда по умолчанию: */
 let slideIndex = 1;
 const pagination = document.querySelectorAll(".pagination .item");
 
@@ -896,66 +898,74 @@ listCard[2].addEventListener('touchstart', (e) => {
 
 /** Swipe */
 
+
+const slider = document.querySelector(".slider");
+
 var startPoint = {};
 var nowPoint;
 var ldelay;
-// document.addEventListener(
-//   "touchstart",
-//   function (event) {
-//     event.preventDefault();
-//     event.stopPropagation();
-//     startPoint.x = event.changedTouches[0].pageX;
-//     startPoint.y = event.changedTouches[0].pageY;
-//     ldelay = new Date();
-//   },
-//   false
-// );
-// /*Ловим движение пальцем*/
-// document.addEventListener(
-//   "touchmove",
-//   function (event) {
-//     event.preventDefault();
-//     event.stopPropagation();
-//     var otk = {};
-//     nowPoint = event.changedTouches[0];
-//     otk.x = nowPoint.pageX - startPoint.x;
-//     /*Обработайте данные*/
-//     /*Для примера*/
-//     if (Math.abs(otk.x) > 200) {
-//       if (otk.x < 0) {
-//         /*СВАЙП ВЛЕВО(ПРЕД.СТРАНИЦА)*/
-//       }
-//       if (otk.x > 0) {
-//         /*СВАЙП ВПРАВО(СЛЕД.СТРАНИЦА)*/
-//       }
-//       startPoint = { x: nowPoint.pageX, y: nowPoint.pageY };
-//     }
-//   },
-//   false
-// );
-// /*Ловим отпускание пальца*/
-// document.addEventListener(
-//   "touchend",
-//   function (event) {
-//     var pdelay = new Date();
-//     nowPoint = event.changedTouches[0];
-//     var xAbs = Math.abs(startPoint.x - nowPoint.pageX);
-//     var yAbs = Math.abs(startPoint.y - nowPoint.pageY);
-//     if ((xAbs > 20 || yAbs > 20) && pdelay.getTime() - ldelay.getTime() < 200) {
-//       if (xAbs > yAbs) {
-//         if (nowPoint.pageX < startPoint.x) {
-//           /*СВАЙП ВЛЕВО*/
-//         } else {
-//           /*СВАЙП ВПРАВО*/
-//         }
-//       } else {
-//         if (nowPoint.pageY < startPoint.y) {
-//           /*СВАЙП ВВЕРХ*/
-//         } else {
-//           /*СВАЙП ВНИЗ*/
-//         }
-//       }
-//     }
-//   },
-//   false
-// );
+slider.addEventListener(
+  "touchstart",
+  function (event) {
+    // event.preventDefault();
+    // event.stopPropagation();
+    startPoint.x = event.changedTouches[0].pageX;
+    startPoint.y = event.changedTouches[0].pageY;
+    ldelay = new Date();
+  },
+  false
+);
+/*Ловим движение пальцем*/
+slider.addEventListener(
+  "touchmove",
+  function (event) {
+    // event.preventDefault();
+    // event.stopPropagation();
+    var otk = {};
+    nowPoint = event.changedTouches[0];
+    otk.x = nowPoint.pageX - startPoint.x;
+    /*Обработайте данные*/
+    /*Для примера*/
+    if (Math.abs(otk.x) > 150) {
+      if (otk.x < 0) {
+        /*СВАЙП ВЛЕВО(ПРЕД.СТРАНИЦА)*/
+        
+          previousSlide();
+      }
+      if (otk.x > 0) {
+        /*СВАЙП ВПРАВО(СЛЕД.СТРАНИЦА)*/
+        nextSlide();
+      }
+      startPoint = { x: nowPoint.pageX, y: nowPoint.pageY };
+    }
+  },
+  false
+);
+/*Ловим отпускание пальца*/
+slider.addEventListener(
+  "touchend",
+  function (event) {
+    var pdelay = new Date();
+    nowPoint = event.changedTouches[0];
+    var xAbs = Math.abs(startPoint.x - nowPoint.pageX);
+    var yAbs = Math.abs(startPoint.y - nowPoint.pageY);
+    if ((xAbs > 20 || yAbs > 20) && pdelay.getTime() - ldelay.getTime() < 200) {
+      if (xAbs > yAbs) {
+        if (nowPoint.pageX < startPoint.x) {
+          /*СВАЙП ВЛЕВО*/
+          console.log("Влево");
+        } else {
+          /*СВАЙП ВПРАВО*/
+          console.log("Вправо");
+        }
+      } else {
+        if (nowPoint.pageY < startPoint.y) {
+          /*СВАЙП ВВЕРХ*/
+        } else {
+          /*СВАЙП ВНИЗ*/
+        }
+      }
+    }
+  },
+  false
+);
