@@ -1761,6 +1761,7 @@ body ~ #hide.show {
           flex-direction: row;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
+  margin: 1.5em 0;
 }
 
 .section-who .wrp .forwho-listitem .forwho-item {
@@ -1784,8 +1785,8 @@ body ~ #hide.show {
   padding: 0.75em;
   background-color: white;
   margin: 5px 2.5px 0;
-  -webkit-box-shadow: 0 0 5px 1px #eaeaea;
-          box-shadow: 0 0 5px 1px #eaeaea;
+  -webkit-box-shadow: 0 0 5px 1px #f9f9f9;
+          box-shadow: 0 0 5px 1px #f9f9f9;
 }
 
 .section-who .wrp .forwho-listitem .forwho-item .forwho-item-title {
@@ -1874,6 +1875,7 @@ body ~ #hide.show {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  margin: 1.5em 0;
 }
 
 .section-know .wrp .know-listitem .know-item {
@@ -1897,8 +1899,8 @@ body ~ #hide.show {
   padding: 0.75em;
   background-color: white;
   margin: 5px 2.5px 0;
-  -webkit-box-shadow: 0 0 5px 1px #eaeaea;
-          box-shadow: 0 0 5px 1px #eaeaea;
+  -webkit-box-shadow: 0 0 5px 1px #f9f9f9;
+          box-shadow: 0 0 5px 1px #f9f9f9;
 }
 
 .section-know .wrp .know-listitem .know-item .know-item-title {
