@@ -1,0 +1,291 @@
+@mixin bgLgOrange {
+  background: linear-gradient(
+    60deg,
+    $color-primary-2 0%,
+    $color-primary-0,
+    $color-primary-0
+  );
+}
+
+@mixin bgLgBlue {
+  background: linear-gradient(60deg, #003399 0%, #6666cc 60%, #9999cc);
+}
+
+@mixin bgLgOrange1 {
+  background: linear-gradient(
+    60deg,
+    #792f07 0%,
+    #d46f07 37%,
+    #f57c00 65%,
+    #ff9900 100%
+  );
+}
+
+#iconVk {
+  width: 24px;
+  height: 24px;
+}
+
+.header {
+  position: relative;
+  @include bgLgBlue;
+
+  & .wrp {
+    @include sectionWidth(0, 0, 0, 0);
+  }
+
+  & .top {
+    width: 100%;
+    min-height: 80px;
+    background-color: #fff;
+    box-shadow: 4px 0 15px -14px #0c0c0c;
+    position: fixed;
+    top: 0;
+    // left: 0;
+    // right: 0;
+    @include fontRG;
+    font-size: 1.5rem;
+    // color: #355dcac9;
+    color: $color-secondary-a-1;
+    // padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    z-index: 200;
+
+    & .wrp {
+      height: 80px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-grow: 1;
+
+      & .top-logo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0.1em;
+        box-sizing: border-box;
+        & span {
+          width: 100%;
+          text-align: center;
+          margin: 0;
+          padding: 0;
+        }
+
+        & span:first-child {
+          @include fontBD;
+          text-transform: uppercase;
+          font-size: 1.25em;
+          color: $color-primary-1;
+        }
+        & span:nth-child(2) {
+          @include fontRG;
+          text-transform: uppercase;
+          font-size: 0.65em;
+        }
+
+        & span:nth-child(3) {
+          @include fontLT;
+          font-size: 0.5em;
+        }
+      }
+
+      & .top-contacts {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        & .messenger {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+
+          & .social-link {
+            margin: 0.3rem;
+            text-decoration: none;
+            // flex-shrink: 1;
+            // flex-grow: 1;
+
+            & svg {
+              opacity: 0.75;
+            }
+
+            & .whatsapp:hover ~ .iconWhatsappBg {
+              fill: #fff;
+            }
+
+            & .imgSVG {
+              width: 32px;
+              height: 32px;
+            }
+          }
+        }
+
+        & .phone {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+        }
+      }
+
+      & .top-button {
+        & .link-button {
+          width: 20rem;
+          min-height: 2.25em;
+          border: 1px solid $color-secondary-a-1;
+          border-radius: 5px;
+          @include fontBD;
+          font-size: 0.75em;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: $color-secondary-a-1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:hover {
+            border: 1px solid #2150d3;
+            color: #2150d3;
+            box-shadow: 0px 5px 10px 2px #e1e1e1;
+          }
+
+          &:active {
+            border: 1px solid #355dcac9;
+            color: #355dcac9;
+            box-shadow: inset 0px 5px 10px 1px #e1e1e1;
+          }
+        }
+      }
+    }
+  }
+
+  & .head {
+    position: relative;
+    margin-top: 80px;
+    min-height: 300px;
+    padding: 0 2rem 1rem 2rem;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    align-content: flex-start;
+    box-sizing: border-box;
+    // background-color: #355cca;
+    // background: linear-gradient(60deg, #5e62fe 0%, #5994f3 60%, #56adee);
+
+    & .imgBg {
+      width: 35%;
+      display: none;
+      // background: url("../img/html.png") no-repeat top;
+      background-size: contain;
+      height: 300px;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+
+    & .nav {
+      width: 100%;
+      min-height: 50px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+
+      & .listItems {
+        margin: 0 15px 0 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        & .item {
+          font-family: "Proxima Nova Th";
+          font-size: 0.45emem;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #fff;
+          margin: 0 2rem 0 2rem;
+
+          & .link {
+            background-color: transparent;
+            color: currentColor;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-size: 0.85em;
+          }
+        }
+      }
+    }
+
+    & .head-text {
+      width: 100%;
+      color: #fff;
+      // margin: 150px 0 0 0;
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      flex-grow: 1;
+      flex-shrink: 1;
+
+      &::before {
+        content: "";
+        display: block;
+        height: 210px;
+        width: 5px;
+        background-color: $color-secondary-a-1;
+        margin-left: 50px;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      & .wrp {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-shrink: 1;
+        @include fontRG;
+        font-size: 2em;
+        color: currentColor;
+        letter-spacing: 1.2;
+        margin: 0 0 0 80px;
+
+        & span:nth-child(1) {
+          @include fontLT;
+          font-size: 0.75em;
+          text-transform: uppercase;
+          color: currentColor;
+        }
+
+        & span:nth-child(2) {
+          @include fontRG;
+          font-size: 1.75em;
+          color: $color-primary-3;
+          // background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+          //         -webkit-background-clip: text;
+          // -webkit-text-fill-color: transparent;
+          display: table;
+        }
+
+        & span:nth-child(3) {
+          margin: 10px 0 0 0;
+          @include fontLT;
+          font-size: 0.75em;
+          line-height: 1.5;
+          color: currentColor;
+        }
+      }
+    }
+  }
+}

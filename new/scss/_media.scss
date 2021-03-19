@@ -1,0 +1,322 @@
+@media (max-width: 576px) {
+  #hide.show {
+    width: 100%;
+    padding: 50px 5px;
+  }
+
+  .button.hide {
+    margin-right: 30px;
+  }
+
+  .countdown-number {
+    width: 50px;
+    margin: 0 5px;
+  }
+
+  .countdown-time {
+    padding: 5px;
+    margin-bottom: -64px;
+    font-size: 0.85em;
+  }
+
+  .countdown-text {
+    font-size: 0.5em;
+  }
+
+  .header {
+    & .top {
+      & .wrp {
+        & .top-logo{
+
+        }
+        & .top-button {
+          display: none;
+        }
+      }
+    }
+    & .head {
+      padding: em-calc(24px) em-calc(12px);
+
+      & .nav {
+        display: none;
+      }
+
+      & .head-text {
+        &:before {
+          content: none;
+        }
+
+        & .wrp {
+          margin: 0;
+          align-items: center;
+
+          & span:nth-child(1) {
+            font-size: 0.5em;
+          }
+
+          & span:nth-child(2) {
+            font-size: em-calc(14px);
+            width: 100%;
+            text-align: center;
+          }
+
+          & span:nth-child(3) {
+            font-size: em-calc(8px);
+          }
+        }
+      }
+    }
+  }
+
+  .section-advantages {
+    & .listItems {
+      flex-wrap: wap;
+
+      & .item {
+        width: 100%;
+        min-height: 100px;
+        margin: 0.5em 0;
+        padding: 0 em-calc(12px);
+      }
+    }
+  }
+
+  .section-stat {
+    & .wrp {
+      & .listitems {
+        width: 100%;
+        flex-direction: column;
+
+        & .item {
+          width: 100%;
+          height: 150px;
+        }
+      }
+    }
+  }
+
+  .section-format {
+    & .wrp {
+      & .format-listitems {
+        & .format-listitems-item {
+          & .circle {
+            width: 50px;
+            height: 50px;
+            color: #fff;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+  .section-format .wrp .format-listitems .format-listitems-item {
+    width: 100%;
+  }
+
+  .section-who {
+    & .wrp {
+      & .forwho-listitem {
+        & .forwho-item {
+          width: calc(95% / 1);
+        }
+      }
+    }
+  }
+
+  .section-know {
+    & .wrp {
+      & .know-listitem {
+        & .know-item {
+          width: calc(95% / 1);
+        }
+      }
+    }
+  }
+
+  .section-prices {
+    padding: 15px 10px;
+
+    & .slider {
+      justify-content: center;
+
+      & .previous, & .next {
+      display: none;
+    }
+    }
+
+    & .listCards {
+      height: 600px;
+      flex-wrap: wrap;
+      flex-basis: 300px;
+
+      & .card {
+        width: 100%;
+        flex-basis: 100%;
+        padding: 0;
+        background-color: transparent;
+        padding: 15px 10px;
+        border: 1px solid #fff;
+
+        & .listitems .item {
+          padding: 5px;
+        }
+      }
+    }
+  }
+
+  .section-form {
+    & form {
+      width: 300px;
+    }
+  }
+
+  #popup {
+    width: 300px;
+    height: 90px;
+
+    & .show {
+      right: 10px;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  #hide.show {
+    width: 100%;
+    padding: 50px;
+  }
+
+  .header {
+    & .top {
+      & .wrp {
+        & .top-logo {
+          // display: block;
+        }
+        & .top-button {
+          display: none;
+        }
+      }
+    }
+    & .head {
+      & .wrp {
+        padding: 1em;
+      }
+      & .nav {
+        display: none;
+      }
+
+      & .head-text {
+        &:before {
+          content: none;
+        }
+        & .wrp {
+          margin: 0;
+          & span:nth-child(1) {
+            font-size: 0.5em;
+          }
+
+          & span:nth-child(2) {
+            font-size: 1em;
+          }
+
+          & span:nth-child(3) {
+            font-size: calc((#{$pageWidthM}/ 48) * 1.25);
+          }
+        }
+      }
+
+      & .imgBg {
+        display: none;
+      }
+    }
+  }
+
+  .section-advantages {
+    & .listItems {
+      flex-wrap: wap;
+
+      & .item {
+        width: 100%;
+        min-height: 100px;
+        margin: 0;
+      }
+    }
+  }
+
+  .section-format .wrp .format-listitems .format-listitems-item {
+    width: 100%;
+  }
+
+  .section-prices .listCards {
+    flex-wrap: wrap;
+
+    & .card {
+      width: 100%;
+      flex-basis: 100%;
+    }
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .header .head .head-text .wrp span:nth-child(2) {
+    font-size: 1.25em;
+  }
+
+  .section-who {
+    .wrp {
+      .forwho-listitem {
+        .forwho-item {
+          width: calc(95% / 1);
+        }
+      }
+    }
+  }
+
+  .section-know {
+    & .wrp {
+      & .know-listitem {
+        & .know-item {
+          width: calc(95% / 2);
+        }
+      }
+    }
+  }
+
+  .section-advantages .listItems .item {
+    width: #{(100% / 2)-4};
+    min-height: 160px;
+  }
+
+  .section-format .wrp .format-listitems {
+    & .format-listitems-item {
+      width: #{((100% / 2)-5)};
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (min-width: 1400px) {
+  .header .wrp {
+    // width: 1170px;
+    // margin: 0 auto;
+  }
+
+  // .header .head .imgBg {
+  //   background: url(../img/html.png) no-repeat center;
+  //   background-size: cover;
+  //   position: absolute;
+  //   right: 30px;
+  //   top: 150px;
+  //   width: 675px;
+  //   height: 470px;
+  // }
+
+  // .header .head .head-text {
+  //   margin: 50px 0 0 0;
+  // }
+}

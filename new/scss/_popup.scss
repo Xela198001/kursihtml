@@ -1,0 +1,65 @@
+#popup {
+  position: fixed;
+  right: -999%;
+  top: auto;
+  width: 350px;
+  height: 90px;
+  opacity: 0;
+  box-shadow: 0 0 1px 0px #cccccc75;
+  background-color: #fff;
+  transition: opacity, right 0.2s, 2.5s ease-in-out;
+  z-index: 201;
+
+  & .body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+    & .square {
+      position: relative;
+      width: 40%;
+      height: 100%;
+      background-color: $color-primary-0;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 45%;
+        right: -5px;
+        width: 0;
+        height: 0;
+        border: 0 solid transparent;
+        border-bottom-width: 5px;
+        border-top-width: 5px;
+        border-left: 5px solid $color-primary-0;
+      }
+    }
+
+    & .text {
+      padding: 0.75em;
+      display: flex;
+      align-items: center;
+      width: 80%;
+      height: 100%;
+      @include fontLT;
+      font-size: 1em;
+      box-sizing: border-box;
+    }
+  }
+}
+
+#popup.show {
+  opacity: 1;
+  top: 100px;
+  right: 50px;
+  transition: right 2.5s ease-in-out;
+}
+
+#popup.message {
+  opacity: 1;
+  top: auto;
+  bottom: 100px;
+  right: 50px;
+  transition: right 2.5s ease-in-out;
+}

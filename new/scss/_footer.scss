@@ -1,0 +1,18 @@
+.footer {
+  background-color: $bg-color-primary-2;
+
+  .wrp {
+    @include sectionWidth;
+    height: 100px;
+    @include fontRG;
+    color: #dfdfdf;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 3em;
+    box-sizing:border-box;
+  }
+}
+.ya-share2__container.ya-share2__container_color-scheme_blackwhite .ya-share2__badge, .ya-share2__container.ya-share2__container_color-scheme_blackwhite .ya-share2__mobile-popup-badge {
+    background-color: #404040;
+}

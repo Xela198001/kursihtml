@@ -1,0 +1,51 @@
+.section-who {
+  display: none;
+  @include sectionParam($bg-color-primary-1);
+
+  .wrp {
+    @include sectionWidth(4.0625em, 1em, 4.0625em, 1em);
+
+    display: flex;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .title {
+      @include sectionTitle;
+    }
+
+    .forwho-listitem {
+      display: flex;
+      flex-direction: row;
+      flex-flow: wrap;
+      margin: 1.5em 0;
+
+      .forwho-item {
+        width: calc(95% / 3);
+        display: flex;
+        flex-shrink: 1;
+        flex-grow: 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding: 0.75em;
+        background-color: white;
+        margin: 5px 2.5px 0;
+        box-shadow: 0 0 5px 1px #f9f9f9;
+
+        .forwho-item-title {
+          width: 100%;
+          flex-shrink: 1;
+          flex-grow: 1;
+          @include fontRG;
+          // font-size: 0.85em;
+        }
+        .forwho-item-text {
+          @include fontLT;
+          // font-size: 0.65em;
+        }
+      }
+    }
+  }
+}
