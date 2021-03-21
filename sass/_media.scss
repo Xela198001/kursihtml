@@ -135,9 +135,11 @@
 
   .section-prices {
     padding: 15px 10px;
+    min-height: 1130px;
 
     & .slider {
       justify-content: center;
+      height: 975px;
 
       & .previous, & .next {
       display: none;
@@ -145,7 +147,7 @@
     }
 
     & .listCards {
-      height: 600px;
+      height: 975px;
       flex-wrap: wrap;
       flex-basis: 300px;
 

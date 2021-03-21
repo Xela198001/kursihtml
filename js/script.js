@@ -90,12 +90,16 @@ const listItemsPrice = [
     id: 2,
     title: "Курс Продвинутый",
     list: [
-      "Курс Начинающий в подарок",
-      "Курс HTML5/CSS3",
+      "HTML. Основы.",
+      "CSS. Основы.",
+      "HTML5/CSS3",
       "Основы программирования",
       "JavaScript базовый",
       "Препроцессоры SASS/SCSS, LESS",
       "Git. Базовый курс",
+      "Mobile First",
+      "Проверка ДЗ преподавателем",
+      "Чат с одногрупниками",
     ],
     skills: [
       "Изучите свойства и возможности применения HTML/CSS",
@@ -117,7 +121,7 @@ const listItemsPrice = [
     long: "2 занятия в неделю по 1,5-2 часа",
     express:
       "Экспресс: 1,5 месяца, 4 занятия в неделю по 1.5-2 часа. Стоимость курса 17 555 руб.",
-    price: 20000,
+    price: 55555,
     sale: 10555,
     program: [
       {
@@ -188,12 +192,22 @@ const listItemsPrice = [
     id: 3,
     title: "Курс Frontend-разработчик",
     list: [
-      "Курс Начинающий в подарок",
-      "Курс Продвинутый в подарок",
+      "HTML. Основы.",
+      "CSS. Основы.",
+      "HTML5/CSS3",
+      "Основы программирования",
+      "JavaScript базовый",
       "JavaScript продвинутый",
+      "Препроцессоры SASS/SCSS, LESS",
+      "Mobile First",
+      "Git. Базовый курс",
       "VueJS",
       "ReactJS",
       "Webpack",
+      "Material UI",
+      "Tailwind",
+      "Проверка ДЗ преподавателем",
+      "Чат с одногрупниками",
     ],
     skills: [
       "Изучите свойства и возможности применения HTML/CSS",
@@ -220,8 +234,8 @@ const listItemsPrice = [
     long: "2 занятия в неделю по 1,5-2 часа",
     express:
       "Экспресс: 2,5 месяца, 4 занятия в неделю по 1.5-2 часа. Стоимость курса 35 555 руб.",
-    price: 35555,
-    sale: 25555,
+    price: 95555,
+    sale: 30555,
     program: [
       {
         kurs: "HTML/CSS",
@@ -899,8 +913,8 @@ listCard[2].addEventListener('touchstart', (e) => {
 /** Swipe */
 
 
-const slider = document.querySelector(".slider");
-
+const slider = document.querySelector(".section-prices");
+console.log(slider.clientWidth);
 var startPoint = {};
 var nowPoint;
 var ldelay;
@@ -926,11 +940,11 @@ slider.addEventListener(
     otk.x = nowPoint.pageX - startPoint.x;
     /*Обработайте данные*/
     /*Для примера*/
-    if (Math.abs(otk.x) > 150) {
+    if (Math.abs(otk.x) > slider.clientWidth / 4) {
       if (otk.x < 0) {
         /*СВАЙП ВЛЕВО(ПРЕД.СТРАНИЦА)*/
-        
-          previousSlide();
+
+        previousSlide();
       }
       if (otk.x > 0) {
         /*СВАЙП ВПРАВО(СЛЕД.СТРАНИЦА)*/

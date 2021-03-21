@@ -20,6 +20,7 @@
       flex-direction: row;
       flex-flow: wrap;
       margin: 1.5em 0;
+      font-size: 1.75em;
 
       .forwho-item {
         width: calc(95% / 3);
@@ -39,11 +40,11 @@
           flex-shrink: 1;
           flex-grow: 1;
           @include fontRG;
-          // font-size: 0.85em;
+          font-size: 0.85em;
         }
         .forwho-item-text {
           @include fontLT;
-          // font-size: 0.65em;
+          font-size: 0.65em;
         }
       }
     }

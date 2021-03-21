@@ -956,12 +956,19 @@ body ~ #hide.show {
 
 .countdown-title {
   color: #ff9900;
-  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
-  font-weight: normal;
+  font-family: 'Proxima Nova Cn Rg';
+  font-weight: bold;
   font-style: normal;
   font-weight: 100;
-  font-size: 40px;
+  font-size: 54px;
+  text-transform: uppercase;
   margin: 100px auto 80px;
+  text-align: center;
+}
+
+.countdown-title span {
+  width: 100%;
+  color: #003399;
 }
 
 .countdown {
@@ -1053,6 +1060,11 @@ body ~ #hide.show {
   width: 100%;
   min-height: 1px;
   max-height: 999999px;
+  opacity: 0;
+}
+
+.contaner.show {
+  opacity: 1;
 }
 
 #iconVk {
@@ -1762,6 +1774,7 @@ body ~ #hide.show {
   -ms-flex-flow: wrap;
       flex-flow: wrap;
   margin: 1.5em 0;
+  font-size: 1.75em;
 }
 
 .section-who .wrp .forwho-listitem .forwho-item {
@@ -1799,12 +1812,14 @@ body ~ #hide.show {
   font-family: 'Proxima Nova Cn Rg', 'sans-serif';
   font-weight: normal;
   font-style: normal;
+  font-size: 0.85em;
 }
 
 .section-who .wrp .forwho-listitem .forwho-item .forwho-item-text {
   font-family: 'Proxima Nova Cn Lt';
   font-weight: 300;
   font-style: normal;
+  font-size: 0.65em;
 }
 
 .section-know {
@@ -1876,6 +1891,7 @@ body ~ #hide.show {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   margin: 1.5em 0;
+  font-size: 1.75em;
 }
 
 .section-know .wrp .know-listitem .know-item {
@@ -1913,6 +1929,7 @@ body ~ #hide.show {
   font-family: 'Proxima Nova Cn Rg', 'sans-serif';
   font-weight: normal;
   font-style: normal;
+  font-size: 0.85em;
   text-align: center;
 }
 
@@ -1920,6 +1937,7 @@ body ~ #hide.show {
   font-family: 'Proxima Nova Cn Lt';
   font-weight: 300;
   font-style: normal;
+  font-size: 0.65em;
 }
 
 .section-format {
@@ -2075,7 +2093,7 @@ body ~ #hide.show {
 .section-prices {
   background: linear-gradient(45deg, #003399 25%, #333399 40%, #6666cc);
   padding: 15px 25px;
-  min-height: 675px;
+  height: 975px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2238,7 +2256,7 @@ body ~ #hide.show {
 
 .section-prices .listCards .card {
   position: relative;
-  min-height: 500px;
+  min-height: 820px;
   background-color: transparent;
   border: 1px solid #ffffff;
   -ms-flex-preferred-size: 450px;
@@ -2932,17 +2950,19 @@ body ~ #hide.show {
   }
   .section-prices {
     padding: 15px 10px;
+    min-height: 1130px;
   }
   .section-prices .slider {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    height: 975px;
   }
   .section-prices .slider .previous, .section-prices .slider .next {
     display: none;
   }
   .section-prices .listCards {
-    height: 600px;
+    height: 975px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-preferred-size: 300px;

@@ -18,10 +18,17 @@
 
 .countdown-title {
   color: $color-primary-0;
-  @include fontRG();
+  @include fontBD;
   font-weight: 100;
-  font-size: 40px;
+  font-size: 54px;
+  text-transform: uppercase;
   margin: 100px auto 80px;
+  text-align: center;
+
+  span {
+    width: 100%;
+    color: $color-secondary-a-0;
+  }
 }
 
 .countdown {

@@ -10,7 +10,7 @@
     $color-secondary-a-3
   );
   padding: 15px 25px;
-  min-height: 675px;
+  height: 975px;
   display: flex;
   flex-grow: 1;
   flex-shrink: 1;
@@ -119,7 +119,7 @@
 
     & .card {
       position: relative;
-      min-height: 500px;
+      min-height: 820px;
       background-color: transparent;
       border: 1px solid #ffffff;
       // border-radius: 7px;

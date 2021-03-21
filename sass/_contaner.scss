@@ -2,4 +2,9 @@
   width: 100%;
   min-height: 1px;
 max-height: 999999px;
+opacity: 0;
+
+&.show {
+  opacity: 1;
+}
 }
