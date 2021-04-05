@@ -229,7 +229,7 @@
     }
 
     & .head-text {
-      width: 100%;
+      width: 60%;
       color: #fff;
       // margin: 150px 0 0 0;
       position: relative;
@@ -286,6 +286,17 @@
           color: currentColor;
         }
       }
+    }
+
+    & .head-start {
+          width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    color: #fff;
+    font-size: 1.5em;
     }
   }
 }

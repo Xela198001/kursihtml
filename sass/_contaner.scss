@@ -1,10 +1,16 @@
-.contaner {
+.container {
   width: 100%;
   min-height: 1px;
 max-height: 999999px;
 opacity: 0;
+@include fontRG;
 
 &.show {
   opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #2704c5;
 }
 }

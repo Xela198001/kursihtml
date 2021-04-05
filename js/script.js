@@ -122,7 +122,7 @@ const listItemsPrice = [
     express:
       "Экспресс: 1,5 месяца, 4 занятия в неделю по 1.5-2 часа. Стоимость курса 17 555 руб.",
     price: 55555,
-    sale: 10555,
+    sale: 19990,
     program: [
       {
         kurs: "HTML/CSS",
@@ -235,7 +235,7 @@ const listItemsPrice = [
     express:
       "Экспресс: 2,5 месяца, 4 занятия в неделю по 1.5-2 часа. Стоимость курса 35 555 руб.",
     price: 95555,
-    sale: 30555,
+    sale: 32990,
     program: [
       {
         kurs: "HTML/CSS",
@@ -376,10 +376,10 @@ function listPrice(j, n) {
 
 let price = document.querySelectorAll("div.price");
 
-function Price(price) {
+function Price() {
   let i = 0;
   listItemsPrice.map((item, i) => {
-    price[i].children[0].innerHTML = `${item.price.toLocaleString()} руб.`;
+    price[i].children[0].innerHTML = `${item.price.toLocaleString()} руб.`; 
     price[i].children[1].innerHTML = `${item.sale.toLocaleString()} руб.`;
     i++;
   });
@@ -387,7 +387,7 @@ function Price(price) {
 
 listPrice(1, "list");
 listPrice(3, "skills");
-Price(price);
+Price();
 
 /**Окно с подробным описанием */
 listCard.forEach((item, i) => {
@@ -642,11 +642,11 @@ function Stat(z, v, s) {
         i = i + 400;
         pay.innerHTML = i.toLocaleString() + " руб.";
       }
-    }, 30);
+    }, 10);
 
     setInterval(() => {
       if (j <= v) {
-        j = j + 30;
+        j = j + 10;
         vacancies.innerHTML = j.toLocaleString() + " +";
       }
     }, 10);
@@ -914,7 +914,6 @@ listCard[2].addEventListener('touchstart', (e) => {
 
 
 const slider = document.querySelector(".section-prices");
-console.log(slider.clientWidth);
 var startPoint = {};
 var nowPoint;
 var ldelay;
@@ -967,10 +966,10 @@ slider.addEventListener(
       if (xAbs > yAbs) {
         if (nowPoint.pageX < startPoint.x) {
           /*СВАЙП ВЛЕВО*/
-          console.log("Влево");
+          // console.log("Влево");
         } else {
           /*СВАЙП ВПРАВО*/
-          console.log("Вправо");
+          // console.log("Вправо");
         }
       } else {
         if (nowPoint.pageY < startPoint.y) {

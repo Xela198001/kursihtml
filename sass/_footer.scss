@@ -3,16 +3,54 @@
 
   .wrp {
     @include sectionWidth;
-    height: 100px;
+    min-height: 100px;
     @include fontRG;
     color: #dfdfdf;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 3em;
-    box-sizing:border-box;
+    padding: 2em 1em;
+    box-sizing: border-box;
+    font-size: 0.95em;
+
+    & a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    & .doc {
+      width: 30%;
+      display: flex;
+      flex-flow: column;
+      align-self: flex-start;
+    }
+
+    & .copyright {
+      width: 100%;
+      text-align: center;
+    }
+
+    & .contact {
+      width: 35%;
+
+      & .wrp {
+        width: 100%;
+        margin: 0.2em 0 0.5em;
+        display: flex;
+        flex-grow: row wrap;
+        padding: 0;
+
+        & span {
+          width: 100%;
+        }
+      }
+    }
   }
 }
-.ya-share2__container.ya-share2__container_color-scheme_blackwhite .ya-share2__badge, .ya-share2__container.ya-share2__container_color-scheme_blackwhite .ya-share2__mobile-popup-badge {
-    background-color: #404040;
+.ya-share2__container.ya-share2__container_color-scheme_blackwhite
+  .ya-share2__badge,
+.ya-share2__container.ya-share2__container_color-scheme_blackwhite
+  .ya-share2__mobile-popup-badge {
+  background-color: #404040;
 }

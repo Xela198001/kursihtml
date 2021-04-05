@@ -11,3 +11,4 @@ Disallow: /js/
 Disallow: /payment/
 Disallow: /sass/
 Disallow: /telegram/
+Disallow: /doc/
