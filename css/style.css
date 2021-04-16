@@ -1117,9 +1117,6 @@ body ~ #hide.show {
   width: 100%;
   min-height: 80px;
   background-color: #fff;
-  -webkit-box-shadow: 4px 0 15px -14px #0c0c0c;
-          box-shadow: 4px 0 15px -14px #0c0c0c;
-  position: fixed;
   top: 0;
   font-family: 'Proxima Nova Cn Rg', 'sans-serif';
   font-weight: normal;
@@ -1643,6 +1640,121 @@ body ~ #hide.show {
   font-size: 0.65em;
   text-align: center;
   margin-bottom: 0;
+}
+
+.section-get-profession {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: #000;
+  background-color: #fdfdfd;
+}
+
+.section-get-profession .wrp {
+  width: 100%;
+  margin: 0;
+  padding: 4.0625em 1em 4.0625em 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-get-profession .wrp .title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 5px 0 0 0;
+  text-align: center;
+  font-family: 'Proxima Nova Cn Rg';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #6666cc;
+}
+
+.section-get-profession .wrp .listitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 1.5em 0;
+  font-size: 1.75em;
+}
+
+.section-get-profession .wrp .listitem .item {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.75em;
+  background-color: #fdfdfd;
+  margin: 5px 2.5px 0;
+  -webkit-box-shadow: 0 0 5px 1px #f9f9f9;
+          box-shadow: 0 0 5px 1px #f9f9f9;
+}
+
+.section-get-profession .wrp .listitem .item .reviews-item-title {
+  width: 100%;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.85em;
+  text-align: center;
+}
+
+.section-get-profession .wrp .listitem .item .reviews-item-text {
+  font-family: 'Proxima Nova Cn Lt';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.65em;
 }
 
 .section-advantages {
@@ -2649,7 +2761,7 @@ body ~ #hide.show {
   border: 1px solid #fff;
 }
 
-.section-form {
+.section-reviews {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2660,6 +2772,126 @@ body ~ #hide.show {
           flex-grow: 1;
   color: #000;
   background-color: #f7f7f7;
+  overflow: hidden;
+}
+
+.section-reviews .wrp {
+  width: 100%;
+  margin: 0;
+  padding: 4.0625em 1em 4.0625em 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.section-reviews .wrp .title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 5px 0 0 0;
+  text-align: center;
+  font-family: 'Proxima Nova Cn Rg';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #6666cc;
+}
+
+.section-reviews .wrp .reviews-listitem .reviews-item {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.75em 2.75em 0.75em 0.75em;
+  background-color: white;
+  margin: 5px 15px 0;
+  -webkit-box-shadow: 0 0 5px 1px #f9f9f9;
+          box-shadow: 0 0 5px 1px #f9f9f9;
+}
+
+.section-reviews .wrp .reviews-listitem .reviews-item .reviews-item-title {
+  width: 100%;
+  margin-top: 50px;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.section-reviews .wrp .reviews-listitem .reviews-item .reviews-item-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.section-reviews .wrp .reviews-listitem .reviews-item .reviews-item-text {
+  width: 80%;
+  font-family: 'Proxima Nova Cn Lt';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.15em;
+  position: relative;
+  line-height: 1.4;
+}
+
+.section-reviews .slick-slider {
+  margin: 30px 30px 30px 30px;
+}
+
+.section-reviews .slick-prev:before, .section-reviews .slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: #999;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.section-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: #000;
+  background-color: #fdfdfd;
   padding: 3em 0;
 }
 
@@ -3085,6 +3317,28 @@ body ~ #hide.show {
   .section-prices .listCards .card .listitems .item {
     padding: 5px;
   }
+  .section-reviews .wrp .reviews-listitem .reviews-item {
+    height: 750px;
+    padding: 0.75em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .section-reviews .wrp .reviews-listitem .reviews-item .reviews-item-title {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
+  .section-reviews .wrp .reviews-listitem .reviews-item .reviews-item-text {
+    width: 100%;
+  }
+  .section-reviews .slick-slider {
+    margin: 30px 0;
+  }
   .section-form form {
     width: 300px;
   }
@@ -3161,6 +3415,10 @@ body ~ #hide.show {
     width: 100%;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .section-reviews .wrp .reviews-listitem .reviews-item {
+    height: 550px;
+    padding: 0.75em;
   }
 }
 

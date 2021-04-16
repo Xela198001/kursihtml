@@ -172,6 +172,28 @@
     }
   }
 
+  .section-reviews {
+
+    .wrp .reviews-listitem .reviews-item {
+      height: 750px;
+      padding: 0.75em;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+
+      .reviews-item-title {
+        flex-grow: 0;
+      }
+    }
+
+.wrp .reviews-listitem .reviews-item .reviews-item-text {
+        width: 100%;
+      }
+
+    .slick-slider {
+    margin: 30px 0;
+}
+  }
+
   .section-form {
     & form {
       width: 300px;
@@ -282,6 +304,11 @@
       flex-basis: 100%;
     }
   }
+
+    .section-reviews .wrp .reviews-listitem .reviews-item {
+      height: 550px;
+      padding: 0.75em;
+    }
 }
 
 @media (min-width: 577px) and (max-width: 992px) {

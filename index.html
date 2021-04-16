@@ -12,8 +12,12 @@
       content="Курсы Frontend-разработчик для всех. Практические занятия помогут освоить ппрофессию и подготовят к старту карьеры в IT"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/normalize.css?v=3.0" />
-    <link rel="stylesheet" href="./css/style.css?v=3.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--Slick slider css-->
+    <link rel="stylesheet" href="./libs/slick/slick.css" />
+    <link rel="stylesheet" href="./libs/slick/slick-theme.css" />
+    <!--End Slick slider-->
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <title>
@@ -201,122 +205,123 @@
       </div>
     </div>
     <div id="page" class="container">
-      <div class="header">
-        <div class="wrp">
-          <div class="top">
-            <div class="wrp">
-              <div class="top-logo">
-                <span>FS</span>
-                <span>freeschool</span>
-                <span>Frontend-разработчика</span>
-              </div>
-              <div class="top-contacts">
-                <span class="messenger">
-                  <a
-                    href="https://api.whatsapp.com/send?phone=79091175549"
-                    class="social-link whatsapp"
-                    title="social link Whatsapp"
-                    target="_blank"
-                  >
-                    <svg
-                      id="iconWhatsapp"
-                      style="enable-background: new 0 0 58 58"
-                      version="1.1"
-                      viewBox="0 0 58 58"
-                      xml:space="preserve"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
+      <div class="wrp">
+        <div class="header">
+          <div class="wrp">
+            <div class="top">
+              <div class="wrp">
+                <div class="top-logo">
+                  <span>FS</span>
+                  <span>freeschool</span>
+                  <span>Frontend-разработчика</span>
+                </div>
+                <div class="top-contacts">
+                  <span class="messenger">
+                    <a
+                      href="https://api.whatsapp.com/send?phone=79091175549"
+                      class="social-link whatsapp"
+                      title="social link Whatsapp"
+                      target="_blank"
                     >
-                      <path
-                        id="iconWhatsappBg"
-                        d="M0,58l4.988-14.963C2.457,38.78,1,33.812,1,28.5C1,12.76,13.76,0,29.5,0S58,12.76,58,28.5   S45.24,57,29.5,57c-4.789,0-9.299-1.187-13.26-3.273L0,58z"
-                      />
-                      <path
-                        d="M47.683,37.985c-1.316-2.487-6.169-5.331-6.169-5.331c-1.098-0.626-2.423-0.696-3.049,0.42   c0,0-1.577,1.891-1.978,2.163c-1.832,1.241-3.529,1.193-5.242-0.52l-3.981-3.981l-3.981-3.981c-1.713-1.713-1.761-3.41-0.52-5.242   c0.272-0.401,2.163-1.978,2.163-1.978c1.116-0.627,1.046-1.951,0.42-3.049c0,0-2.844-4.853-5.331-6.169   c-1.058-0.56-2.357-0.364-3.203,0.482l-1.758,1.758c-5.577,5.577-2.831,11.873,2.746,17.45l5.097,5.097l5.097,5.097   c5.577,5.577,11.873,8.323,17.45,2.746l1.758-1.758C48.048,40.341,48.243,39.042,47.683,37.985z"
-                        style="fill: #ffffff"
-                      />
-                    </svg> </a
-                  ><a
-                    href="viber://chat?number=+79091175549"
-                    class="social-link"
-                    title="social link Viber"
-                    target="_blank"
-                  >
-                    <svg
-                      enable-background="new 0 0 128 128"
-                      id="iconViber"
-                      version="1.1"
-                      viewBox="0 0 128 128"
-                      xml:space="preserve"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      <svg
+                        id="iconWhatsapp"
+                        style="enable-background: new 0 0 58 58"
+                        version="1.1"
+                        viewBox="0 0 58 58"
+                        xml:space="preserve"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                      >
+                        <path
+                          id="iconWhatsappBg"
+                          d="M0,58l4.988-14.963C2.457,38.78,1,33.812,1,28.5C1,12.76,13.76,0,29.5,0S58,12.76,58,28.5   S45.24,57,29.5,57c-4.789,0-9.299-1.187-13.26-3.273L0,58z"
+                        />
+                        <path
+                          d="M47.683,37.985c-1.316-2.487-6.169-5.331-6.169-5.331c-1.098-0.626-2.423-0.696-3.049,0.42   c0,0-1.577,1.891-1.978,2.163c-1.832,1.241-3.529,1.193-5.242-0.52l-3.981-3.981l-3.981-3.981c-1.713-1.713-1.761-3.41-0.52-5.242   c0.272-0.401,2.163-1.978,2.163-1.978c1.116-0.627,1.046-1.951,0.42-3.049c0,0-2.844-4.853-5.331-6.169   c-1.058-0.56-2.357-0.364-3.203,0.482l-1.758,1.758c-5.577,5.577-2.831,11.873,2.746,17.45l5.097,5.097l5.097,5.097   c5.577,5.577,11.873,8.323,17.45,2.746l1.758-1.758C48.048,40.341,48.243,39.042,47.683,37.985z"
+                          style="fill: #ffffff"
+                        />
+                      </svg> </a
+                    ><a
+                      href="viber://chat?number=+79091175549"
+                      class="social-link"
+                      title="social link Viber"
+                      target="_blank"
                     >
-                      < id="_x34__stroke">< id="Viber_1_">
-                      <rect
-                        clip-rule="evenodd"
-                        fill="none"
-                        fill-rule="evenodd"
-                        height="58"
-                        width="58"
-                      />
-                      <path
-                        clip-rule="evenodd"
-                        d="M71.4,44.764c2.492,0.531,4.402,1.478,6.034,3.006    c2.1,1.983,3.251,4.383,3.757,7.831c0.342,2.248,0.202,3.132-0.595,3.865c-0.746,0.682-2.125,0.707-2.96,0.063    c-0.607-0.455-0.797-0.935-0.936-2.236c-0.164-1.731-0.468-2.943-0.987-4.067c-1.113-2.387-3.074-3.625-6.388-4.029    c-1.556-0.19-2.024-0.366-2.53-0.96c-0.924-1.099-0.569-2.88,0.708-3.537c0.481-0.24,0.683-0.265,1.746-0.202    C69.908,44.536,70.882,44.65,71.4,44.764z M68.706,35.227c7.679,1.124,13.624,4.686,17.521,10.471    c2.189,3.259,3.555,7.086,4.023,11.191c0.164,1.503,0.164,4.244-0.013,4.699c-0.165,0.429-0.696,1.01-1.151,1.25    c-0.493,0.253-1.543,0.227-2.125-0.076c-0.974-0.493-1.265-1.276-1.265-3.398c0-3.271-0.848-6.72-2.315-9.398    c-1.67-3.057-4.099-5.583-7.059-7.339c-2.543-1.516-6.3-2.64-9.728-2.918c-1.24-0.101-1.923-0.354-2.391-0.897    c-0.721-0.821-0.797-1.933-0.19-2.855C64.67,34.937,65.682,34.772,68.706,35.227z M38.914,27.434    c0.443,0.152,1.126,0.505,1.518,0.758c2.403,1.592,9.095,10.143,11.284,14.412c1.252,2.438,1.67,4.244,1.278,5.583    c-0.405,1.44-1.075,2.198-4.074,4.61c-1.202,0.972-2.328,1.97-2.505,2.236c-0.455,0.657-0.822,1.945-0.822,2.855    c0.013,2.109,1.379,5.937,3.175,8.88c1.391,2.286,3.883,5.216,6.35,7.465c2.897,2.653,5.452,4.459,8.337,5.886    c3.707,1.844,5.971,2.311,7.628,1.541c0.417-0.19,0.86-0.442,0.999-0.556c0.126-0.114,1.101-1.301,2.163-2.615    c2.049-2.577,2.517-2.994,3.922-3.474c1.784-0.606,3.605-0.442,5.44,0.493c1.392,0.72,4.428,2.602,6.388,3.966    c2.581,1.806,8.096,6.303,8.843,7.2c1.315,1.617,1.543,3.688,0.658,5.975c-0.936,2.412-4.579,6.934-7.122,8.867    c-2.302,1.743-3.934,2.412-6.085,2.513c-1.771,0.088-2.505-0.063-4.769-0.998C63.76,95.718,49.579,84.805,38.32,69.811    c-5.882-7.831-10.361-15.953-13.422-24.378c-1.784-4.913-1.872-7.048-0.405-9.562c0.633-1.061,3.327-3.688,5.288-5.153    c3.264-2.425,4.769-3.322,5.971-3.575C36.574,26.966,38.004,27.105,38.914,27.434z M67.833,26.07    c4.352,0.543,7.868,1.591,11.727,3.474c3.795,1.857,6.224,3.613,9.437,6.808c3.011,3.019,4.681,5.305,6.452,8.854    c2.467,4.951,3.871,10.838,4.111,17.317c0.089,2.21,0.025,2.703-0.481,3.335c-0.961,1.225-3.074,1.023-3.795-0.354    c-0.228-0.455-0.291-0.846-0.367-2.615c-0.127-2.716-0.316-4.471-0.696-6.568c-1.493-8.223-5.44-14.791-11.74-19.503    c-5.25-3.941-10.677-5.861-17.786-6.278c-2.404-0.139-2.821-0.227-3.365-0.644c-1.012-0.796-1.063-2.665-0.089-3.537    c0.595-0.543,1.012-0.619,3.074-0.556C65.392,25.842,66.973,25.969,67.833,26.07z M64,0c35.346,0,64,28.654,64,64    s-28.654,64-64,64S0,99.346,0,64S28.654,0,64,0z"
-                        fill-rule="evenodd"
-                        id="iconViberBg"
-                      />
-                    </svg>
-                  </a>
-                  <a
-                    href="https://t.me/freeschoolfe_bot"
-                    class="social-link"
-                    title="social link Telegram"
-                    target="_blank"
-                  >
-                    <svg
-                      class="t-sociallinks__svg"
-                      version="1.1"
-                      id="Layer_1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      width="30px"
-                      height="30px"
-                      viewBox="0 0 60 60"
-                      xml:space="preserve"
+                      <svg
+                        enable-background="new 0 0 128 128"
+                        id="iconViber"
+                        version="1.1"
+                        viewBox="0 0 128 128"
+                        xml:space="preserve"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                      >
+                        < id="_x34__stroke">< id="Viber_1_">
+                        <rect
+                          clip-rule="evenodd"
+                          fill="none"
+                          fill-rule="evenodd"
+                          height="58"
+                          width="58"
+                        />
+                        <path
+                          clip-rule="evenodd"
+                          d="M71.4,44.764c2.492,0.531,4.402,1.478,6.034,3.006    c2.1,1.983,3.251,4.383,3.757,7.831c0.342,2.248,0.202,3.132-0.595,3.865c-0.746,0.682-2.125,0.707-2.96,0.063    c-0.607-0.455-0.797-0.935-0.936-2.236c-0.164-1.731-0.468-2.943-0.987-4.067c-1.113-2.387-3.074-3.625-6.388-4.029    c-1.556-0.19-2.024-0.366-2.53-0.96c-0.924-1.099-0.569-2.88,0.708-3.537c0.481-0.24,0.683-0.265,1.746-0.202    C69.908,44.536,70.882,44.65,71.4,44.764z M68.706,35.227c7.679,1.124,13.624,4.686,17.521,10.471    c2.189,3.259,3.555,7.086,4.023,11.191c0.164,1.503,0.164,4.244-0.013,4.699c-0.165,0.429-0.696,1.01-1.151,1.25    c-0.493,0.253-1.543,0.227-2.125-0.076c-0.974-0.493-1.265-1.276-1.265-3.398c0-3.271-0.848-6.72-2.315-9.398    c-1.67-3.057-4.099-5.583-7.059-7.339c-2.543-1.516-6.3-2.64-9.728-2.918c-1.24-0.101-1.923-0.354-2.391-0.897    c-0.721-0.821-0.797-1.933-0.19-2.855C64.67,34.937,65.682,34.772,68.706,35.227z M38.914,27.434    c0.443,0.152,1.126,0.505,1.518,0.758c2.403,1.592,9.095,10.143,11.284,14.412c1.252,2.438,1.67,4.244,1.278,5.583    c-0.405,1.44-1.075,2.198-4.074,4.61c-1.202,0.972-2.328,1.97-2.505,2.236c-0.455,0.657-0.822,1.945-0.822,2.855    c0.013,2.109,1.379,5.937,3.175,8.88c1.391,2.286,3.883,5.216,6.35,7.465c2.897,2.653,5.452,4.459,8.337,5.886    c3.707,1.844,5.971,2.311,7.628,1.541c0.417-0.19,0.86-0.442,0.999-0.556c0.126-0.114,1.101-1.301,2.163-2.615    c2.049-2.577,2.517-2.994,3.922-3.474c1.784-0.606,3.605-0.442,5.44,0.493c1.392,0.72,4.428,2.602,6.388,3.966    c2.581,1.806,8.096,6.303,8.843,7.2c1.315,1.617,1.543,3.688,0.658,5.975c-0.936,2.412-4.579,6.934-7.122,8.867    c-2.302,1.743-3.934,2.412-6.085,2.513c-1.771,0.088-2.505-0.063-4.769-0.998C63.76,95.718,49.579,84.805,38.32,69.811    c-5.882-7.831-10.361-15.953-13.422-24.378c-1.784-4.913-1.872-7.048-0.405-9.562c0.633-1.061,3.327-3.688,5.288-5.153    c3.264-2.425,4.769-3.322,5.971-3.575C36.574,26.966,38.004,27.105,38.914,27.434z M67.833,26.07    c4.352,0.543,7.868,1.591,11.727,3.474c3.795,1.857,6.224,3.613,9.437,6.808c3.011,3.019,4.681,5.305,6.452,8.854    c2.467,4.951,3.871,10.838,4.111,17.317c0.089,2.21,0.025,2.703-0.481,3.335c-0.961,1.225-3.074,1.023-3.795-0.354    c-0.228-0.455-0.291-0.846-0.367-2.615c-0.127-2.716-0.316-4.471-0.696-6.568c-1.493-8.223-5.44-14.791-11.74-19.503    c-5.25-3.941-10.677-5.861-17.786-6.278c-2.404-0.139-2.821-0.227-3.365-0.644c-1.012-0.796-1.063-2.665-0.089-3.537    c0.595-0.543,1.012-0.619,3.074-0.556C65.392,25.842,66.973,25.969,67.833,26.07z M64,0c35.346,0,64,28.654,64,64    s-28.654,64-64,64S0,99.346,0,64S28.654,0,64,0z"
+                          fill-rule="evenodd"
+                          id="iconViberBg"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      href="https://t.me/freeschoolfe_bot"
+                      class="social-link"
+                      title="social link Telegram"
+                      target="_blank"
                     >
-                      <desc>Telegram</desc>
-                      <path
-                        id="iconTelegramBg"
-                        d="M30 0C13.4 0 0 13.4 0 30s13.4 30 30 30 30-13.4 30-30S46.6 0 30 0zm16.9 13.9l-6.7 31.5c-.1.6-.8.9-1.4.6l-10.3-6.9-5.5 5.2c-.5.4-1.2.2-1.4-.4L18 32.7l-9.5-3.9c-.7-.3-.7-1.5 0-1.8l37.1-14.1c.7-.2 1.4.3 1.3 1z"
-                      ></path>
-                      <path
-                        style="fill: #3581a5"
-                        d="M22.7 40.6l.6-5.8 16.8-16.3-20.2 13.3"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a
-                    href="https://vk.com/mescheryakovff"
-                    class="social-link"
-                    title="social link Vkontakte"
-                    target="_blank"
-                  >
-                    <svg
-                      version="1.1"
-                      id="Layer_1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      x="0px"
-                      y="0px"
-                      width="30px"
-                      height="30px"
-                      viewBox="0 0 48 48"
-                      enable-background="new 0 0 48 48"
-                      xml:space="preserve"
+                      <svg
+                        class="t-sociallinks__svg"
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="30px"
+                        height="30px"
+                        viewBox="0 0 60 60"
+                        xml:space="preserve"
+                      >
+                        <desc>Telegram</desc>
+                        <path
+                          id="iconTelegramBg"
+                          d="M30 0C13.4 0 0 13.4 0 30s13.4 30 30 30 30-13.4 30-30S46.6 0 30 0zm16.9 13.9l-6.7 31.5c-.1.6-.8.9-1.4.6l-10.3-6.9-5.5 5.2c-.5.4-1.2.2-1.4-.4L18 32.7l-9.5-3.9c-.7-.3-.7-1.5 0-1.8l37.1-14.1c.7-.2 1.4.3 1.3 1z"
+                        ></path>
+                        <path
+                          style="fill: #3581a5"
+                          d="M22.7 40.6l.6-5.8 16.8-16.3-20.2 13.3"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://vk.com/mescheryakovff"
+                      class="social-link"
+                      title="social link Vkontakte"
+                      target="_blank"
                     >
-                      <path
-                        id="iconVkBg"
-                        d="M47.761,24c0,13.121-10.639,23.76-23.76,23.76C10.878,47.76,0.239,37.121,0.239,24c0-13.123,10.639-23.76,23.762-23.76
+                      <svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        width="30px"
+                        height="30px"
+                        viewBox="0 0 48 48"
+                        enable-background="new 0 0 48 48"
+                        xml:space="preserve"
+                      >
+                        <path
+                          id="iconVkBg"
+                          d="M47.761,24c0,13.121-10.639,23.76-23.76,23.76C10.878,47.76,0.239,37.121,0.239,24c0-13.123,10.639-23.76,23.762-23.76
 C37.122,0.24,47.761,10.877,47.761,24 M35.259,28.999c-2.621-2.433-2.271-2.041,0.89-6.25c1.923-2.562,2.696-4.126,2.45-4.796
 c-0.227-0.639-1.64-0.469-1.64-0.469l-4.71,0.029c0,0-0.351-0.048-0.609,0.106c-0.249,0.151-0.414,0.505-0.414,0.505
 s-0.742,1.982-1.734,3.669c-2.094,3.559-2.935,3.747-3.277,3.524c-0.796-0.516-0.597-2.068-0.597-3.171
@@ -327,433 +332,542 @@ c-0.299-0.222-0.722-0.298-0.722-0.298l-4.469,0.018c0,0-0.674-0.003-0.919,0.289c-
 s3.499,8.104,7.463,12.23c3.638,3.784,7.764,3.36,7.764,3.36h1.867c0,0,0.566,0.113,0.854-0.189
 c0.265-0.288,0.256-0.646,0.256-0.646s-0.034-2.512,1.129-2.883c1.15-0.36,2.624,2.429,4.188,3.497
 c1.182,0.812,2.079,0.633,2.079,0.633l4.181-0.056c0,0,2.186-0.136,1.149-1.858C38.281,32.451,37.763,31.321,35.259,28.999"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a
-                    href="https://www.instagram.com/xela198001/"
-                    class="social-link"
-                    title="social link Instagram"
-                    target="_blank"
-                  >
-                    <svg
-                      version="1.1"
-                      id="Layer_1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      x="0px"
-                      y="0px"
-                      width="30px"
-                      height="30px"
-                      viewBox="0 0 30 30"
-                      xml:space="preserve"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/xela198001/"
+                      class="social-link"
+                      title="social link Instagram"
+                      target="_blank"
                     >
-                      <desc>Instagram</desc>
-                      <path
-                        id="iconInstagramBg"
-                        d="M15,11.014 C12.801,11.014 11.015,12.797 11.015,15 C11.015,17.202 12.802,18.987 15,18.987 C17.199,18.987 18.987,17.202 18.987,15 C18.987,12.797 17.199,11.014 15,11.014 L15,11.014 Z M15,17.606 C13.556,17.606 12.393,16.439 12.393,15 C12.393,13.561 13.556,12.394 15,12.394 C16.429,12.394 17.607,13.561 17.607,15 C17.607,16.439 16.444,17.606 15,17.606 L15,17.606 Z"
-                      ></path>
-                      <path
-                        id="iconInstagramBg"
-                        d="M19.385,9.556 C18.872,9.556 18.465,9.964 18.465,10.477 C18.465,10.989 18.872,11.396 19.385,11.396 C19.898,11.396 20.306,10.989 20.306,10.477 C20.306,9.964 19.897,9.556 19.385,9.556 L19.385,9.556 Z"
-                      ></path>
-                      <path
-                        id="iconInstagramBg"
-                        d="M15.002,0.15 C6.798,0.15 0.149,6.797 0.149,15 C0.149,23.201 6.798,29.85 15.002,29.85 C23.201,29.85 29.852,23.202 29.852,15 C29.852,6.797 23.201,0.15 15.002,0.15 L15.002,0.15 Z M22.666,18.265 C22.666,20.688 20.687,22.666 18.25,22.666 L11.75,22.666 C9.312,22.666 7.333,20.687 7.333,18.28 L7.333,11.734 C7.333,9.312 9.311,7.334 11.75,7.334 L18.25,7.334 C20.688,7.334 22.666,9.312 22.666,11.734 L22.666,18.265 L22.666,18.265 Z"
-                      ></path>
-                    </svg>
-                  </a>
-                </span>
-                <span class="top-contact phone" style="display: none"
-                  >+7 (909)117-55-49</span
-                >
-              </div>
-              <div class="top-button">
-                <a href="#bid" class="link-button">Оставить заявку</a>
-              </div>
-            </div>
-          </div>
-          <div class="head">
-            <div class="nav">
-              <ul class="listItems">
-                <li class="item"><a href="#" class="link">Преимущества</a></li>
-                <li class="item"><a href="#" class="link">Программа</a></li>
-                <li class="item">
-                  <a href="#" class="link">Формат обучения</a>
-                </li>
-                <li class="item">
-                  <a href="#contacts" class="link">Контакты</a>
-                </li>
-              </ul>
-            </div>
-            <div class="head-text">
-              <h1 class="wrp">
-                <span class="kurs">Онлайн-курсы</span>
-                <span class=""
-                  >от HTML-верстальщика <br />до Frontend-разработчика</span
-                >
-                <span class="subTitle">Освой востребованную профессию</span>
-              </h1>
-            </div>
-            <div class="head-start">
-              <span>с 20.04.2021 по 04.09.2021</span>
-            </div>
-            <div class="imgBg"></div>
-          </div>
-        </div>
-      </div>
-      <div class="main">
-        <div class="section-timer">
-          <div class="wrp">
-            <div class="countdown-title">
-              до конца <span>Распродажи</span><br />курса "Frontend-разработчик"
-            </div>
-            <div id="countdown" class="countdown">
-              <div class="countdown-number">
-                <span class="days countdown-time">0</span>
-              </div>
-              <div class="countdown-number day">
-                <span class="countdown-text day">Дней</span>
-              </div>
-              <div class="countdown-number">
-                <span class="hours countdown-time"></span>
-                <span class="countdown-text">:</span>
-              </div>
-              <div class="countdown-number">
-                <span class="minutes countdown-time"></span>
-                <span class="countdown-text">:</span>
-              </div>
-              <div class="countdown-number">
-                <span class="seconds countdown-time"></span>
-                <span class="countdown-text"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section-advantages">
-          <div class="wrp">
-            <h2 class="title">Преимущества</h2>
-            <div class="listItems">
-              <div class="item">
-                <div class="itemSVG"></div>
-                <div class="itemTitle"></div>
-                <span class="itemText"></span>
-              </div>
-              <div class="item">
-                <div class="itemSVG"></div>
-                <div class="itemTitle"></div>
-                <span class="itemText"></span>
-              </div>
-              <div class="item">
-                <div class="itemSVG"></div>
-                <div class="itemTitle"></div>
-                <span class="itemText"></span>
-              </div>
-              <div class="item">
-                <div class="itemSVG"></div>
-                <div class="itemTitle"></div>
-                <span class="itemText"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section-stat">
-          <div class="wrp">
-            <h2 class="title">Frontend-разработчики востребованы на рынке</h2>
-            <p class="title-text">
-              Любая значимая организация имеет своё представление в глобальной
-              сети. Это требование времени и требование рынка. Без учета
-              современных реалий мира невозможно добиться конкурентоспособности
-              и следовательно успеха. Именно связка HTML/CSS даёт возможность
-              верстать макеты, создавать и редактировать статические сайты.
-              Изучаемая на данном курсе технология программирования позволяет
-              заложить долгосрочную основу и закрепиться в данной области на
-              рынке труда.
-            </p>
-            <div class="listitems">
-              <div class="item">
-                <div id="pay" class="stat">87 400</div>
-                <div class="body">
-                  <h3 class="text">Средняя зарплата frontend-разработчика</h3>
+                      <svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        width="30px"
+                        height="30px"
+                        viewBox="0 0 30 30"
+                        xml:space="preserve"
+                      >
+                        <desc>Instagram</desc>
+                        <path
+                          id="iconInstagramBg"
+                          d="M15,11.014 C12.801,11.014 11.015,12.797 11.015,15 C11.015,17.202 12.802,18.987 15,18.987 C17.199,18.987 18.987,17.202 18.987,15 C18.987,12.797 17.199,11.014 15,11.014 L15,11.014 Z M15,17.606 C13.556,17.606 12.393,16.439 12.393,15 C12.393,13.561 13.556,12.394 15,12.394 C16.429,12.394 17.607,13.561 17.607,15 C17.607,16.439 16.444,17.606 15,17.606 L15,17.606 Z"
+                        ></path>
+                        <path
+                          id="iconInstagramBg"
+                          d="M19.385,9.556 C18.872,9.556 18.465,9.964 18.465,10.477 C18.465,10.989 18.872,11.396 19.385,11.396 C19.898,11.396 20.306,10.989 20.306,10.477 C20.306,9.964 19.897,9.556 19.385,9.556 L19.385,9.556 Z"
+                        ></path>
+                        <path
+                          id="iconInstagramBg"
+                          d="M15.002,0.15 C6.798,0.15 0.149,6.797 0.149,15 C0.149,23.201 6.798,29.85 15.002,29.85 C23.201,29.85 29.852,23.202 29.852,15 C29.852,6.797 23.201,0.15 15.002,0.15 L15.002,0.15 Z M22.666,18.265 C22.666,20.688 20.687,22.666 18.25,22.666 L11.75,22.666 C9.312,22.666 7.333,20.687 7.333,18.28 L7.333,11.734 C7.333,9.312 9.311,7.334 11.75,7.334 L18.25,7.334 C20.688,7.334 22.666,9.312 22.666,11.734 L22.666,18.265 L22.666,18.265 Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </span>
+                  <span class="top-contact phone" style="display: none"
+                    >+7 (909)117-55-49</span
+                  >
                 </div>
-              </div>
-              <div class="item">
-                <div id="vacancies" class="stat">5 700 +</div>
-                <div class="body">
-                  <h3 class="text">Вакансий доступно сейчас</h3>
-                </div>
-              </div>
-              <div class="item">
-                <div class="stat">hh.ru SuperJob.ru</div>
-                <div class="body">
-                  <h3 class="text">Данные с сайтов по поиску работы</h3>
+                <div class="top-button">
+                  <a href="#bid" class="link-button">Оставить заявку</a>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="section-format">
-          <div class="wrp">
-            <h3 class="section-title">Как проходит обучение</h3>
-            <div class="format-listitems">
-              <div class="format-listitems-item">
-                <div class="circle">1</div>
-                <h2 class="item-title">
-                  Вы учитесь — посещаете онлайн-занятия или смотрите их в записи
-                </h2>
-                <p class="item-text">
-                  Обучение проходит в формате онлайн-вебинаров: вы общаетесь
-                  напрямую с преподавателем и получаете ответы в прямом эфире.
-                  Если вы не успели на вебинар, видеозаписи уроков доступны в
-                  вашем личном кабинете.
-                </p>
+            <div class="head">
+              <div class="nav">
+                <ul class="listItems">
+                  <li class="item">
+                    <a href="#" class="link">Преимущества</a>
+                  </li>
+                  <li class="item"><a href="#" class="link">Программа</a></li>
+                  <li class="item">
+                    <a href="#" class="link">Формат обучения</a>
+                  </li>
+                  <li class="item">
+                    <a href="#contacts" class="link">Контакты</a>
+                  </li>
+                </ul>
               </div>
-              <div class="format-listitems-item">
-                <div class="circle">2</div>
-                <h2 class="item-title">
-                  Выполняете домашние задания, получаете оценки и комментарии
-                  преподавателей
-                </h2>
-                <p class="item-text">
-                  После каждого занятия вас ждёт домашнее задание. Преподаватели
-                  проверят его и дадут развёрнутую обратную связь. По завершении
-                  каждого модуля вы создадите проекты, которые сможете сразу
-                  включить в своё портфолио.
-                </p>
+              <div class="head-text">
+                <h1 class="wrp">
+                  <span class="kurs">Онлайн-курсы</span>
+                  <span class=""
+                    >от HTML-верстальщика <br />до Frontend-разработчика</span
+                  >
+                  <span class="subTitle">Освой востребованную профессию</span>
+                </h1>
               </div>
-              <div class="format-listitems-item">
-                <div class="circle">3</div>
-                <h2 class="item-title">
-                  Оперативно получаете поддержку координатора и преподавателя
-                </h2>
-                <p class="item-text">
-                  Координаторы помогут с операционными вопросами, преподаватель
-                  — с вопросами по домашним заданиям, с трудностями в коде. Вы
-                  всегда сможете задать вопрос, получить консультацию и помощь.
-                </p>
+              <div class="head-start">
+                <span>с 20.04.2021 по 04.09.2021</span>
               </div>
-              <div class="format-listitems-item">
-                <div class="circle">4</div>
-                <h2 class="item-title">Общение с одногрупниками в чате</h2>
-                <p class="item-text">
-                  Создается отделныйчат в Telegram, Whatsapp, Viber или VK. Где
-                  вы сможете задавать вопросы по ДЗ одногрупникам,
-                  преподавателю. Делиться опытом и идеями.
-                </p>
-              </div>
+              <div class="imgBg"></div>
             </div>
           </div>
         </div>
-        <div class="section-who">
-          <div class="wrp">
-            <h2 class="title">Кому подойдет курс</h2>
-            <div class="forwho-listitem">
-              <div class="forwho-item">
-                <h3 class="forwho-item-title">Новичкам</h3>
-                <p class="forwho-item-text">
-                  Поможем начать карьеру frontend-разработчика. Вы научитесь
-                  верстать сайты и создавать интерфейсы
-                </p>
-              </div>
-              <div class="forwho-item">
-                <h3 class="forwho-item-title">Начинающим разработчикам</h3>
-                <p class="forwho-item-text">
-                  Поможем ускорить карьерный рост: вы получите новый опыт работы
-                  с HTML, CSS, JavaScript, ReactJS, Node.js
-                </p>
-              </div>
-              <div class="forwho-item">
-                <h3 class="forwho-item-title">Практикующим IT-специалистам</h3>
-                <p class="forwho-item-text">
-                  Поможем перейти в перспективное направление, чтобы заниматься
-                  любимым делом и больше зарабатывать
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section-know">
-          <div class="wrp">
-            <h2 class="title">Что вы будете уметь после обучения</h2>
-            <div class="know-listitem">
-              <div class="know-item">
-                <h3 class="know-item-title">
-                  Верстать сайты и приложения для всех типов устройств
-                </h3>
-                <p class="know-item-text">
-                  Узнаете о тонкостях вёрстки под Android и другие мобильные
-                  операционные системы
-                </p>
-              </div>
-              <div class="know-item">
-                <h3 class="know-item-title">
-                  Решать задачи с использованием JavaScript
-                </h3>
-                <p class="know-item-text">
-                  Узнаете всё о семантике, синтаксисе и архитектуре языка и
-                  сможете создавать сайты и приложения
-                </p>
-              </div>
-              <div class="know-item">
-                <h3 class="know-item-title">
-                  Оформлять решения, как это делают опытные разработчики
-                </h3>
-                <p class="know-item-text">
-                  Изучите подходы к решению задач и варианты практического
-                  использования инструментов
-                </p>
-              </div>
-              <div class="know-item">
-                <h3 class="know-item-title">Использовать библиотеку React</h3>
-                <p class="know-item-text">
-                  Сможете применять библиотеку для создания качественных
-                  интерфейсов, освоите композицию компонентов и способы
-                  интеграции с React
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section-prices">
-          <div class="wrp">
-            <h2 class="section-title">Цены</h2>
-            <div class="slider">
-              <a class="previous" onclick="previousSlide()"></a>
-              <div class="listCards">
-                <div class="card">
-                  <div class="salePercent">-18 %</div>
-                  <h3 class="title">Курс Начинающий</h3>
-                  <ul class="listitems"></ul>
-                  <h4 class="length">1 месяц<span>&nbsp;обучения</span></h4>
-                  <div class="more show">Подробнее</div>
-                  <ul class="listitems"></ul>
-                  <div class="price">
-                    <span class="price"></span>
-                    <span class="sale"></span>
-                  </div>
-                  <a href="#bid" class="link">Купить курс</a>
-                </div>
-                <div class="card">
-                  <div class="salePercent">-18 %</div>
-                  <h3 class="title">Курс Продвинутый</h3>
-                  <ul class="listitems"></ul>
-                  <h4 class="length">3 месяца<span>&nbsp;обучения</span></h4>
-                  <div class="more show">Подробнее</div>
-                  <ul class="listitems"></ul>
-                  <div class="price">
-                    <span class="price"></span>
-                    <span class="sale"></span>
-                  </div>
-                  <a href="#bid" class="link">Купить курс</a>
-                </div>
-                <div class="card">
-                  <div class="salePercent">-18 %</div>
-                  <h3 class="title">Курс Frontend-разработчик</h3>
-                  <ul class="listitems"></ul>
-                  <h4 class="length">5 месяцев<span>&nbsp;обучения</span></h4>
-                  <div class="more show">Подробнее</div>
-                  <ul class="listitems"></ul>
-                  <div class="price">
-                    <span class="price"></span>
-                    <span class="sale frontend"></span>
-                  </div>
-                  <a href="#bid" id="buy" class="link">Купить курс</a>
-                </div>
-              </div>
-              <a class="next" onclick="nextSlide()"></a>
-              <div class="pagination">
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section-form">
-          <a name="bid"></a>
-          <div class="wrp">
-            <h2 class="title">оставить заявку</h2>
-            <form action="" method="post">
-              <label for="user_name">ФИО<span>*</span></label>
-              <input type="text" name="user_name" id="user_name" />
-              <label for="user_name">Телефон<span>*</span></label>
-              <input type="text" name="user_phone" id="user_phone" />
-              <label for="user_name">E-Mail<span>*</span></label>
-              <input type="email" name="user_email" id="user_email" />
-              <div>
-                <input
-                  type="checkbox"
-                  name="user_personal"
-                  id="user_personal"
-                />
-                <label for="user_personal"
-                  >Я даю согласие на обработку персональных данных и согласен на
-                  получение информационных рассылок</label
-                >
-              </div>
-              <input type="submit" id="submit" value="Оставить заявку" />
-            </form>
-            <div id="input"></div>
-          </div>
-        </div>
-        <div class="section-extra" style="display: none">
-          <div class="wrp">
-            <h3 class="section-title">Дополнительно</h3>
-            <div class="extra-listitems">
-              <div class="item">
-                Express обучение - для тех у кого много свободного времени.
-                Обучение 4 раза в неделю. Стоимость + 40%
-              </div>
-              <div class="extra-listitems-item"></div>
-              <div class="extra-listitems-item"></div>
-              <div class="extra-listitems-item"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="footer">
-        <div class="wrp">
-          <div class="doc">
-            <a href="./doc/oferta.html" class="oferta" target="_blank"
-              >Договор оферты</a
-            >
-            <a href="./doc/privacy.html" class="oferta" target="_blank"
-              >Политика конфиденциальности</a
-            >
-          </div>
-          <div class="contact">
+        <div class="main">
+          <div class="section-timer">
             <div class="wrp">
-              <a name="contacts"></a>
-              <span>Freeschool</span>
-              <span>Мещеряков Александр Анатольевич</span>
-              <span>ИНН 592105438830</span>
-              <span>тел. +7(909) 117-55-49</span>
-              <span>E-Mail mes-aleksandr@yandex.ru</span>
-              <span>WhatsApp +7(909) 117-55-49</span>
-              <span>Россия, Ленинградская область, Всеволожский район</span>
-              <span>г. Мурино, Ручьевский пр-кт, 9-142</span>
+              <div class="countdown-title">
+                до конца <span>Распродажи</span><br />курса
+                "Frontend-разработчик"
+              </div>
+              <div id="countdown" class="countdown">
+                <div class="countdown-number">
+                  <span class="days countdown-time">0</span>
+                </div>
+                <div class="countdown-number day">
+                  <span class="countdown-text day">Дней</span>
+                </div>
+                <div class="countdown-number">
+                  <span class="hours countdown-time"></span>
+                  <span class="countdown-text">:</span>
+                </div>
+                <div class="countdown-number">
+                  <span class="minutes countdown-time"></span>
+                  <span class="countdown-text">:</span>
+                </div>
+                <div class="countdown-number">
+                  <span class="seconds countdown-time"></span>
+                  <span class="countdown-text"></span>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="copyright">Copyright &copy; 2021 Все права защищены</div>
-          <div class="share">
-            <!-- uSocial -->
-            <div
-              class="uSocial-Share"
-              data-pid="8adfda149186b02ac220bfbaeed314e1"
-              data-type="share"
-              data-options="round,style4,default,absolute,horizontal,size32,counter0,upArrow-left,mobile_position_right"
-              data-social="telegram,vi,wa,vk,twi,fb,ok,bookmarks"
-            ></div>
-            <!-- /uSocial -->
+          <div class="section-advantages">
+            <div class="wrp">
+              <h2 class="title">Преимущества</h2>
+              <div class="listItems">
+                <div class="item">
+                  <div class="itemSVG"></div>
+                  <div class="itemTitle"></div>
+                  <span class="itemText"></span>
+                </div>
+                <div class="item">
+                  <div class="itemSVG"></div>
+                  <div class="itemTitle"></div>
+                  <span class="itemText"></span>
+                </div>
+                <div class="item">
+                  <div class="itemSVG"></div>
+                  <div class="itemTitle"></div>
+                  <span class="itemText"></span>
+                </div>
+                <div class="item">
+                  <div class="itemSVG"></div>
+                  <div class="itemTitle"></div>
+                  <span class="itemText"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-stat">
+            <div class="wrp">
+              <h2 class="title">Frontend-разработчики востребованы на рынке</h2>
+              <p class="title-text">
+                Любая значимая организация имеет своё представление в глобальной
+                сети. Это требование времени и требование рынка. Без учета
+                современных реалий мира невозможно добиться
+                конкурентоспособности и следовательно успеха. Именно связка
+                HTML/CSS даёт возможность верстать макеты, создавать и
+                редактировать статические сайты. Изучаемая на данном курсе
+                технология программирования позволяет заложить долгосрочную
+                основу и закрепиться в данной области на рынке труда.
+              </p>
+              <div class="listitems">
+                <div class="item">
+                  <div id="pay" class="stat">87 400</div>
+                  <div class="body">
+                    <h3 class="text">Средняя зарплата frontend-разработчика</h3>
+                  </div>
+                </div>
+                <div class="item">
+                  <div id="vacancies" class="stat">5 700 +</div>
+                  <div class="body">
+                    <h3 class="text">Вакансий доступно сейчас</h3>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="stat">hh.ru SuperJob.ru</div>
+                  <div class="body">
+                    <h3 class="text">Данные с сайтов по поиску работы</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-get-profession">
+            <div class="wrp">
+              <h2 class="title">Получите профессию прямо сейчас</h2>
+              <div class="listitem">
+                <div class="item"></div>
+              </div>
+            </div>
+          </div>
+          <div class="section-format">
+            <div class="wrp">
+              <h2 class="section-title">Как проходит обучение</h2>
+              <div class="format-listitems">
+                <div class="format-listitems-item">
+                  <div class="circle">1</div>
+                  <h2 class="item-title">
+                    Вы учитесь — посещаете онлайн-занятия или смотрите их в
+                    записи
+                  </h2>
+                  <p class="item-text">
+                    Обучение проходит в формате онлайн-вебинаров: вы общаетесь
+                    напрямую с преподавателем и получаете ответы в прямом эфире.
+                    Если вы не успели на вебинар, видеозаписи уроков доступны в
+                    вашем личном кабинете.
+                  </p>
+                </div>
+                <div class="format-listitems-item">
+                  <div class="circle">2</div>
+                  <h2 class="item-title">
+                    Выполняете домашние задания, получаете оценки и комментарии
+                    преподавателей
+                  </h2>
+                  <p class="item-text">
+                    После каждого занятия вас ждёт домашнее задание.
+                    Преподаватели проверят его и дадут развёрнутую обратную
+                    связь. По завершении каждого модуля вы создадите проекты,
+                    которые сможете сразу включить в своё портфолио.
+                  </p>
+                </div>
+                <div class="format-listitems-item">
+                  <div class="circle">3</div>
+                  <h2 class="item-title">
+                    Оперативно получаете поддержку координатора и преподавателя
+                  </h2>
+                  <p class="item-text">
+                    Координаторы помогут с операционными вопросами,
+                    преподаватель — с вопросами по домашним заданиям, с
+                    трудностями в коде. Вы всегда сможете задать вопрос,
+                    получить консультацию и помощь.
+                  </p>
+                </div>
+                <div class="format-listitems-item">
+                  <div class="circle">4</div>
+                  <h2 class="item-title">Общение с одногрупниками в чате</h2>
+                  <p class="item-text">
+                    Создается отделныйчат в Telegram, Whatsapp, Viber или VK.
+                    Где вы сможете задавать вопросы по ДЗ одногрупникам,
+                    преподавателю. Делиться опытом и идеями.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-who">
+            <div class="wrp">
+              <h2 class="title">Кому подойдет курс</h2>
+              <div class="forwho-listitem">
+                <div class="forwho-item">
+                  <h3 class="forwho-item-title">Новичкам</h3>
+                  <p class="forwho-item-text">
+                    Поможем начать карьеру frontend-разработчика. Вы научитесь
+                    верстать сайты и создавать интерфейсы
+                  </p>
+                </div>
+                <div class="forwho-item">
+                  <h3 class="forwho-item-title">Начинающим разработчикам</h3>
+                  <p class="forwho-item-text">
+                    Поможем ускорить карьерный рост: вы получите новый опыт
+                    работы с HTML, CSS, JavaScript, ReactJS, Node.js
+                  </p>
+                </div>
+                <div class="forwho-item">
+                  <h3 class="forwho-item-title">
+                    Практикующим IT-специалистам
+                  </h3>
+                  <p class="forwho-item-text">
+                    Поможем перейти в перспективное направление, чтобы
+                    заниматься любимым делом и больше зарабатывать
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-know">
+            <div class="wrp">
+              <h2 class="title">Что вы будете уметь после обучения</h2>
+              <div class="know-listitem">
+                <div class="know-item">
+                  <h3 class="know-item-title">
+                    Верстать сайты и приложения для всех типов устройств
+                  </h3>
+                  <p class="know-item-text">
+                    Узнаете о тонкостях вёрстки под Android и другие мобильные
+                    операционные системы
+                  </p>
+                </div>
+                <div class="know-item">
+                  <h3 class="know-item-title">
+                    Решать задачи с использованием JavaScript
+                  </h3>
+                  <p class="know-item-text">
+                    Узнаете всё о семантике, синтаксисе и архитектуре языка и
+                    сможете создавать сайты и приложения
+                  </p>
+                </div>
+                <div class="know-item">
+                  <h3 class="know-item-title">
+                    Оформлять решения, как это делают опытные разработчики
+                  </h3>
+                  <p class="know-item-text">
+                    Изучите подходы к решению задач и варианты практического
+                    использования инструментов
+                  </p>
+                </div>
+                <div class="know-item">
+                  <h3 class="know-item-title">Использовать библиотеку React</h3>
+                  <p class="know-item-text">
+                    Сможете применять библиотеку для создания качественных
+                    интерфейсов, освоите композицию компонентов и способы
+                    интеграции с React
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-prices">
+            <div class="wrp">
+              <h2 class="section-title">Цены</h2>
+              <div class="slider">
+                <a class="previous" onclick="previousSlide()"></a>
+                <div class="listCards">
+                  <div class="card">
+                    <div class="salePercent">-18 %</div>
+                    <h3 class="title">Курс Начинающий</h3>
+                    <ul class="listitems"></ul>
+                    <h4 class="length">1 месяц<span>&nbsp;обучения</span></h4>
+                    <div class="more show">Подробнее</div>
+                    <ul class="listitems"></ul>
+                    <div class="price">
+                      <span class="price"></span>
+                      <span class="sale"></span>
+                    </div>
+                    <a href="#bid" class="link">Купить курс</a>
+                  </div>
+                  <div class="card">
+                    <div class="salePercent">-18 %</div>
+                    <h3 class="title">Курс Продвинутый</h3>
+                    <ul class="listitems"></ul>
+                    <h4 class="length">3 месяца<span>&nbsp;обучения</span></h4>
+                    <div class="more show">Подробнее</div>
+                    <ul class="listitems"></ul>
+                    <div class="price">
+                      <span class="price"></span>
+                      <span class="sale"></span>
+                    </div>
+                    <a href="#bid" class="link">Купить курс</a>
+                  </div>
+                  <div class="card">
+                    <div class="salePercent">-18 %</div>
+                    <h3 class="title">Курс Frontend-разработчик</h3>
+                    <ul class="listitems"></ul>
+                    <h4 class="length">5 месяцев<span>&nbsp;обучения</span></h4>
+                    <div class="more show">Подробнее</div>
+                    <ul class="listitems"></ul>
+                    <div class="price">
+                      <span class="price"></span>
+                      <span class="sale frontend"></span>
+                    </div>
+                    <a href="#bid" id="buy" class="link">Купить курс</a>
+                  </div>
+                </div>
+                <a class="next" onclick="nextSlide()"></a>
+                <div class="pagination">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-reviews">
+            <div class="wrp">
+              <h2 class="title">Отзывы</h2>
+              <div class="reviews">
+                <div id="reviews-carousel" class="reviews-listitem">
+                  <div class="revSlider">
+                    <div class="reviews-item">
+                      <span class="reviews-item-title"> Мария </span>
+                      <img
+                        class="reviews-item-avatar"
+                        src="./img/df_avatar.png"
+                        alt="avatar"
+                        srcset=""
+                      />
+                      <p class="reviews-item-text">
+                        Александр, отличный преподаватель! У меня были моменты, которые
+                        вызвали затруднения и я всегда получала очень
+                        профессиональную, оперативную обратную связь. Нелегко
+                        осваивать новую сферу, но благодаря такой поддержке и
+                        помощи процесс обучения проходит гораздо продуктивнее.
+                      </p>
+                    </div>
+                    <div class="reviews-item">
+                      <span class="reviews-item-title"> Сергей </span>
+                      <img
+                        class="reviews-item-avatar"
+                        src="./img/df_avatar.png"
+                        alt="avatar"
+                        srcset=""
+                      />
+                      <p class="reviews-item-text">
+                        Адекватная стоимость, отличные преподаватели, обилие
+                        хорошо структурированного материала, общение с
+                        одногруппниками, удобный удаленный формат обучения. И не
+                        только, на самом деле. Думаю, это обучение будет хорошо
+                        для тех людей, которые: хотят начать разрабатывать
+                        сайты, но не понимают с чего начать. Безусловно, можно
+                        все найти в интернете и прочитать документацию
+                        выбранного языка программирования самостоятельно, но
+                        грамотное введение в предмет, структурированные основы
+                        (и не только основы), дадут хороший набор инструментов,
+                        с которым можно дальше работать.
+                      </p>
+                    </div>
+                    <div class="reviews-item">
+                      <span class="reviews-item-title"> Анжела </span>
+                      <img
+                        class="reviews-item-avatar"
+                        src="./img/df_avatar.png"
+                        alt="avatar"
+                        srcset=""
+                      />
+                      <p class="reviews-item-text">
+                        Подойдет и для школьников старших классов, и для людей,
+                        которые хотят сменить профессию. У меня два хороших
+                        высших образования, первое я выбрала из соображений "в
+                        школе неплохо получается предмет, пойду в университет
+                        учить" и потратила драгоценные годы на получение
+                        диплома. Намного дешевле попробовать программирование на
+                        таких вот курсах, и понять твое или нет за несколько
+                        месяцев, нежели тратить на осознание годы университета.
+                      </p>
+                    </div>
+                    <div class="reviews-item">
+                      <span class="reviews-item-title"> Владимир </span>
+                      <img
+                        class="reviews-item-avatar"
+                        src="./img/df_avatar.png"
+                        alt="avatar"
+                        srcset=""
+                      />
+                      <p class="reviews-item-text">
+                        Отличная возможность получить профессию, потому что
+                        курсы дают терминологию и подходы, и все практические
+                        задания устроены почти всегда так, чтобы заставить
+                        копаться самому, выйти за границы методичек и за границы
+                        того, что преподаватель рассказал на уроке. Но для
+                        человека, у которого сформирована самодисциплина, навык
+                        поиска и структурирования знаний в своей голове, можно
+                        получить все инструменты для реального вхождения в
+                        профессию, для школьника именно как профессию - не знаю,
+                        думаю, как важное дополнение. Подойдет так же для тех,
+                        кто что-то слышал про ИТ, но не понимает что будет
+                        интересно в этой сфере.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-form">
+            <a name="bid"></a>
+            <div class="wrp">
+              <h2 class="title">Оплатить</h2>
+              <form action="" method="post">
+                <label for="user_name">ФИО<span>*</span></label>
+                <input type="text" name="user_name" id="user_name" />
+                <label for="user_name">Телефон<span>*</span></label>
+                <input type="text" name="user_phone" id="user_phone" />
+                <label for="user_name">E-Mail<span>*</span></label>
+                <input type="email" name="user_email" id="user_email" />
+                <div>
+                  <input
+                    type="checkbox"
+                    name="user_personal"
+                    id="user_personal"
+                  />
+                  <label for="user_personal"
+                    >Я даю согласие на обработку персональных данных и согласен
+                    на получение информационных рассылок</label
+                  >
+                </div>
+                <input type="submit" id="submit" value="Оставить заявку" />
+              </form>
+              <div id="input"></div>
+            </div>
+          </div>
+          <div class="section-extra" style="display: none">
+            <div class="wrp">
+              <h3 class="section-title">Дополнительно</h3>
+              <div class="extra-listitems">
+                <div class="item">
+                  Express обучение - для тех у кого много свободного времени.
+                  Обучение 4 раза в неделю. Стоимость + 40%
+                </div>
+                <div class="extra-listitems-item"></div>
+                <div class="extra-listitems-item"></div>
+                <div class="extra-listitems-item"></div>
+              </div>
+            </div>
           </div>
         </div>
-      </footer>
-      <div id="hide">
-        <div class="button hide">
-          <span class="liner"></span>
-          <span class="liner"></span>
+        <footer class="footer">
+          <div class="wrp">
+            <div class="doc">
+              <a href="./doc/oferta.html" class="oferta" target="_blank"
+                >Договор оферты</a
+              >
+              <a href="./doc/privacy.html" class="oferta" target="_blank"
+                >Политика конфиденциальности</a
+              >
+            </div>
+            <div class="contact">
+              <div class="wrp">
+                <a name="contacts"></a>
+                <span>Freeschool</span>
+                <span>Мещеряков Александр Анатольевич</span>
+                <span>ИНН 592105438830</span>
+                <span>тел. +7(909) 117-55-49</span>
+                <span>E-Mail mes-aleksandr@yandex.ru</span>
+                <span>WhatsApp +7(909) 117-55-49</span>
+                <span>Россия, Ленинградская область, Всеволожский район</span>
+                <span>г. Мурино, Ручьевский пр-кт, 9-142</span>
+              </div>
+            </div>
+            <div class="copyright">
+              Copyright &copy; 2021 Все права защищены
+            </div>
+            <div class="share">
+              <!-- uSocial -->
+              <div
+                class="uSocial-Share"
+                data-pid="8adfda149186b02ac220bfbaeed314e1"
+                data-type="share"
+                data-options="round,style4,default,absolute,horizontal,size32,counter0,upArrow-left,mobile_position_right"
+                data-social="telegram,vi,wa,vk,twi,fb,ok,bookmarks"
+              ></div>
+              <!-- /uSocial -->
+            </div>
+          </div>
+        </footer>
+        <div id="hide">
+          <div class="button hide">
+            <span class="liner"></span>
+            <span class="liner"></span>
+          </div>
+          <!-- <div class="side-bg"></div> -->
         </div>
-        <!-- <div class="side-bg"></div> -->
       </div>
     </div>
     <div id="popup"></div>
@@ -766,6 +880,54 @@ c1.182,0.812,2.079,0.633,2.079,0.633l4.181-0.056c0,0,2.186-0.136,1.149-1.858C38.
       data-script="usocial"
       charset="utf-8"
     ></script>
+    <!--Slick slider-->
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="./libs/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".revSlider").slick({
+          dots: true,
+          arrows: true,
+          infinite: false,
+          centerMode: true,
+          centerPadding: "60px",
+          slidesToShow: 1,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                dots: true,
+                arrows: false,
+                infinite: false,
+                centerMode: true,
+                centerPadding: "0px",
+                slidesToShow: 1,
+              },
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                dots: true,
+                arrows: false,
+                infinite: false,
+                centerMode: true,
+                centerPadding: "0px",
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    <!--End Slick slider-->
     <!-- <script type="text/javascript"  defer src="./js/card.js"></script> -->
   </body>
 </html>
