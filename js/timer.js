@@ -1,9 +1,7 @@
 'use strict';
 var timeText = document.querySelectorAll(".countdown-text");
 var textTime;
- console.log(timeText);
 var clock = document.querySelector(".countdown");
-console.log(clock)
 var daysSpan = clock.querySelector(".days");
 var hoursSpan = clock.querySelector(".hours");
 var minutesSpan = clock.querySelector(".minutes");

@@ -1,16 +1,20 @@
 .container {
   width: 100%;
   min-height: 1px;
-max-height: 999999px;
-opacity: 0;
-@include fontRG;
+  max-height: 999999px;
+  opacity: 0;
+  @include fontRG;
 
-&.show {
-  opacity: 1;
+  &.show {
+    opacity: 1;
+  }
+.wrp {
+  // max-width: 1440px;
+  // min-width: 100%;
+  // margin: 0 auto;
 }
-
-a {
-  text-decoration: none;
-  color: #2704c5;
-}
+  a {
+    text-decoration: none;
+    color: #2704c5;
+  }
 }

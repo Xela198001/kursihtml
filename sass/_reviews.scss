@@ -1,0 +1,101 @@
+.section-reviews {
+  @include sectionParam($bg-color-primary-0);
+  overflow: hidden;
+
+  .wrp {
+    @include sectionWidth(4.0625em, 1em, 4.0625em, 1em);
+
+    // display: flex;
+    // flex-shrink: 1;
+    // flex-grow: 1;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+
+    .title {
+      @include sectionTitle;
+    }
+
+    .reviews-listitem {
+      // display: flex;
+      // flex: 1 1;
+      // flex-direction: row;
+      // margin: 1.5em 0;
+      // font-size: 1.75em;
+
+      .reviews-item {
+        // max-width: 950px;
+        // min-width: 450px;
+        height: 400px;
+        display: flex;
+        flex-shrink: 1;
+        flex-grow: 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: flex-start;
+        box-sizing: border-box;
+        padding: 0.75em 2.75em 0.75em 0.75em;
+        background-color: white;
+        margin: 5px 15px 0;
+        box-shadow: 0 0 5px 1px #f9f9f9;
+
+        .reviews-item-title {
+          width: 100%;
+          margin-top: 50px;
+          flex-shrink: 1;
+          flex-grow: 1;
+          @include fontRG;
+          font-size: 1.25em;
+          text-align: center;
+        }
+
+        .reviews-item-avatar {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          margin: 20px auto;
+        }
+        .reviews-item-text {
+          width: 80%;
+          @include fontLT;
+          font-size: 1.15em;
+          position: relative;
+          // padding: 20px 30px 20px 20px;
+          // margin: 0 0 0 45px;
+          // border-left: 3px solid #e1e1e1;
+          line-height: 1.4;
+
+          // &:before {
+          //   content: "\201c";
+          //   position: absolute;
+          //   left: -45px;
+          //   top: -15px;
+          //   font-size: 90px;
+          //   color: #e1e1e1;
+          // }
+
+          // &:after {
+          //   content: "\201d";
+          //   position: absolute;
+          //   right: 0;
+          //   bottom: 0;
+          // }
+        }
+      }
+    }
+  }
+
+  .slick-slider {
+    margin: 30px 30px 30px 30px;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #999;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+}
