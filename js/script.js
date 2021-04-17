@@ -675,6 +675,11 @@ setTimeout(() => {
 }, 30000);
 
 setTimeout(() => {
+  const count = document.querySelector("#count");
+  count.innerHTML = count.innerHTML - 1;
+}, 32000);
+
+setTimeout(() => {
   popup.classList.toggle("show");
   setTimeout(() => {
     popup.querySelector(".body").remove();

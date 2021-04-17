@@ -84,8 +84,8 @@
       justify-content: center;
 
       & .item {
-        width: 10px;
-        height: 10px;
+        width: 5px;
+        height: 5px;
         background-color: #bbb8b8;
         margin: 20px 15px;
         border-radius: 50%;
@@ -93,19 +93,8 @@
 
       & .item.action {
         transform: scale(1.5);
-        background-color: #fff;
+        background-color: #413f3f;
         position: relative;
-
-        &:before {
-          content: "";
-          width: 6px;
-          height: 6px;
-          background-color: #dadada;
-          border-radius: 50%;
-          position: absolute;
-          left: 2px;
-          top: 2px;
-        }
       }
     }
   }

@@ -1652,7 +1652,7 @@ body ~ #hide.show {
       -ms-flex-positive: 1;
           flex-grow: 1;
   color: #000;
-  background-color: #fdfdfd;
+  background-color: #ff9900;
 }
 
 .section-get-profession .wrp {
@@ -1697,64 +1697,77 @@ body ~ #hide.show {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #6666cc;
+  color: #fdfdfd;
 }
 
-.section-get-profession .wrp .listitem {
+.section-get-profession .wrp .text {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 1.5em 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 5px 0 0 0;
+  text-align: center;
+  font-family: 'Proxima Nova Cn Rg';
+  font-weight: bold;
+  font-style: normal;
   font-size: 1.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #6666cc;
+  color: #6666cc;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.section-get-profession .wrp .listitem .item {
-  width: 50%;
+.section-get-profession .wrp .text span {
+  color: #fdfdfd;
+  padding: 0 4px;
+  font-size: 2.25em;
+}
+
+.section-get-profession .wrp .link {
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  background: #fdfdfd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f90;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0.75em;
-  background-color: #fdfdfd;
-  margin: 5px 2.5px 0;
-  -webkit-box-shadow: 0 0 5px 1px #f9f9f9;
-          box-shadow: 0 0 5px 1px #f9f9f9;
 }
 
-.section-get-profession .wrp .listitem .item .reviews-item-title {
-  width: 100%;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 0.85em;
-  text-align: center;
+.section-get-profession .wrp .link:hover {
+  -webkit-box-shadow: 0 1px 3px 1px #e58b04;
+          box-shadow: 0 1px 3px 1px #e58b04;
 }
 
-.section-get-profession .wrp .listitem .item .reviews-item-text {
-  font-family: 'Proxima Nova Cn Lt';
-  font-weight: 300;
-  font-style: normal;
-  font-size: 0.65em;
+.section-get-profession .wrp .link:active {
+  background: #fdfdfd;
+  color: #f90;
+  -webkit-box-shadow: inset 0 -1px 3px 1px #e58b04;
+          box-shadow: inset 0 -1px 3px 1px #e58b04;
+  border: none;
+}
+
+.section-get-profession .wrp .link:focus-visible {
+  border: 1px solid #f90;
 }
 
 .section-advantages {
@@ -2377,8 +2390,8 @@ body ~ #hide.show {
 }
 
 .section-prices .slider .pagination .item {
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   background-color: #bbb8b8;
   margin: 20px 15px;
   border-radius: 50%;
@@ -2387,19 +2400,8 @@ body ~ #hide.show {
 .section-prices .slider .pagination .item.action {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
-  background-color: #fff;
+  background-color: #413f3f;
   position: relative;
-}
-
-.section-prices .slider .pagination .item.action:before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  background-color: #dadada;
-  border-radius: 50%;
-  position: absolute;
-  left: 2px;
-  top: 2px;
 }
 
 .section-prices .listCards {
@@ -3302,8 +3304,8 @@ body ~ #hide.show {
     height: 975px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-preferred-size: 300px;
-        flex-basis: 300px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .section-prices .listCards .card {
     width: 100%;

@@ -1,9 +1,8 @@
 .section-get-profession {
-  @include sectionParam($bg-color-primary-1);
+  @include sectionParam($color-primary-1);
 
   .wrp {
     @include sectionWidth(4.0625em, 1em, 4.0625em, 1em);
-
     display: flex;
     flex-shrink: 1;
     flex-grow: 1;
@@ -12,40 +11,85 @@
 
     .title {
       @include sectionTitle;
+      color: $bg-color-primary-1;
     }
 
-    .listitem {
+    .text {
+      @include sectionTitle;
+      color: $color-secondary-a-3;
+      align-items: center;
+
+     & span {
+        color: $bg-color-primary-1;
+        padding: 0 4px;
+        font-size: 2.25em;
+      }
+    }
+
+    // .listitem {
+    //   width: 100%;
+    //   display: flex;
+    //   // flex: 1 1;
+    //   flex-direction: row;
+    //   margin: 1.5em 0;
+    //   font-size: 1.75em;
+
+    //   .item {
+    //     width: calc(95% / 3);
+    //     display: flex;
+    //     flex-shrink: 1;
+    //     flex-grow: 1;
+    //     flex-direction: row;
+    //     flex-wrap: wrap;
+    //     box-sizing: border-box;
+    //     background-color: transparent;
+    //     margin: 1.5rem 0.1rem;
+    //     padding: 1em 0.5em;
+    //     box-shadow: 0 0 5px 1px #aa6b0c17;
+
+    //     .item-title {
+    //       width: 100%;
+    //       flex-shrink: 1;
+    //       flex-grow: 1;
+    //       @include fontRG;
+    //       font-size: 0.85em;
+    //       text-align: center;
+    //     }
+    //     .item-text {
+    //       @include fontLT;
+    //       font-size: 0.65em;
+    //     }
+    //   }
+    // }
+
+    .link {
+      width: 200px;
+      height: 40px;
+      margin: 0 auto;
+      background: $bg-color-primary-1;
       display: flex;
-      // flex: 1 1;
-      flex-direction: row;
-      margin: 1.5em 0;
-      font-size: 1.75em;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #f90;
+      box-sizing: border-box;
 
-      .item {
-        width: 50%;
-        display: flex;
-        flex-shrink: 1;
-        flex-grow: 1;
-        flex-direction: row;
-        flex-wrap: wrap;
-        box-sizing: border-box;
-        padding: 0.75em;
-        background-color: $bg-color-primary-1;
-        margin: 5px 2.5px 0;
-        box-shadow: 0 0 5px 1px #f9f9f9;
+      &:hover {
+        // border: 1px solid #f90;
+        // color: #f9f9f9;
+        box-shadow: 0 1px 3px 1px #e58b04;
+      }
 
-        .reviews-item-title {
-          width: 100%;
-          flex-shrink: 1;
-          flex-grow: 1;
-          @include fontRG;
-          font-size: 0.85em;
-          text-align: center;
-        }
-        .reviews-item-text {
-          @include fontLT;
-          font-size: 0.65em;
-        }
+      &:active {
+        background: $bg-color-primary-1;
+        color: #f90;
+        box-shadow: inset 0 -1px 3px 1px #e58b04;
+        border: none;
+      }
+
+      &:focus-visible {
+        border: 1px solid #f90;
       }
     }
   }
