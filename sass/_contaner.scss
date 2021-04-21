@@ -3,16 +3,35 @@
   min-height: 1px;
   max-height: 999999px;
   opacity: 0;
+  visibility: hidden;
   @include fontRG;
 
   &.show {
     opacity: 1;
+    visibility: visible;
   }
-.wrp {
-  // max-width: 1440px;
-  // min-width: 100%;
-  // margin: 0 auto;
-}
+  .wrp {
+    // max-width: 1440px;
+    // min-width: 100%;
+    // margin: 0 auto;
+  }
+  .payment-title {
+    @include sectionTitle;
+    margin: 4em auto;
+  }
+
+  .payment-text {
+    @include fontRG;
+    color: $color-secondary-a-3;
+    width: 400px;
+    align-items: center;
+    margin: 20px auto 20px;
+  }
+
+  .payment-frame {
+    width: 300px;
+    margin: 0 auto;
+  }
   a {
     text-decoration: none;
     color: #2704c5;

@@ -942,8 +942,8 @@ body ~ #hide.show {
 }
 
 .section-timer .wrp {
-  width: 100%;
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
   padding: 5.0625em 1em 5.0625em 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1081,6 +1081,7 @@ body ~ #hide.show {
   min-height: 1px;
   max-height: 999999px;
   opacity: 0;
+  visibility: hidden;
   font-family: 'Proxima Nova Cn Rg', 'sans-serif';
   font-weight: normal;
   font-style: normal;
@@ -1088,6 +1089,47 @@ body ~ #hide.show {
 
 .container.show {
   opacity: 1;
+  visibility: visible;
+}
+
+.container .payment-title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 5px 0 0 0;
+  text-align: center;
+  font-family: 'Proxima Nova Cn Rg';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #6666cc;
+  margin: 4em auto;
+}
+
+.container .payment-text {
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
+  font-weight: normal;
+  font-style: normal;
+  color: #6666cc;
+  width: 400px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px auto 20px;
+}
+
+.container .payment-frame {
+  width: 300px;
+  margin: 0 auto;
 }
 
 .container a {
@@ -1106,8 +1148,8 @@ body ~ #hide.show {
 }
 
 .header .wrp {
-  width: 100%;
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
   padding: 0 0 0 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1171,21 +1213,32 @@ body ~ #hide.show {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 0.1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.header .top .wrp .top-logo span {
+.header .top .wrp .top-logo .logo-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header .top .wrp .top-logo .logo-link span {
   width: 100%;
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
-.header .top .wrp .top-logo span:first-child {
+.header .top .wrp .top-logo .logo-link span:first-child {
   font-family: 'Proxima Nova Cn Rg';
   font-weight: bold;
   font-style: normal;
@@ -1194,7 +1247,7 @@ body ~ #hide.show {
   color: #ff9900;
 }
 
-.header .top .wrp .top-logo span:nth-child(2) {
+.header .top .wrp .top-logo .logo-link span:nth-child(2) {
   font-family: 'Proxima Nova Cn Rg', 'sans-serif';
   font-weight: normal;
   font-style: normal;
@@ -1202,7 +1255,7 @@ body ~ #hide.show {
   font-size: 0.65em;
 }
 
-.header .top .wrp .top-logo span:nth-child(3) {
+.header .top .wrp .top-logo .logo-link span:nth-child(3) {
   font-family: 'Proxima Nova Cn Lt';
   font-weight: 300;
   font-style: normal;
@@ -1306,7 +1359,7 @@ body ~ #hide.show {
 
 .header .head {
   position: relative;
-  margin-top: 80px;
+  margin-top: 20px;
   min-height: 300px;
   padding: 0 2rem 1rem 2rem;
   display: -ms-flexbox;
@@ -1362,7 +1415,7 @@ body ~ #hide.show {
 }
 
 .header .head .nav .listItems {
-  margin: 0 15px 0 0;
+  margin: 0 35px 0 0;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1397,7 +1450,7 @@ body ~ #hide.show {
 }
 
 .header .head .head-text {
-  width: 60%;
+  width: 45%;
   color: #fff;
   position: relative;
   display: -webkit-box;
@@ -1476,7 +1529,7 @@ body ~ #hide.show {
 }
 
 .header .head .head-start {
-  width: 30%;
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1510,8 +1563,8 @@ body ~ #hide.show {
 }
 
 .section-stat .wrp {
-  width: 100%;
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
   padding: 1em 1em 1em 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1656,8 +1709,8 @@ body ~ #hide.show {
 }
 
 .section-get-profession .wrp {
-  width: 100%;
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
   padding: 4.0625em 1em 4.0625em 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1700,6 +1753,12 @@ body ~ #hide.show {
   color: #fdfdfd;
 }
 
+.section-get-profession .wrp .title span {
+  color: #6666cc;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
 .section-get-profession .wrp .text {
   width: 100%;
   display: -webkit-box;
@@ -1728,7 +1787,7 @@ body ~ #hide.show {
 
 .section-get-profession .wrp .text span {
   color: #fdfdfd;
-  padding: 0 4px;
+  padding: 0 7px;
   font-size: 2.25em;
 }
 
@@ -1784,8 +1843,8 @@ body ~ #hide.show {
 }
 
 .section-advantages .wrp {
-  width: 100%;
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
   padding: 1em 1em 1em 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1894,19 +1953,14 @@ body ~ #hide.show {
 }
 
 .section-who .wrp {
-  width: 100%;
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
   padding: 4.0625em 1em 4.0625em 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -2010,19 +2064,14 @@ body ~ #hide.show {
 }
 
 .section-know .wrp {
-  width: 100%;
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
   padding: 4.0625em 1em 4.0625em 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -2128,8 +2177,8 @@ body ~ #hide.show {
 }
 
 .section-format .wrp {
-  width: 100%;
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
   padding: 1em 1em 1em 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2280,8 +2329,8 @@ body ~ #hide.show {
 }
 
 .section-prices .wrp {
-  width: 100%;
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
   padding: 1em 1em 1em 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2778,8 +2827,8 @@ body ~ #hide.show {
 }
 
 .section-reviews .wrp {
-  width: 100%;
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
   padding: 4.0625em 1em 4.0625em 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2883,6 +2932,119 @@ body ~ #hide.show {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.section-payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: #000;
+  background-color: #f7f7f7;
+}
+
+.section-payment .wrp {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 4.0625em 1em 4.0625em 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-payment .wrp .title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 5px 0 0 0;
+  text-align: center;
+  font-family: 'Proxima Nova Cn Rg';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #6666cc;
+}
+
+.section-payment .wrp .know-listitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 1.5em 0;
+  font-size: 1.75em;
+}
+
+.section-payment .wrp .know-listitem .know-item {
+  width: calc(95% / 4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.75em;
+  background-color: white;
+  margin: 5px 2.5px 0;
+  -webkit-box-shadow: 0 0 5px 1px #f9f9f9;
+          box-shadow: 0 0 5px 1px #f9f9f9;
+}
+
+.section-payment .wrp .know-listitem .know-item .know-item-title {
+  width: 100%;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-family: 'Proxima Nova Cn Rg', 'sans-serif';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.85em;
+  text-align: center;
+}
+
+.section-payment .wrp .know-listitem .know-item .know-item-text {
+  font-family: 'Proxima Nova Cn Lt';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.65em;
+}
+
 .section-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2898,8 +3060,8 @@ body ~ #hide.show {
 }
 
 .section-form .wrp {
-  width: 100%;
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
   padding: 1em 1em 1em 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -3037,8 +3199,8 @@ body ~ #hide.show {
 }
 
 .footer .wrp {
-  width: 100%;
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
   padding: 1em 1em 1em 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -3198,6 +3360,22 @@ body ~ #hide.show {
 }
 
 @media (max-width: 576px) {
+  .header .wrp,
+  .section-advantages .wrp,
+  .section-extra .wrp,
+  .section-format .wrp,
+  .section-reviews .wrp,
+  .section-form .wrp,
+  .section-know .wrp,
+  .section-get-profession .wrp,
+  .section-payment .wrp,
+  .section-stat .wrp,
+  .section-who .wrp,
+  .section-timer .wrp,
+  .section-title .wrp,
+  .footer .wrp {
+    width: 100%;
+  }
   #hide.show {
     width: 100%;
     padding: 50px 5px;
@@ -3297,7 +3475,8 @@ body ~ #hide.show {
             justify-content: center;
     height: 975px;
   }
-  .section-prices .slider .previous, .section-prices .slider .next {
+  .section-prices .slider .previous,
+  .section-prices .slider .next {
     display: none;
   }
   .section-prices .listCards {
@@ -3360,6 +3539,22 @@ body ~ #hide.show {
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
+  .header .wrp,
+  .section-advantages .wrp,
+  .section-extra .wrp,
+  .section-format .wrp,
+  .section-reviews .wrp,
+  .section-form .wrp,
+  .section-know .wrp,
+  .section-get-profession .wrp,
+  .section-payment .wrp,
+  .section-stat .wrp,
+  .section-who .wrp,
+  .section-timer .wrp,
+  .section-title .wrp,
+  .footer .wrp {
+    width: 100%;
+  }
   #hide.show {
     width: 100%;
     padding: 50px;
@@ -3425,6 +3620,22 @@ body ~ #hide.show {
 }
 
 @media (min-width: 577px) and (max-width: 992px) {
+  .header .wrp,
+  .section-advantages .wrp,
+  .section-extra .wrp,
+  .section-format .wrp,
+  .section-reviews .wrp,
+  .section-form .wrp,
+  .section-know .wrp,
+  .section-get-profession .wrp,
+  .section-payment .wrp,
+  .section-stat .wrp,
+  .section-who .wrp,
+  .section-timer .wrp,
+  .section-title .wrp,
+  .footer .wrp {
+    width: 100%;
+  }
   .header .head .head-text .wrp span:nth-child(2) {
     font-size: 1.25em;
   }
@@ -3440,6 +3651,25 @@ body ~ #hide.show {
   }
   .section-format .wrp .format-listitems .format-listitems-item {
     width: 45%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header .wrp,
+  .section-advantages .wrp,
+  .section-extra .wrp,
+  .section-format .wrp,
+  .section-reviews .wrp,
+  .section-form .wrp,
+  .section-know .wrp,
+  .section-get-profession .wrp,
+  .section-payment .wrp,
+  .section-stat .wrp,
+  .section-who .wrp,
+  .section-timer .wrp,
+  .section-title .wrp,
+  .footer .wrp {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

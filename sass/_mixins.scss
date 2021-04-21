@@ -1,6 +1,6 @@
 @mixin sectionWidth($top: 1em, $right: 1em, $buttom:1em, $left: 1em) {
-  width: 100%;
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
   padding: $top $right $buttom $left;
   box-sizing: border-box;
 }
