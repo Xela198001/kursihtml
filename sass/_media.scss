@@ -86,6 +86,16 @@
 
       & .head-start {
         width: 100%;
+
+        & .sale {
+          margin: 20px 0 0;
+          font-size: 0.85em;
+        }
+
+        & span {
+          margin: 20px 0 0;
+          font-size: 0.85em;
+        }
       }
     }
   }
@@ -116,6 +126,19 @@
       }
     }
   }
+  
+.section-get-profession {
+
+  & .wrp {
+
+    & .title {
+      font-size: 0.85em;
+    }
+
+    & .text {
+      font-size: 0.85em;}
+  }
+}
 
   .section-format {
     & .wrp {

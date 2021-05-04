@@ -1291,10 +1291,31 @@ body ~ #hide.show {
 .header .top .wrp .top-contacts .messenger .social-link {
   margin: 0.3rem;
   text-decoration: none;
+  border: 1px solid #c0c0c0;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #c0c0c0;
+}
+
+.header .top .wrp .top-contacts .messenger .social-link:hover {
+  color: #9e9e9e;
+  border-color: #9e9e9e;
 }
 
 .header .top .wrp .top-contacts .messenger .social-link svg {
-  opacity: 0.75;
+  opacity: 1;
+  width: 18px;
+  height: 18px;
 }
 
 .header .top .wrp .top-contacts .messenger .social-link .whatsapp:hover ~ .iconWhatsappBg {
@@ -1535,8 +1556,8 @@ body ~ #hide.show {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1547,6 +1568,27 @@ body ~ #hide.show {
       align-self: center;
   color: #fff;
   font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.header .head .head-start span {
+  margin: 35px 0 0 0;
+  text-align: center;
+}
+
+.header .head .head-start .sale {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 1.65em;
 }
 
 .section-stat {
@@ -1794,7 +1836,7 @@ body ~ #hide.show {
 .section-get-profession .wrp .link {
   width: 200px;
   height: 40px;
-  margin: 0 auto;
+  margin: 20px auto 0;
   background: #fdfdfd;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3429,6 +3471,12 @@ body ~ #hide.show {
   .header .head .head-start {
     width: 100%;
   }
+  .header .head .head-start .sale {
+    margin: 20px 0 0;
+  }
+  .header .head .head-start span {
+    margin: 20px 0 0;
+  }
   .section-advantages .listItems {
     -ms-flex-wrap: wap;
         flex-wrap: wap;
@@ -3449,6 +3497,12 @@ body ~ #hide.show {
   .section-stat .wrp .listitems .item {
     width: 100%;
     height: 150px;
+  }
+  .section-get-profession .wrp .title {
+    font-size: 0.85em;
+  }
+  .section-get-profession .wrp .text {
+    font-size: 0.85em;
   }
   .section-format .wrp .format-listitems .format-listitems-item .circle {
     width: 50px;
